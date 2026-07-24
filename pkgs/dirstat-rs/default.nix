@@ -13,8 +13,8 @@ rustPlatform.buildRustPackage {
   cargoLock.lockFile = "${p.src}/Cargo.lock";
 
   meta = {
-    description = "Command-line tool to manipulate impermanence old roots in btrfs";
-    homepage = "https://github.com/js0ny/oroot";
+    description = "disk usage cli, similar to windirstat.";
+    homepage = "https://github.com/scullionw/dirstat-rs";
     license = lib.licenses.mit;
     mainProgram = "ds";
     platforms = lib.platforms.linux;

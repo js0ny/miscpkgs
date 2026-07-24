@@ -173,6 +173,17 @@
       sha256 = "sha256-Ez/XZHtEDvLCVnJvqxQcUeiZI6GiJMjrorV48eSmbqM=";
     };
   };
+  openlogi = {
+    pname = "openlogi";
+    version = "v0.6.22";
+    src = fetchFromGitHub {
+      owner = "AprilNEA";
+      repo = "OpenLogi";
+      rev = "v0.6.22";
+      fetchSubmodules = false;
+      sha256 = "sha256-6gJzIcFJK6edHLmV8GWDx5LxbbMp8xq4odwtY1goEGM=";
+    };
+  };
   oroot = {
     pname = "oroot";
     version = "0b76c1e834cea24cad8e8ad7204db01f970303ce";

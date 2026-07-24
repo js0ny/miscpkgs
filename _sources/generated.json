@@ -290,6 +290,27 @@
         },
         "version": "v1.11.4.1"
     },
+    "openlogi": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "openlogi",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "AprilNEA",
+            "repo": "OpenLogi",
+            "rev": "v0.6.22",
+            "sha256": "sha256-6gJzIcFJK6edHLmV8GWDx5LxbbMp8xq4odwtY1goEGM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.6.22"
+    },
     "oroot": {
         "cargoLock": null,
         "date": "2026-07-09",

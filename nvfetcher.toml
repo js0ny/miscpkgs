@@ -122,3 +122,7 @@ fetch.url = "https://proton.me/download/drive/cli/$ver/darwin-arm64/proton-drive
 [dirstat-rs]
 src.github = "scullionw/dirstat-rs"
 fetch.github = "scullionw/dirstat-rs"
+
+[openlogi]
+src.github = "AprilNEA/OpenLogi"
+fetch.github = "AprilNEA/OpenLogi"
