@@ -104,15 +104,15 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-M8wcC7pKFs0Qena5NN9ylq2TykRfPK7JiHnzP6DkZv0=",
+            "sha256": "sha256-kWMYlF0H9iYjRcKmq/G4Ws4sTl+gN8nSFgfYvAOd754=",
             "type": "tarball",
-            "url": "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-7/dwproton-11.0-7-x86_64.tar.xz"
+            "url": "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-9/dwproton-11.0-9-x86_64.tar.xz"
         },
-        "version": "dwproton-11.0-7"
+        "version": "dwproton-11.0-9"
     },
     "firefox-csshacks": {
         "cargoLock": null,
-        "date": "2026-06-24",
+        "date": "2026-07-23",
         "extract": null,
         "name": "firefox-csshacks",
         "passthru": null,
@@ -122,13 +122,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e7b748bfa4572ddcc50cced16a524f5f75dc04f2",
-            "sha256": "sha256-KTjiWPp/KUY99rff5gws+s6T8oC1o9a+Eqp+aKlrCWE=",
+            "rev": "52e47afe74182b4a31d6e2a229e687daa3916c7e",
+            "sha256": "sha256-irQ+LUoN9NQWHOuV89mGQeedyAQOjiqDpig5v2Or928=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/MrOtherGuy/firefox-csshacks.git"
         },
-        "version": "e7b748bfa4572ddcc50cced16a524f5f75dc04f2"
+        "version": "52e47afe74182b4a31d6e2a229e687daa3916c7e"
     },
     "go-fast-note-sync": {
         "cargoLock": null,
@@ -250,7 +250,7 @@
     },
     "msd_lite": {
         "cargoLock": null,
-        "date": "2025-05-02",
+        "date": "2026-07-20",
         "extract": null,
         "name": "msd_lite",
         "passthru": null,
@@ -262,12 +262,12 @@
             "name": null,
             "owner": "rozhuk-im",
             "repo": "msd_lite",
-            "rev": "79a6c62c8fced6128a5e445ee110709b3b51bb78",
-            "sha256": "sha256-OEpPlxJqsGrokyVvvACrZMV7wosY/RzFPBnqRr2lUIg=",
+            "rev": "fa68e131343fb58c67ad77b2d26f2cb7c49a2c95",
+            "sha256": "sha256-+LMcsU/kfaRD/0OTN4IN84GeFOsuiGCKjtvVP4dyY6g=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "79a6c62c8fced6128a5e445ee110709b3b51bb78"
+        "version": "fa68e131343fb58c67ad77b2d26f2cb7c49a2c95"
     },
     "noname": {
         "cargoLock": null,
@@ -390,12 +390,12 @@
             "name": null,
             "owner": "acmagn",
             "repo": "ratune",
-            "rev": "v0.15.1",
-            "sha256": "sha256-bavGTCOoVcI4LTnnPOalu19YN+5qIYVcKkVjPAIsuzM=",
+            "rev": "v0.15.2",
+            "sha256": "sha256-LkEzYYEVkOL/f1BDa9sYSXuXlCk1i2PZ+1+sHzB+KBc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.15.1"
+        "version": "v0.15.2"
     },
     "rime-cantonese": {
         "cargoLock": null,
@@ -467,7 +467,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-tOHZ/RvNvmyA9sfV+6LpnCNrCVmfBfAJqDF9usHq2iY=",
+            "sha256": "sha256-e7d0vWSlUiUaPLs8x212vTBuV6xssnbVJpMeK3G/yUo=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -497,11 +497,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-rvdRU/K/3VkuR//qp4KYeJ8HX8IKZYPltUhJApO2fwY=",
+            "sha256": "sha256-NyRVsXRgt7+axItf0zssDDOi/TjZ2CD8SJmpoud91Zc=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.3.2/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v16.1.3"
+        "version": "v16.3.2"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -512,11 +512,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kKPnTaCd5sr+opB4HGiTGhO790DZYGex7L6mx/gENAo=",
+            "sha256": "sha256-ZbX6vEKvE6Ofi6peo9gTlENXu8UER+34OVGJgTVP7cc=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.3.2/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v16.1.3"
+        "version": "v16.3.2"
     },
     "udpxy": {
         "cargoLock": null,

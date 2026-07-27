@@ -64,25 +64,25 @@
   };
   dwproton = {
     pname = "dwproton";
-    version = "dwproton-11.0-7";
+    version = "dwproton-11.0-9";
     src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-7/dwproton-11.0-7-x86_64.tar.xz";
-      sha256 = "sha256-M8wcC7pKFs0Qena5NN9ylq2TykRfPK7JiHnzP6DkZv0=";
+      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-9/dwproton-11.0-9-x86_64.tar.xz";
+      sha256 = "sha256-kWMYlF0H9iYjRcKmq/G4Ws4sTl+gN8nSFgfYvAOd754=";
     };
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "e7b748bfa4572ddcc50cced16a524f5f75dc04f2";
+    version = "52e47afe74182b4a31d6e2a229e687daa3916c7e";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "e7b748bfa4572ddcc50cced16a524f5f75dc04f2";
+      rev = "52e47afe74182b4a31d6e2a229e687daa3916c7e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-KTjiWPp/KUY99rff5gws+s6T8oC1o9a+Eqp+aKlrCWE=";
+      sha256 = "sha256-irQ+LUoN9NQWHOuV89mGQeedyAQOjiqDpig5v2Or928=";
     };
-    date = "2026-06-24";
+    date = "2026-07-23";
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
@@ -152,15 +152,15 @@
   };
   msd_lite = {
     pname = "msd_lite";
-    version = "79a6c62c8fced6128a5e445ee110709b3b51bb78";
+    version = "fa68e131343fb58c67ad77b2d26f2cb7c49a2c95";
     src = fetchFromGitHub {
       owner = "rozhuk-im";
       repo = "msd_lite";
-      rev = "79a6c62c8fced6128a5e445ee110709b3b51bb78";
+      rev = "fa68e131343fb58c67ad77b2d26f2cb7c49a2c95";
       fetchSubmodules = true;
-      sha256 = "sha256-OEpPlxJqsGrokyVvvACrZMV7wosY/RzFPBnqRr2lUIg=";
+      sha256 = "sha256-+LMcsU/kfaRD/0OTN4IN84GeFOsuiGCKjtvVP4dyY6g=";
     };
-    date = "2025-05-02";
+    date = "2026-07-20";
   };
   noname = {
     pname = "noname";
@@ -224,13 +224,13 @@
   };
   ratune = {
     pname = "ratune";
-    version = "v0.15.1";
+    version = "v0.15.2";
     src = fetchFromGitHub {
       owner = "acmagn";
       repo = "ratune";
-      rev = "v0.15.1";
+      rev = "v0.15.2";
       fetchSubmodules = false;
-      sha256 = "sha256-bavGTCOoVcI4LTnnPOalu19YN+5qIYVcKkVjPAIsuzM=";
+      sha256 = "sha256-LkEzYYEVkOL/f1BDa9sYSXuXlCk1i2PZ+1+sHzB+KBc=";
     };
   };
   rime-cantonese = {
@@ -277,7 +277,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-tOHZ/RvNvmyA9sfV+6LpnCNrCVmfBfAJqDF9usHq2iY=";
+      sha256 = "sha256-e7d0vWSlUiUaPLs8x212vTBuV6xssnbVJpMeK3G/yUo=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -290,18 +290,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v16.1.3";
+    version = "v16.3.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-rvdRU/K/3VkuR//qp4KYeJ8HX8IKZYPltUhJApO2fwY=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.3.2/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-NyRVsXRgt7+axItf0zssDDOi/TjZ2CD8SJmpoud91Zc=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v16.1.3";
+    version = "v16.3.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-kKPnTaCd5sr+opB4HGiTGhO790DZYGex7L6mx/gENAo=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.3.2/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-ZbX6vEKvE6Ofi6peo9gTlENXu8UER+34OVGJgTVP7cc=";
     };
   };
   udpxy = {
