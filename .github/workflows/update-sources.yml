@@ -24,6 +24,8 @@ jobs:
         run: nix flake update nixpkgs
 
       - name: Update nvfetcher sources
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: nix run nixpkgs#nvfetcher -- -c nvfetcher.toml -o _sources
 
       - name: Create pull request
