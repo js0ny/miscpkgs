@@ -277,7 +277,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-e7d0vWSlUiUaPLs8x212vTBuV6xssnbVJpMeK3G/yUo=";
+      sha256 = "sha256-6/nzFtoCWk2d+CuWNxVzWNH8CD5OgIYp5MeU88EXKQ0=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -285,7 +285,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-oUYJIZb300lm+XT0k2TYOClEq9UELd1oLOJkgo/f7aU=";
+      sha256 = "sha256-YE7DnLSZgbRG8wEhhvnuHr8S1dEYYATPrSDg9HVMJYw=";
     };
   };
   rime-wanxiang-flypy = {
@@ -313,6 +313,36 @@
       rev = "1.0-25.2";
       fetchSubmodules = false;
       sha256 = "sha256-v+w4Y6MyJqUrgwuYUYTZW0Zn1jhW4vEpgBEQyEjvkzg=";
+    };
+  };
+  waywallen = {
+    pname = "waywallen";
+    version = "v0.2.6";
+    src = fetchFromGitHub {
+      owner = "waywallen";
+      repo = "waywallen";
+      rev = "v0.2.6";
+      fetchSubmodules = false;
+      sha256 = "sha256-i7kvhOHiJZaiBFLRWSfbLmTkiAx//cSFAraG2rpb5I4=";
+    };
+  };
+  waywallen-display = {
+    pname = "waywallen-display";
+    version = "v0.2.9";
+    src = fetchFromGitHub {
+      owner = "waywallen";
+      repo = "waywallen-display";
+      rev = "v0.2.9";
+      fetchSubmodules = false;
+      sha256 = "sha256-N+QjNfDu3RpfDWPE42miZ5i37CV68Y5A9EkzWUAolVI=";
+    };
+  };
+  waywallen-main-page-webp = {
+    pname = "waywallen-main-page-webp";
+    version = "v0.2.6";
+    src = fetchurl {
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.2.6/ui/assets/main_page.webp";
+      sha256 = "sha256-US6vRPPip7LjLsjVpet+jW2AyIH/AcUkYoCaI+zoFBs=";
     };
   };
   wdotool = {

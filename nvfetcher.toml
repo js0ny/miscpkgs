@@ -126,3 +126,15 @@ fetch.github = "scullionw/dirstat-rs"
 [openlogi]
 src.github = "AprilNEA/OpenLogi"
 fetch.github = "AprilNEA/OpenLogi"
+
+[waywallen]
+src.github = "waywallen/waywallen"
+fetch.github = "waywallen/waywallen"
+
+[waywallen-main-page-webp]
+src.github = "waywallen/waywallen"
+fetch.url = "https://media.githubusercontent.com/media/waywallen/waywallen/$ver/ui/assets/main_page.webp"
+
+[waywallen-display]
+src.github = "waywallen/waywallen-display"
+fetch.github = "waywallen/waywallen-display"

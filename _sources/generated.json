@@ -467,7 +467,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-e7d0vWSlUiUaPLs8x212vTBuV6xssnbVJpMeK3G/yUo=",
+            "sha256": "sha256-6/nzFtoCWk2d+CuWNxVzWNH8CD5OgIYp5MeU88EXKQ0=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -482,7 +482,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-oUYJIZb300lm+XT0k2TYOClEq9UELd1oLOJkgo/f7aU=",
+            "sha256": "sha256-YE7DnLSZgbRG8wEhhvnuHr8S1dEYYATPrSDg9HVMJYw=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
         },
@@ -538,6 +538,63 @@
             "type": "github"
         },
         "version": "1.0-25.2"
+    },
+    "waywallen": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "waywallen",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "waywallen",
+            "repo": "waywallen",
+            "rev": "v0.2.6",
+            "sha256": "sha256-i7kvhOHiJZaiBFLRWSfbLmTkiAx//cSFAraG2rpb5I4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.2.6"
+    },
+    "waywallen-display": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "waywallen-display",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "waywallen",
+            "repo": "waywallen-display",
+            "rev": "v0.2.9",
+            "sha256": "sha256-N+QjNfDu3RpfDWPE42miZ5i37CV68Y5A9EkzWUAolVI=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.2.9"
+    },
+    "waywallen-main-page-webp": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "waywallen-main-page-webp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-US6vRPPip7LjLsjVpet+jW2AyIH/AcUkYoCaI+zoFBs=",
+            "type": "url",
+            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.2.6/ui/assets/main_page.webp"
+        },
+        "version": "v0.2.6"
     },
     "wdotool": {
         "cargoLock": null,
