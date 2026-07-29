@@ -304,6 +304,20 @@
       sha256 = "sha256-ZbX6vEKvE6Ofi6peo9gTlENXu8UER+34OVGJgTVP7cc=";
     };
   };
+  sops-nvim = {
+    pname = "sops-nvim";
+    version = "4de0cb71746d7a6de6311c85bc39873e56bcefc7";
+    src = fetchgit {
+      url = "https://github.com/trixnz/sops.nvim.git";
+      rev = "4de0cb71746d7a6de6311c85bc39873e56bcefc7";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-pMnAGm7tkgM5pxhNEs06Qdx69qztMd14uNpuRi4I4qE=";
+    };
+    date = "2026-07-11";
+  };
   udpxy = {
     pname = "udpxy";
     version = "1.0-25.2";

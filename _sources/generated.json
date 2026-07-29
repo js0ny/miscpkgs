@@ -518,6 +518,26 @@
         },
         "version": "v16.3.2"
     },
+    "sops-nvim": {
+        "cargoLock": null,
+        "date": "2026-07-11",
+        "extract": null,
+        "name": "sops-nvim",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "4de0cb71746d7a6de6311c85bc39873e56bcefc7",
+            "sha256": "sha256-pMnAGm7tkgM5pxhNEs06Qdx69qztMd14uNpuRi4I4qE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/trixnz/sops.nvim.git"
+        },
+        "version": "4de0cb71746d7a6de6311c85bc39873e56bcefc7"
+    },
     "udpxy": {
         "cargoLock": null,
         "date": null,

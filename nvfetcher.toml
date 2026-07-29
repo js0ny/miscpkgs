@@ -138,3 +138,7 @@ fetch.url = "https://media.githubusercontent.com/media/waywallen/waywallen/$ver/
 [waywallen-display]
 src.github = "waywallen/waywallen-display"
 fetch.github = "waywallen/waywallen-display"
+
+[sops-nvim]
+src.git = "https://github.com/trixnz/sops.nvim.git"
+fetch.git = "https://github.com/trixnz/sops.nvim.git"
