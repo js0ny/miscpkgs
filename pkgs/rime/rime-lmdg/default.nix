@@ -14,7 +14,7 @@ let
       installPhase = ''
         runHook preInstall
 
-        install -Dm444 "$src" "$raw/wanxiang.gram"
+        install -Dm444 "$src" "$raw"
 
         install -Dm444 "$src" \
           "$out/share/rime-data/wanxiang.gram"
