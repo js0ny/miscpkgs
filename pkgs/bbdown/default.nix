@@ -25,8 +25,8 @@ buildDotnetModule {
 
   projectFile = "BBDown/BBDown.csproj";
 
-  dotnet-sdk = dotnetCorePackages.sdk_9_0;
-  dotnet-runtime = dotnetCorePackages.runtime_9_0;
+  dotnet-sdk = dotnetCorePackages.sdk_8_0;
+  dotnet-runtime = dotnetCorePackages.runtime_8_0;
   selfContainedBuild = true;
 
   executables = [ "BBDown" ];
