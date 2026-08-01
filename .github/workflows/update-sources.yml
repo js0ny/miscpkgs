@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update:
@@ -28,12 +27,16 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: nix run nixpkgs#nvfetcher -- -c nvfetcher.toml -o _sources
 
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          commit-message: "chore: update nix sources"
-          title: "chore: update nix sources"
-          body: |
-            Automated update for nixpkgs and nvfetcher generated sources.
-          branch: update/nix-sources
-          delete-branch: true
+      - name: Create commit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update nix sources"
+          git push

@@ -27,15 +27,15 @@
   };
   danmakufactory = {
     pname = "danmakufactory";
-    version = "02134bc672729aec85c034af8635de985ae5b65c";
+    version = "3813e93b13b087e95901d1822baf9c3540e3f3f6";
     src = fetchFromGitHub {
       owner = "hihkm";
       repo = "DanmakuFactory";
-      rev = "02134bc672729aec85c034af8635de985ae5b65c";
+      rev = "3813e93b13b087e95901d1822baf9c3540e3f3f6";
       fetchSubmodules = false;
-      sha256 = "sha256-BkYACua7LN/aKHzV05RQWi70Mrlx+6r748S43JD2ftY=";
+      sha256 = "sha256-wRQjWlG3R4IbcMedL7v36VZE3CcUkbeYwgr1Ex+7NGI=";
     };
-    date = "2026-07-09";
+    date = "2026-07-27";
   };
   dirstat-rs = {
     pname = "dirstat-rs";
@@ -72,27 +72,27 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "52e47afe74182b4a31d6e2a229e687daa3916c7e";
+    version = "b00b2545f485faaf49a327dd2b26e16fcd425075";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "52e47afe74182b4a31d6e2a229e687daa3916c7e";
+      rev = "b00b2545f485faaf49a327dd2b26e16fcd425075";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-irQ+LUoN9NQWHOuV89mGQeedyAQOjiqDpig5v2Or928=";
+      sha256 = "sha256-hmN7MqgsDtyeE34yBNA21W2NrDCGy0ra7Eysk2aWqZk=";
     };
-    date = "2026-07-23";
+    date = "2026-07-31";
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
-    version = "v1.0.0";
+    version = "v1.1.0";
     src = fetchFromGitHub {
       owner = "erichll";
       repo = "go-fast-note-sync";
-      rev = "v1.0.0";
+      rev = "v1.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-wgtzH5NdkzjXfYUIk9xvugv+QUTWxvlkhor6kkBYZsc=";
+      sha256 = "sha256-8My8gk0ukzhEQi3VHyoC0OD608QNHXixIUeStSxbSi0=";
     };
   };
   jellyfin-plugin-sso = {
@@ -164,13 +164,13 @@
   };
   noname = {
     pname = "noname";
-    version = "v1.11.4.1";
+    version = "v1.11.5";
     src = fetchFromGitHub {
       owner = "libnoname";
       repo = "noname";
-      rev = "v1.11.4.1";
+      rev = "v1.11.5";
       fetchSubmodules = false;
-      sha256 = "sha256-Ez/XZHtEDvLCVnJvqxQcUeiZI6GiJMjrorV48eSmbqM=";
+      sha256 = "sha256-eut+46GB+szbfUN3drtKfXXQiRbCnxGT61WN6z9H98Q=";
     };
   };
   openlogi = {
@@ -200,26 +200,26 @@
   };
   proton-drive-cli-darwin-arm64 = {
     pname = "proton-drive-cli-darwin-arm64";
-    version = "0.6.0";
+    version = "0.7.0";
     src = fetchurl {
-      url = "https://proton.me/download/drive/cli/0.6.0/darwin-arm64/proton-drive";
-      sha256 = "sha256-YGqXNrsdvfRbnO1UUsd/Aev0bjKdSUZov9gkIcxT4LA=";
+      url = "https://proton.me/download/drive/cli/0.7.0/darwin-arm64/proton-drive";
+      sha256 = "sha256-uTHY1ePqcrjcoUM/b+uQ/6ACQw1p+1gZZH5JpbmdyBQ=";
     };
   };
   proton-drive-cli-linux-arm64 = {
     pname = "proton-drive-cli-linux-arm64";
-    version = "0.6.0";
+    version = "0.7.0";
     src = fetchurl {
-      url = "https://proton.me/download/drive/cli/0.6.0/linux-arm64/proton-drive";
-      sha256 = "sha256-Wrd0px//Z7WR71aeoZwgvPxbyrOkGXbeKiABglrPrw0=";
+      url = "https://proton.me/download/drive/cli/0.7.0/linux-arm64/proton-drive";
+      sha256 = "sha256-XW7TKTy1gb/pL8ZUStmzLA24MgJtQ4wX3vKPXNQ9ZsI=";
     };
   };
   proton-drive-cli-linux-x64 = {
     pname = "proton-drive-cli-linux-x64";
-    version = "0.6.0";
+    version = "0.7.0";
     src = fetchurl {
-      url = "https://proton.me/download/drive/cli/0.6.0/linux-x64/proton-drive";
-      sha256 = "sha256-DCaHY7+c9eLRj1zQXnnGPSsmqZamcPXN3KHZz+CgIBI=";
+      url = "https://proton.me/download/drive/cli/0.7.0/linux-x64/proton-drive";
+      sha256 = "sha256-Tjx0p6JdoA16DKnuIjqbewsjjaNXq2/P7gSlwxPd9NE=";
     };
   };
   ratune = {
@@ -277,7 +277,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-6/nzFtoCWk2d+CuWNxVzWNH8CD5OgIYp5MeU88EXKQ0=";
+      sha256 = "sha256-mdab7x5ErrKP9+6Eg5ClfFoQTTsdH0gns+jRR14aCvU=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -290,18 +290,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v16.3.2";
+    version = "v16.4.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.3.2/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-NyRVsXRgt7+axItf0zssDDOi/TjZ2CD8SJmpoud91Zc=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.4.2/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-+Le8X2OOdxlktHedIDZxr4wrgLqCYBU6nSP0nIeAet4=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v16.3.2";
+    version = "v16.4.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.3.2/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-ZbX6vEKvE6Ofi6peo9gTlENXu8UER+34OVGJgTVP7cc=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.4.2/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-Rj8NIUZRc0YdBlBQPH3s1+F4KV7199vCqQarB3Asuro=";
     };
   };
   sops-nvim = {
