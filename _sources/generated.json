@@ -144,12 +144,12 @@
             "name": null,
             "owner": "erichll",
             "repo": "go-fast-note-sync",
-            "rev": "v1.1.0",
-            "sha256": "sha256-8My8gk0ukzhEQi3VHyoC0OD608QNHXixIUeStSxbSi0=",
+            "rev": "v1.1.1",
+            "sha256": "sha256-y/U8kQ3HeYf/KvCEQisMjgrfRP/ie7vZjqMU/im1lF0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.1.0"
+        "version": "v1.1.1"
     },
     "jellyfin-plugin-sso": {
         "cargoLock": null,
@@ -313,7 +313,7 @@
     },
     "oroot": {
         "cargoLock": null,
-        "date": "2026-07-09",
+        "date": "2026-08-02",
         "extract": null,
         "name": "oroot",
         "passthru": null,
@@ -323,13 +323,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0b76c1e834cea24cad8e8ad7204db01f970303ce",
-            "sha256": "sha256-irYbVLJAvf1QooFBJCj1QquO9fNyU3rMoR5eZ/KItz0=",
+            "rev": "99992d13696833ebb31372a2eb5072c3c1b79a33",
+            "sha256": "sha256-IEfxtTh271WtPKVZhKiz+mEFKS2ACM7aS4Bnk8n2kcc=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/js0ny/oroot.git"
         },
-        "version": "0b76c1e834cea24cad8e8ad7204db01f970303ce"
+        "version": "99992d13696833ebb31372a2eb5072c3c1b79a33"
     },
     "proton-drive-cli-darwin-arm64": {
         "cargoLock": null,
@@ -497,11 +497,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-+Le8X2OOdxlktHedIDZxr4wrgLqCYBU6nSP0nIeAet4=",
+            "sha256": "sha256-dlBAbUoIn09/veAvJCh2mThVb5uvlf3DkGO0OKh+1w8=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.4.2/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.0.3/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v16.4.2"
+        "version": "v17.0.3"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -512,11 +512,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Rj8NIUZRc0YdBlBQPH3s1+F4KV7199vCqQarB3Asuro=",
+            "sha256": "sha256-760qpqOVClsfGGXG365Y3425Bf2f3qH+awPDKrZr1xo=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.4.2/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.0.3/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v16.4.2"
+        "version": "v17.0.3"
     },
     "sops-nvim": {
         "cargoLock": null,

@@ -86,13 +86,13 @@
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
-    version = "v1.1.0";
+    version = "v1.1.1";
     src = fetchFromGitHub {
       owner = "erichll";
       repo = "go-fast-note-sync";
-      rev = "v1.1.0";
+      rev = "v1.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-8My8gk0ukzhEQi3VHyoC0OD608QNHXixIUeStSxbSi0=";
+      sha256 = "sha256-y/U8kQ3HeYf/KvCEQisMjgrfRP/ie7vZjqMU/im1lF0=";
     };
   };
   jellyfin-plugin-sso = {
@@ -186,17 +186,17 @@
   };
   oroot = {
     pname = "oroot";
-    version = "0b76c1e834cea24cad8e8ad7204db01f970303ce";
+    version = "99992d13696833ebb31372a2eb5072c3c1b79a33";
     src = fetchgit {
       url = "https://github.com/js0ny/oroot.git";
-      rev = "0b76c1e834cea24cad8e8ad7204db01f970303ce";
+      rev = "99992d13696833ebb31372a2eb5072c3c1b79a33";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-irYbVLJAvf1QooFBJCj1QquO9fNyU3rMoR5eZ/KItz0=";
+      sha256 = "sha256-IEfxtTh271WtPKVZhKiz+mEFKS2ACM7aS4Bnk8n2kcc=";
     };
-    date = "2026-07-09";
+    date = "2026-08-02";
   };
   proton-drive-cli-darwin-arm64 = {
     pname = "proton-drive-cli-darwin-arm64";
@@ -290,18 +290,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v16.4.2";
+    version = "v17.0.3";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.4.2/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-+Le8X2OOdxlktHedIDZxr4wrgLqCYBU6nSP0nIeAet4=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.0.3/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-dlBAbUoIn09/veAvJCh2mThVb5uvlf3DkGO0OKh+1w8=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v16.4.2";
+    version = "v17.0.3";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.4.2/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-Rj8NIUZRc0YdBlBQPH3s1+F4KV7199vCqQarB3Asuro=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.0.3/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-760qpqOVClsfGGXG365Y3425Bf2f3qH+awPDKrZr1xo=";
     };
   };
   sops-nvim = {
