@@ -2,6 +2,7 @@
   rustPlatform,
   glib,
   pkg-config,
+  wrapGAppsHook4,
   dbus,
   gtk4,
   openssl,
@@ -22,6 +23,7 @@ rustPlatform.buildRustPackage {
   nativeBuildInputs = [
     glib
     pkg-config
+    wrapGAppsHook4
   ];
 
   buildInputs = [
@@ -35,7 +37,7 @@ rustPlatform.buildRustPackage {
   postInstall = ''
     mkdir -p $out/share/icons
     cp -r data/icons $out/share/icons
-    install -Dm644 data/co.hyprlab.Vireo.desktop $out/share/aplications/co.hyprlab.Vireo.desktop
+    install -Dm644 data/co.hyprlab.Vireo.desktop $out/share/applications/co.hyprlab.Vireo.desktop
   '';
 
   meta = {
