@@ -559,6 +559,27 @@
         },
         "version": "1.0-25.2"
     },
+    "vireo": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "vireo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "hyprlab",
+            "repo": "vireo",
+            "rev": "v1.6.1",
+            "sha256": "sha256-E/g4YAPUkmPFnhd7KvKGsjN5ZYOUiN66C3OsaiK9UiY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.6.1"
+    },
     "waywallen": {
         "cargoLock": null,
         "date": null,

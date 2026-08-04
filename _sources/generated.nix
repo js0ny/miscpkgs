@@ -329,6 +329,17 @@
       sha256 = "sha256-v+w4Y6MyJqUrgwuYUYTZW0Zn1jhW4vEpgBEQyEjvkzg=";
     };
   };
+  vireo = {
+    pname = "vireo";
+    version = "v1.6.1";
+    src = fetchFromGitHub {
+      owner = "hyprlab";
+      repo = "vireo";
+      rev = "v1.6.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-E/g4YAPUkmPFnhd7KvKGsjN5ZYOUiN66C3OsaiK9UiY=";
+    };
+  };
   waywallen = {
     pname = "waywallen";
     version = "v0.2.6";

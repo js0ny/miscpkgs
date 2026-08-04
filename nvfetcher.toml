@@ -142,3 +142,7 @@ fetch.github = "waywallen/waywallen-display"
 [sops-nvim]
 src.git = "https://github.com/trixnz/sops.nvim.git"
 fetch.git = "https://github.com/trixnz/sops.nvim.git"
+
+[vireo]
+src.github = "hyprlab/vireo"
+fetch.github = "hyprlab/vireo"
