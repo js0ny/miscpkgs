@@ -22,6 +22,10 @@ stdenvNoCC.mkDerivation rec {
     autoPatchelfHook
   ];
 
+  buildInputs = [
+    pkgs.stdenv.cc.cc.lib
+  ];
+
   installPhase = ''
     mkdir -p $out/bin
 
