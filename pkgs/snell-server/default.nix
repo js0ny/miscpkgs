@@ -4,6 +4,7 @@
   upx,
   autoPatchelfHook,
   lib,
+  stdenv,
   ...
 }:
 stdenvNoCC.mkDerivation rec {
@@ -21,6 +22,8 @@ stdenvNoCC.mkDerivation rec {
     upx
     autoPatchelfHook
   ];
+
+  buildInputs = [ stdenv.cc.cc ];
 
   installPhase = ''
     mkdir -p $out/bin
