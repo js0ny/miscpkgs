@@ -130,6 +130,27 @@
         },
         "version": "b00b2545f485faaf49a327dd2b26e16fcd425075"
     },
+    "flyline": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "flyline",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "HalFrgrd",
+            "repo": "flyline",
+            "rev": "v1.5.0",
+            "sha256": "sha256-2apK1e/Hqb8bUj9Ng7cB+pz27Hv14MXMy2JYYI7nxKE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.5.0"
+    },
     "go-fast-note-sync": {
         "cargoLock": null,
         "date": null,

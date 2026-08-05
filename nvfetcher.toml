@@ -20,6 +20,10 @@ fetch.github = "nilaoda/BBDown"
 src.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"
 fetch.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"
 
+[flyline]
+src.github = "HalFrgrd/flyline"
+fetch.github = "HalFrgrd/flyline"
+
 [mpv-bilibili-sponsorblock]
 src.github_tag = "test482/mpv-bilibili-sponsorblock"
 fetch.github = "test482/mpv-bilibili-sponsorblock"

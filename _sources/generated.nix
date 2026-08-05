@@ -84,6 +84,17 @@
     };
     date = "2026-07-31";
   };
+  flyline = {
+    pname = "flyline";
+    version = "v1.5.0";
+    src = fetchFromGitHub {
+      owner = "HalFrgrd";
+      repo = "flyline";
+      rev = "v1.5.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-2apK1e/Hqb8bUj9Ng7cB+pz27Hv14MXMy2JYYI7nxKE=";
+    };
+  };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
     version = "v1.1.1";
