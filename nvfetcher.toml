@@ -82,7 +82,7 @@ fetch.git = "https://github.com/js0ny/dump-tabs.yazi.git"
 
 [wdotool]
 src.github = "cushycush/wdotool"
-fetch.github =  "cushycush/wdotool"
+fetch.github = "cushycush/wdotool"
 
 [udpxy]
 src.github_tag = "pcherenkov/udpxy"
@@ -150,3 +150,7 @@ fetch.git = "https://github.com/trixnz/sops.nvim.git"
 [vireo]
 src.github = "hyprlab/vireo"
 fetch.github = "hyprlab/vireo"
+
+[forgejo-file-icons]
+src.git = "https://github.com/js0ny/forgejo-file-icons.git"
+fetch.git = "https://github.com/js0ny/forgejo-file-icons.git"

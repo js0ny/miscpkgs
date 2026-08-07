@@ -95,6 +95,20 @@
       sha256 = "sha256-2apK1e/Hqb8bUj9Ng7cB+pz27Hv14MXMy2JYYI7nxKE=";
     };
   };
+  forgejo-file-icons = {
+    pname = "forgejo-file-icons";
+    version = "8d548bb720feaf31dd026457bff821cb9a030080";
+    src = fetchgit {
+      url = "https://github.com/js0ny/forgejo-file-icons.git";
+      rev = "8d548bb720feaf31dd026457bff821cb9a030080";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-Ns6LIxf8s9NWAVtwyQ4Tsk3HIOQhu0IfRPm/WwV5hM4=";
+    };
+    date = "2026-08-07";
+  };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
     version = "v1.1.1";
@@ -288,7 +302,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-mdab7x5ErrKP9+6Eg5ClfFoQTTsdH0gns+jRR14aCvU=";
+      sha256 = "sha256-BRpVq7OCT+EDp68QuKyWtatOlwZ6HAzxyWiEHqKhw5E=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -296,7 +310,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-YE7DnLSZgbRG8wEhhvnuHr8S1dEYYATPrSDg9HVMJYw=";
+      sha256 = "sha256-Yx70ezhPgcGzsI5hjvwp2/B3Ks8KDHgCbjgt8rAHCDA=";
     };
   };
   rime-wanxiang-flypy = {

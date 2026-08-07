@@ -151,6 +151,26 @@
         },
         "version": "v1.5.0"
     },
+    "forgejo-file-icons": {
+        "cargoLock": null,
+        "date": "2026-08-07",
+        "extract": null,
+        "name": "forgejo-file-icons",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "8d548bb720feaf31dd026457bff821cb9a030080",
+            "sha256": "sha256-Ns6LIxf8s9NWAVtwyQ4Tsk3HIOQhu0IfRPm/WwV5hM4=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/js0ny/forgejo-file-icons.git"
+        },
+        "version": "8d548bb720feaf31dd026457bff821cb9a030080"
+    },
     "go-fast-note-sync": {
         "cargoLock": null,
         "date": null,
@@ -488,7 +508,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mdab7x5ErrKP9+6Eg5ClfFoQTTsdH0gns+jRR14aCvU=",
+            "sha256": "sha256-BRpVq7OCT+EDp68QuKyWtatOlwZ6HAzxyWiEHqKhw5E=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -503,7 +523,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YE7DnLSZgbRG8wEhhvnuHr8S1dEYYATPrSDg9HVMJYw=",
+            "sha256": "sha256-Yx70ezhPgcGzsI5hjvwp2/B3Ks8KDHgCbjgt8rAHCDA=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
         },
