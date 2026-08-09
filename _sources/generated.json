@@ -104,15 +104,15 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-kWMYlF0H9iYjRcKmq/G4Ws4sTl+gN8nSFgfYvAOd754=",
+            "sha256": "sha256-p1x1UAuXLG0MpYcyrssudKwpCRlKAPPxrv7UFyPe2lI=",
             "type": "tarball",
-            "url": "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-9/dwproton-11.0-9-x86_64.tar.xz"
+            "url": "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-11/dwproton-11.0-11-x86_64.tar.xz"
         },
-        "version": "dwproton-11.0-9"
+        "version": "dwproton-11.0-11"
     },
     "firefox-csshacks": {
         "cargoLock": null,
-        "date": "2026-07-31",
+        "date": "2026-08-03",
         "extract": null,
         "name": "firefox-csshacks",
         "passthru": null,
@@ -122,13 +122,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "b00b2545f485faaf49a327dd2b26e16fcd425075",
-            "sha256": "sha256-hmN7MqgsDtyeE34yBNA21W2NrDCGy0ra7Eysk2aWqZk=",
+            "rev": "8d4814857f39c522e1e1d0bd704a168336ca1d3a",
+            "sha256": "sha256-2R4DoAljYsJUb1f9RE0Fh0pn1/h/ugK8jhNIPeWmdsg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/MrOtherGuy/firefox-csshacks.git"
         },
-        "version": "b00b2545f485faaf49a327dd2b26e16fcd425075"
+        "version": "8d4814857f39c522e1e1d0bd704a168336ca1d3a"
     },
     "flyline": {
         "cargoLock": null,
@@ -345,12 +345,12 @@
             "name": null,
             "owner": "AprilNEA",
             "repo": "OpenLogi",
-            "rev": "v0.6.22",
-            "sha256": "sha256-6gJzIcFJK6edHLmV8GWDx5LxbbMp8xq4odwtY1goEGM=",
+            "rev": "v0.6.23",
+            "sha256": "sha256-tdnHEYOLXGis3u17QYsVWkmDtvkklqLhgLJqGX/coMA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6.22"
+        "version": "v0.6.23"
     },
     "oroot": {
         "cargoLock": null,
@@ -508,7 +508,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-BRpVq7OCT+EDp68QuKyWtatOlwZ6HAzxyWiEHqKhw5E=",
+            "sha256": "sha256-MW285vytIy2GebvKOdWmggyHCz/pVKW5jkg4remyqDE=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -538,11 +538,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-dlBAbUoIn09/veAvJCh2mThVb5uvlf3DkGO0OKh+1w8=",
+            "sha256": "sha256-7TMQcH0UaemlVJ+mvIKu9Zj7+IKn1D5qX4cyXCcg0CM=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.0.3/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.2.4/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v17.0.3"
+        "version": "v17.2.4"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -553,11 +553,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-760qpqOVClsfGGXG365Y3425Bf2f3qH+awPDKrZr1xo=",
+            "sha256": "sha256-ib8U25sD8szfuUDB+L7i20MJPBcFVW9eoyW4QuKuDs0=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.0.3/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.2.4/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v17.0.3"
+        "version": "v17.2.4"
     },
     "sops-nvim": {
         "cargoLock": null,
@@ -614,12 +614,12 @@
             "name": null,
             "owner": "hyprlab",
             "repo": "vireo",
-            "rev": "v1.6.1",
-            "sha256": "sha256-E/g4YAPUkmPFnhd7KvKGsjN5ZYOUiN66C3OsaiK9UiY=",
+            "rev": "v1.7.0",
+            "sha256": "sha256-dicvn51CXo7STHArC6yyKXqBmAy79GP9AMb71MUKl+s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.6.1"
+        "version": "v1.7.0"
     },
     "waywallen": {
         "cargoLock": null,
@@ -635,12 +635,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen",
-            "rev": "v0.2.6",
-            "sha256": "sha256-i7kvhOHiJZaiBFLRWSfbLmTkiAx//cSFAraG2rpb5I4=",
+            "rev": "v0.3.1",
+            "sha256": "sha256-882hr8+krSLI5JPaB3wggcCz6UXDoln0CxbkEDCE8Fs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.6"
+        "version": "v0.3.1"
     },
     "waywallen-display": {
         "cargoLock": null,
@@ -656,12 +656,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen-display",
-            "rev": "v0.2.9",
-            "sha256": "sha256-N+QjNfDu3RpfDWPE42miZ5i37CV68Y5A9EkzWUAolVI=",
+            "rev": "v0.3.1",
+            "sha256": "sha256-vKBo7JlaxZc0YkbBA6GPsF/Mpa9vqoQP9O9eRoMRNMU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.9"
+        "version": "v0.3.1"
     },
     "waywallen-main-page-webp": {
         "cargoLock": null,
@@ -674,9 +674,9 @@
             "name": null,
             "sha256": "sha256-US6vRPPip7LjLsjVpet+jW2AyIH/AcUkYoCaI+zoFBs=",
             "type": "url",
-            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.2.6/ui/assets/main_page.webp"
+            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.1/ui/assets/main_page.webp"
         },
-        "version": "v0.2.6"
+        "version": "v0.3.1"
     },
     "wdotool": {
         "cargoLock": null,
