@@ -8,8 +8,10 @@
   pkg-config,
   rustPlatform,
   sources,
+  stdenv,
   vulkan-loader,
   wayland,
+  clang,
 }:
 let
   p = sources.openlogi;
@@ -25,6 +27,10 @@ let
   common = {
     inherit (p) src;
     inherit version cargoDeps;
+    BINDGEN_EXTRA_CLANG_ARGS = "-I${stdenv.cc.libc.dev}/include";
+    preConfigure = ''
+      export LIBCLANG_PATH="${lib.getLib clang.cc}/lib"
+    '';
     meta = {
       homepage = "https://github.com/AprilNEA/OpenLogi";
       license = with lib.licenses; [
