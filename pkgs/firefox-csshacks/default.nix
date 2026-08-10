@@ -8,8 +8,9 @@ let
   p = sources.firefox-csshacks;
 in
 stdenvNoCC.mkDerivation {
-  inherit (p) version src;
+  inherit (p) src;
   pname = "firefox-csshacks";
+  version = "0-unstable-${p.date}";
 
   installPhase = ''
     runHook preInstall

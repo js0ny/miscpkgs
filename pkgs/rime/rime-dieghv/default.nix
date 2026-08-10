@@ -7,12 +7,8 @@ let
   p = sources.rime-dieghv;
 in
 stdenvNoCC.mkDerivation {
-  inherit (p)
-    pname
-    version
-    src
-    date
-    ;
+  inherit (p) pname src;
+  version = "0-unstable-${p.date}";
 
   outputs = [
     "out"

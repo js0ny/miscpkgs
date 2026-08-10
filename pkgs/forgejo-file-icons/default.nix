@@ -8,7 +8,8 @@ let
   p = sources.forgejo-file-icons;
 in
 stdenvNoCC.mkDerivation (finalAttrs: {
-  inherit (p) pname version src;
+  inherit (p) pname src;
+  version = "0-unstable-${p.date}";
 
   nativeBuildInputs = [ bash ];
 

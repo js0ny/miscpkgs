@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage {
   };
   cargoHash = null;
 
-  preConfigure = lib.optionalString stdenv.hostPlatform.isDarwin ''
+  preConfigure = lib.optionalString stdenv.hostPlatform.isDarwin /* bash */ ''
     export RUSTFLAGS="--remap-path-prefix=$NIX_BUILD_TOP=/build -C link-arg=-undefined -C link-arg=dynamic_lookup -C link-arg=-Wl,-install_name,@rpath/libflyline.dylib -C link-arg=-Wl,-reproducible''${RUSTFLAGS:+ $RUSTFLAGS}"
   '';
 

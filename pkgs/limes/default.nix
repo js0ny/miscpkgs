@@ -8,7 +8,8 @@ let
   p = sources.limes;
 in
 rustPlatform.buildRustPackage {
-  inherit (p) pname version src;
+  inherit (p) pname src;
+  version = "0-unstable-${p.date}";
 
   cargoLock.lockFile = "${p.src}/Cargo.lock";
 

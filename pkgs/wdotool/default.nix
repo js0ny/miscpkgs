@@ -11,7 +11,8 @@ let
   p = sources.wdotool;
 in
 rustPlatform.buildRustPackage {
-  inherit (p) pname src version;
+  inherit (p) pname src;
+  version = lib.removePrefix "v" p.version;
 
   cargoLock.lockFile = "${p.src}/Cargo.lock";
 

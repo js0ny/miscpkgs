@@ -13,7 +13,8 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "noname";
-  inherit (p) version src;
+  inherit (p) src;
+  version = lib.removePrefix "v" p.version;
 
   pnpmRoot = ".";
 

@@ -4,5 +4,5 @@ let
 in
 vimUtils.buildVimPlugin {
   inherit (p) pname src;
-  version = "unstable-${p.date}";
+  version = "0-unstable-${p.date}";
 }

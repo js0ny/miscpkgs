@@ -8,7 +8,8 @@ let
   p = sources.go-fast-note-sync;
 in
 buildGoModule (finalAttrs: {
-  inherit (p) pname version src;
+  inherit (p) pname src;
+  version = lib.removePrefix "v" p.version;
   vendorHash = "sha256-RprORNk78eVi5I2tpZ7P4uy9QDWbnpkbY8R6NopLXcM=";
   postInstall = ''
     mv $out/bin/cmd $out/bin/go-fast-note-sync
