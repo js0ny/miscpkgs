@@ -53,8 +53,8 @@ src.github = "acmagn/ratune"
 fetch.github = "acmagn/ratune"
 
 [rime-cantonese]
-src.github = "rime/rime-cantonese"
-fetch.github = "rime/rime-cantonese"
+src.git = "https://github.com/rime/rime-cantonese.git"
+fetch.git = "https://github.com/rime/rime-cantonese.git"
 
 [rime-dieghv]
 src.git = "https://github.com/kahaani/dieghv.git"

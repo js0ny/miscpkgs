@@ -1,6 +1,5 @@
 {
   stdenvNoCC,
-  fd,
   sources,
   lib,
 }:
@@ -8,7 +7,8 @@ let
   p = sources.rime-cantonese;
 in
 stdenvNoCC.mkDerivation {
-  inherit (p) pname version src;
+  inherit (p) pname src;
+  version = "0-unstable-${p.date}";
 
   outputs = [
     "out"
@@ -17,7 +17,7 @@ stdenvNoCC.mkDerivation {
 
   postPatch = ''
     find . -name '*.md' -delete
-    rm -rf .ci .github demo
+    rm -rf .ci .github demo LICENSE-ODbL LICENSE-CC-BY
   '';
 
   installPhase = ''

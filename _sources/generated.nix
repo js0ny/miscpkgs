@@ -260,14 +260,17 @@
   };
   rime-cantonese = {
     pname = "rime-cantonese";
-    version = "latest";
-    src = fetchFromGitHub {
-      owner = "rime";
-      repo = "rime-cantonese";
-      rev = "latest";
+    version = "c99b16e44d2df77a5cb8fb0867dd2bab7a112cb0";
+    src = fetchgit {
+      url = "https://github.com/rime/rime-cantonese.git";
+      rev = "c99b16e44d2df77a5cb8fb0867dd2bab7a112cb0";
       fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-M2zFuhKAmSJ3X7zP0+itakhmuHqwtxZVOHS/fn+NSZo=";
     };
+    date = "2026-07-02";
   };
   rime-dieghv = {
     pname = "rime-dieghv";
@@ -302,7 +305,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-MW285vytIy2GebvKOdWmggyHCz/pVKW5jkg4remyqDE=";
+      sha256 = "sha256-kNI4X2Uzf4uMexuly+h03z8tkbRi1o+i+f6QxXqjvGY=";
     };
   };
   rime-lmdg-zh-hant = {

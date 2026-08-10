@@ -440,7 +440,7 @@
     },
     "rime-cantonese": {
         "cargoLock": null,
-        "date": null,
+        "date": "2026-07-02",
         "extract": null,
         "name": "rime-cantonese",
         "passthru": null,
@@ -450,14 +450,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "rime",
-            "repo": "rime-cantonese",
-            "rev": "latest",
+            "rev": "c99b16e44d2df77a5cb8fb0867dd2bab7a112cb0",
             "sha256": "sha256-M2zFuhKAmSJ3X7zP0+itakhmuHqwtxZVOHS/fn+NSZo=",
             "sparseCheckout": [],
-            "type": "github"
+            "type": "git",
+            "url": "https://github.com/rime/rime-cantonese.git"
         },
-        "version": "latest"
+        "version": "c99b16e44d2df77a5cb8fb0867dd2bab7a112cb0"
     },
     "rime-dieghv": {
         "cargoLock": null,
@@ -508,7 +507,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-MW285vytIy2GebvKOdWmggyHCz/pVKW5jkg4remyqDE=",
+            "sha256": "sha256-kNI4X2Uzf4uMexuly+h03z8tkbRi1o+i+f6QxXqjvGY=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
