@@ -86,13 +86,13 @@
   };
   flyline = {
     pname = "flyline";
-    version = "v1.5.0";
+    version = "v1.6.0";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.5.0";
+      rev = "v1.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-2apK1e/Hqb8bUj9Ng7cB+pz27Hv14MXMy2JYYI7nxKE=";
+      sha256 = "sha256-8cDiAp6fh9/kcNIG0kloD0YgkuHabrRpK3GNFCYegO8=";
     };
   };
   forgejo-file-icons = {
@@ -367,13 +367,13 @@
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.3.1";
+    version = "v0.3.2";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.3.1";
+      rev = "v0.3.2";
       fetchSubmodules = false;
-      sha256 = "sha256-882hr8+krSLI5JPaB3wggcCz6UXDoln0CxbkEDCE8Fs=";
+      sha256 = "sha256-26juf3rhbs4rUjLQ/L23yEw7Yf23EqkRqu3lNC3MQYI=";
     };
   };
   waywallen-display = {
@@ -389,9 +389,9 @@
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.3.1";
+    version = "v0.3.2";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.1/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.2/ui/assets/main_page.webp";
       sha256 = "sha256-US6vRPPip7LjLsjVpet+jW2AyIH/AcUkYoCaI+zoFBs=";
     };
   };

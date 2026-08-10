@@ -144,12 +144,12 @@
             "name": null,
             "owner": "HalFrgrd",
             "repo": "flyline",
-            "rev": "v1.5.0",
-            "sha256": "sha256-2apK1e/Hqb8bUj9Ng7cB+pz27Hv14MXMy2JYYI7nxKE=",
+            "rev": "v1.6.0",
+            "sha256": "sha256-8cDiAp6fh9/kcNIG0kloD0YgkuHabrRpK3GNFCYegO8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.5.0"
+        "version": "v1.6.0"
     },
     "forgejo-file-icons": {
         "cargoLock": null,
@@ -635,12 +635,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen",
-            "rev": "v0.3.1",
-            "sha256": "sha256-882hr8+krSLI5JPaB3wggcCz6UXDoln0CxbkEDCE8Fs=",
+            "rev": "v0.3.2",
+            "sha256": "sha256-26juf3rhbs4rUjLQ/L23yEw7Yf23EqkRqu3lNC3MQYI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.1"
+        "version": "v0.3.2"
     },
     "waywallen-display": {
         "cargoLock": null,
@@ -674,9 +674,9 @@
             "name": null,
             "sha256": "sha256-US6vRPPip7LjLsjVpet+jW2AyIH/AcUkYoCaI+zoFBs=",
             "type": "url",
-            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.1/ui/assets/main_page.webp"
+            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.2/ui/assets/main_page.webp"
         },
-        "version": "v0.3.1"
+        "version": "v0.3.2"
     },
     "wdotool": {
         "cargoLock": null,
