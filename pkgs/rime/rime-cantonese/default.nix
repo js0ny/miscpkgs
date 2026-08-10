@@ -17,7 +17,8 @@ stdenvNoCC.mkDerivation {
 
   postPatch = ''
     find . -name '*.md' -delete
-    rm -rf .ci .github demo LICENSE-ODbL LICENSE-CC-BY
+    rm -rf .ci .github demo
+    rm LICENSE-ODbL LICENSE-CC-BY .gitignore
   '';
 
   installPhase = ''

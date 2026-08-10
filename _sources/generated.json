@@ -478,6 +478,26 @@
         },
         "version": "1709bb786a144de7be2229755011fde9034457de"
     },
+    "rime-hokkien": {
+        "cargoLock": null,
+        "date": "2026-05-04",
+        "extract": null,
+        "name": "rime-hokkien",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "e52e8bf337f161097cd3798c0173ba4e39b44396",
+            "sha256": "sha256-60NlGg2vLkOmth/O3o4G/n/XzJ9cB/tfPtCYRGbOnCs=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/hokkien-writing/rime-hokkien.git"
+        },
+        "version": "e52e8bf337f161097cd3798c0173ba4e39b44396"
+    },
     "rime-latex": {
         "cargoLock": null,
         "date": "2025-04-03",
@@ -527,6 +547,26 @@
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
         },
         "version": "LTS"
+    },
+    "rime-teochew": {
+        "cargoLock": null,
+        "date": "2026-07-05",
+        "extract": null,
+        "name": "rime-teochew",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "7c80a292fee4001e28ca4f539c23924ab3fc3924",
+            "sha256": "sha256-TfCY0Y1CPVJP0mV0cnAPh3y3g39z2yYQvycT97jWBuE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/OpenTeochew/rime-teochew.git"
+        },
+        "version": "7c80a292fee4001e28ca4f539c23924ab3fc3924"
     },
     "rime-wanxiang-flypy": {
         "cargoLock": null,

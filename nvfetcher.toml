@@ -154,3 +154,11 @@ fetch.github = "hyprlab/vireo"
 [forgejo-file-icons]
 src.git = "https://github.com/js0ny/forgejo-file-icons.git"
 fetch.git = "https://github.com/js0ny/forgejo-file-icons.git"
+
+[rime-teochew]
+src.git = "https://github.com/OpenTeochew/rime-teochew.git"
+fetch.git = "https://github.com/OpenTeochew/rime-teochew.git"
+
+[rime-hokkien]
+src.git = "https://github.com/hokkien-writing/rime-hokkien.git"
+fetch.git = "https://github.com/hokkien-writing/rime-hokkien.git"

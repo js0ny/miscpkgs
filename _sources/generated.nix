@@ -286,6 +286,20 @@
     };
     date = "2019-02-11";
   };
+  rime-hokkien = {
+    pname = "rime-hokkien";
+    version = "e52e8bf337f161097cd3798c0173ba4e39b44396";
+    src = fetchgit {
+      url = "https://github.com/hokkien-writing/rime-hokkien.git";
+      rev = "e52e8bf337f161097cd3798c0173ba4e39b44396";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-60NlGg2vLkOmth/O3o4G/n/XzJ9cB/tfPtCYRGbOnCs=";
+    };
+    date = "2026-05-04";
+  };
   rime-latex = {
     pname = "rime-latex";
     version = "858f2abc645f0e459e468e98122470ce20b16b30";
@@ -315,6 +329,20 @@
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
       sha256 = "sha256-Yx70ezhPgcGzsI5hjvwp2/B3Ks8KDHgCbjgt8rAHCDA=";
     };
+  };
+  rime-teochew = {
+    pname = "rime-teochew";
+    version = "7c80a292fee4001e28ca4f539c23924ab3fc3924";
+    src = fetchgit {
+      url = "https://github.com/OpenTeochew/rime-teochew.git";
+      rev = "7c80a292fee4001e28ca4f539c23924ab3fc3924";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-TfCY0Y1CPVJP0mV0cnAPh3y3g39z2yYQvycT97jWBuE=";
+    };
+    date = "2026-07-05";
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
