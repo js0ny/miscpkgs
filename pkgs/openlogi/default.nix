@@ -19,7 +19,7 @@ let
     pname = "openlogi";
     inherit (p) src;
     inherit version;
-    hash = "sha256-fCKnpbre0pPmwZ72RGapOgox8VZAj8pG8oK2iUTvQS8=";
+    hash = "sha256-r43F9fqrtjQ/QScAjEps9PHIOU3C7U2WKXEGjHkivrE=";
   };
 
   common = {
