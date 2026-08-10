@@ -86,28 +86,28 @@
   };
   flyline = {
     pname = "flyline";
-    version = "v1.6.0";
+    version = "v1.6.1";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.6.0";
+      rev = "v1.6.1";
       fetchSubmodules = false;
-      sha256 = "sha256-8cDiAp6fh9/kcNIG0kloD0YgkuHabrRpK3GNFCYegO8=";
+      sha256 = "sha256-SMNxKvalFApL3cgafMTGUwXT2VdUqFUAkLPDW2Dhyo4=";
     };
   };
   forgejo-file-icons = {
     pname = "forgejo-file-icons";
-    version = "8d548bb720feaf31dd026457bff821cb9a030080";
+    version = "6143bd16c1b2a30e97d78e4ffb3b09a2840d1e20";
     src = fetchgit {
       url = "https://github.com/js0ny/forgejo-file-icons.git";
-      rev = "8d548bb720feaf31dd026457bff821cb9a030080";
+      rev = "6143bd16c1b2a30e97d78e4ffb3b09a2840d1e20";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Ns6LIxf8s9NWAVtwyQ4Tsk3HIOQhu0IfRPm/WwV5hM4=";
+      sha256 = "sha256-XrHIZQcVe5QmmoihaTIHijG4BV12plNHSj+Lc0IOO20=";
     };
-    date = "2026-08-07";
+    date = "2026-08-10";
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
@@ -200,13 +200,13 @@
   };
   openlogi = {
     pname = "openlogi";
-    version = "v0.6.23";
+    version = "v0.6.24";
     src = fetchFromGitHub {
       owner = "AprilNEA";
       repo = "OpenLogi";
-      rev = "v0.6.23";
+      rev = "v0.6.24";
       fetchSubmodules = false;
-      sha256 = "sha256-tdnHEYOLXGis3u17QYsVWkmDtvkklqLhgLJqGX/coMA=";
+      sha256 = "sha256-ah9DgcVJ8yaqBShHODvixshePH0LiOGgD/AW1tL4+uo=";
     };
   };
   oroot = {
@@ -356,13 +356,13 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.7.0";
+    version = "v1.7.1";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.7.0";
+      rev = "v1.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-dicvn51CXo7STHArC6yyKXqBmAy79GP9AMb71MUKl+s=";
+      sha256 = "sha256-vECTQuZM4S9nKP7hle9NGZ51Z+h7cNEW9z3qrNmAops=";
     };
   };
   waywallen = {
