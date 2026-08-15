@@ -29,11 +29,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qb+Ro2j598Tuo4CCqfuPtGuNAFtxmm13FdLloZgsOOs=",
+            "sha256": "sha256-cIoVobt24rt/DjduUUU5H6J3rTpkBXwdMlN73CobTm4=",
             "type": "url",
             "url": "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb"
         },
-        "version": "26.803.81509"
+        "version": "26.810.52044"
     },
     "clair-obscur-fix": {
         "cargoLock": null,
@@ -127,7 +127,7 @@
     },
     "firefox-csshacks": {
         "cargoLock": null,
-        "date": "2026-08-03",
+        "date": "2026-08-15",
         "extract": null,
         "name": "firefox-csshacks",
         "passthru": null,
@@ -137,13 +137,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8d4814857f39c522e1e1d0bd704a168336ca1d3a",
-            "sha256": "sha256-2R4DoAljYsJUb1f9RE0Fh0pn1/h/ugK8jhNIPeWmdsg=",
+            "rev": "65d4b5d6ec3ca3570c81460905465cbc78e736f6",
+            "sha256": "sha256-Dsxb3ijrFQQ+Ce0O631Hh7XjsNMpcVt+2Umt+LaDCVc=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/MrOtherGuy/firefox-csshacks.git"
         },
-        "version": "8d4814857f39c522e1e1d0bd704a168336ca1d3a"
+        "version": "65d4b5d6ec3ca3570c81460905465cbc78e736f6"
     },
     "flyline": {
         "cargoLock": null,
@@ -159,12 +159,12 @@
             "name": null,
             "owner": "HalFrgrd",
             "repo": "flyline",
-            "rev": "v1.6.1",
-            "sha256": "sha256-SMNxKvalFApL3cgafMTGUwXT2VdUqFUAkLPDW2Dhyo4=",
+            "rev": "v1.6.2",
+            "sha256": "sha256-UAHb54S4WUu5IyYiqVvDQYTShaIaBBL78POqCEonEqc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.6.1"
+        "version": "v1.6.2"
     },
     "forgejo-file-icons": {
         "cargoLock": null,
@@ -339,12 +339,12 @@
             "name": null,
             "owner": "libnoname",
             "repo": "noname",
-            "rev": "v1.11.5",
-            "sha256": "sha256-eut+46GB+szbfUN3drtKfXXQiRbCnxGT61WN6z9H98Q=",
+            "rev": "v1.11.5.1",
+            "sha256": "sha256-Kc//eccLUl1wkj+3GJYSadxPblLWKjxBWLFUO863mTI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.11.5"
+        "version": "v1.11.5.1"
     },
     "openlogi": {
         "cargoLock": null,
@@ -360,12 +360,12 @@
             "name": null,
             "owner": "AprilNEA",
             "repo": "OpenLogi",
-            "rev": "v0.6.24",
-            "sha256": "sha256-ah9DgcVJ8yaqBShHODvixshePH0LiOGgD/AW1tL4+uo=",
+            "rev": "v0.6.27",
+            "sha256": "sha256-FhHzbfcdwtD8bGPCMGsvVaP56zgzvkElMCEPyqHvaz4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6.24"
+        "version": "v0.6.27"
     },
     "oroot": {
         "cargoLock": null,
@@ -396,11 +396,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uTHY1ePqcrjcoUM/b+uQ/6ACQw1p+1gZZH5JpbmdyBQ=",
+            "sha256": "sha256-3I/BTenvB/zvKP4gQFG7ZynEnPV5FwyM4a1mmiZ2lxE=",
             "type": "url",
-            "url": "https://proton.me/download/drive/cli/0.7.0/darwin-arm64/proton-drive"
+            "url": "https://proton.me/download/drive/cli/0.8.0/darwin-arm64/proton-drive"
         },
-        "version": "0.7.0"
+        "version": "0.8.0"
     },
     "proton-drive-cli-linux-arm64": {
         "cargoLock": null,
@@ -411,11 +411,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XW7TKTy1gb/pL8ZUStmzLA24MgJtQ4wX3vKPXNQ9ZsI=",
+            "sha256": "sha256-CGvEdApzy460kA1Rg2v/DDMt2jkLPweA2fgF/VwqX+M=",
             "type": "url",
-            "url": "https://proton.me/download/drive/cli/0.7.0/linux-arm64/proton-drive"
+            "url": "https://proton.me/download/drive/cli/0.8.0/linux-arm64/proton-drive"
         },
-        "version": "0.7.0"
+        "version": "0.8.0"
     },
     "proton-drive-cli-linux-x64": {
         "cargoLock": null,
@@ -426,11 +426,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Tjx0p6JdoA16DKnuIjqbewsjjaNXq2/P7gSlwxPd9NE=",
+            "sha256": "sha256-lEPXcXGciSeQ2xfm8C7Nma18U1kzKfOmfHdnfc5XdzU=",
             "type": "url",
-            "url": "https://proton.me/download/drive/cli/0.7.0/linux-x64/proton-drive"
+            "url": "https://proton.me/download/drive/cli/0.8.0/linux-x64/proton-drive"
         },
-        "version": "0.7.0"
+        "version": "0.8.0"
     },
     "ratune": {
         "cargoLock": null,
@@ -455,7 +455,7 @@
     },
     "rime-cantonese": {
         "cargoLock": null,
-        "date": "2026-07-02",
+        "date": "2026-08-13",
         "extract": null,
         "name": "rime-cantonese",
         "passthru": null,
@@ -465,13 +465,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "c99b16e44d2df77a5cb8fb0867dd2bab7a112cb0",
-            "sha256": "sha256-M2zFuhKAmSJ3X7zP0+itakhmuHqwtxZVOHS/fn+NSZo=",
+            "rev": "259f0e48bba840c3a2e0d117539e96937f3d89bc",
+            "sha256": "sha256-ctyYZQVCd9Sc7oqPmP4lO1Q0TYDQILqt/BRloaEWjPg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rime/rime-cantonese.git"
         },
-        "version": "c99b16e44d2df77a5cb8fb0867dd2bab7a112cb0"
+        "version": "259f0e48bba840c3a2e0d117539e96937f3d89bc"
     },
     "rime-dieghv": {
         "cargoLock": null,
@@ -542,7 +542,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kNI4X2Uzf4uMexuly+h03z8tkbRi1o+i+f6QxXqjvGY=",
+            "sha256": "sha256-a81qxhNpt0AYI/fc5ZomWYFA6sW5Q884Zun0EgS2rfs=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -592,11 +592,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7TMQcH0UaemlVJ+mvIKu9Zj7+IKn1D5qX4cyXCcg0CM=",
+            "sha256": "sha256-ndK8aX9MqI30FRw9ZgcJcqT/By9e8q/rTVcH9axVxS4=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.2.4/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.3.0/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v17.2.4"
+        "version": "v17.3.0"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -607,11 +607,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ib8U25sD8szfuUDB+L7i20MJPBcFVW9eoyW4QuKuDs0=",
+            "sha256": "sha256-lowg5ECM2a7sJmB+zDzyUg1AAIhIphTIBXJ3u4A78/I=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.2.4/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.3.0/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v17.2.4"
+        "version": "v17.3.0"
     },
     "sops-nvim": {
         "cargoLock": null,
@@ -668,12 +668,12 @@
             "name": null,
             "owner": "hyprlab",
             "repo": "vireo",
-            "rev": "v1.7.1",
-            "sha256": "sha256-vECTQuZM4S9nKP7hle9NGZ51Z+h7cNEW9z3qrNmAops=",
+            "rev": "v1.8.1",
+            "sha256": "sha256-85yTavASNJOkxkXHZqf6AaQmM2TVwZFqTYJ55UnM/QA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.1"
+        "version": "v1.8.1"
     },
     "waywallen": {
         "cargoLock": null,
@@ -689,12 +689,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen",
-            "rev": "v0.3.2",
-            "sha256": "sha256-26juf3rhbs4rUjLQ/L23yEw7Yf23EqkRqu3lNC3MQYI=",
+            "rev": "v0.3.4",
+            "sha256": "sha256-xjkRdgwTcHzfqOyWKt2Lq0uqFI+ox3fVv5ReM2AvDLI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.2"
+        "version": "v0.3.4"
     },
     "waywallen-display": {
         "cargoLock": null,
@@ -710,12 +710,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen-display",
-            "rev": "v0.3.1",
-            "sha256": "sha256-vKBo7JlaxZc0YkbBA6GPsF/Mpa9vqoQP9O9eRoMRNMU=",
+            "rev": "v0.3.2",
+            "sha256": "sha256-3CMPCulvUwG5m8d894cHAwPKLxhmOEj8t498ujlOPZw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.3.1"
+        "version": "v0.3.2"
     },
     "waywallen-main-page-webp": {
         "cargoLock": null,
@@ -726,11 +726,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-US6vRPPip7LjLsjVpet+jW2AyIH/AcUkYoCaI+zoFBs=",
+            "sha256": "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=",
             "type": "url",
-            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.2/ui/assets/main_page.webp"
+            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.4/ui/assets/main_page.webp"
         },
-        "version": "v0.3.2"
+        "version": "v0.3.4"
     },
     "wdotool": {
         "cargoLock": null,
