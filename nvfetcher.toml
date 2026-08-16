@@ -175,3 +175,7 @@ fetch.git = "https://github.com/hokkien-writing/rime-hokkien.git"
 [emacs-typst-overlay]
 src.git = "https://github.com/hesampakdaman/typst-overlay.git"
 fetch.git = "https://github.com/hesampakdaman/typst-overlay.git"
+
+[emacs-kitty-graphics]
+src.github = "cashmeredev/kitty-graphics.el"
+fetch.github = "cashmeredev/kitty-graphics.el"

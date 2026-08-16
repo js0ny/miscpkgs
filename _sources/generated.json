@@ -145,6 +145,27 @@
         },
         "version": "dwproton-11.0-11"
     },
+    "emacs-kitty-graphics": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "emacs-kitty-graphics",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cashmeredev",
+            "repo": "kitty-graphics.el",
+            "rev": "v1.0.0",
+            "sha256": "sha256-wctqnbM7vdQndXl6uArLdfMHYdU6tdN7MWp2Rxdz668=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.0.0"
+    },
     "emacs-typst-overlay": {
         "cargoLock": null,
         "date": "2026-06-04",

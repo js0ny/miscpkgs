@@ -92,6 +92,17 @@
       sha256 = "sha256-p1x1UAuXLG0MpYcyrssudKwpCRlKAPPxrv7UFyPe2lI=";
     };
   };
+  emacs-kitty-graphics = {
+    pname = "emacs-kitty-graphics";
+    version = "v1.0.0";
+    src = fetchFromGitHub {
+      owner = "cashmeredev";
+      repo = "kitty-graphics.el";
+      rev = "v1.0.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-wctqnbM7vdQndXl6uArLdfMHYdU6tdN7MWp2Rxdz668=";
+    };
+  };
   emacs-typst-overlay = {
     pname = "emacs-typst-overlay";
     version = "292cea49c5073a54b02aa5eb12467a4ac9919097";
