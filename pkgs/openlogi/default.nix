@@ -17,16 +17,10 @@ let
   p = sources.openlogi;
   version = lib.removePrefix "v" p.version;
 
-  cargoDeps = rustPlatform.fetchCargoVendor {
-    pname = "openlogi";
-    inherit (p) src;
-    inherit version;
-    hash = "sha256-r43F9fqrtjQ/QScAjEps9PHIOU3C7U2WKXEGjHkivrE=";
-  };
-
   common = {
     inherit (p) src;
-    inherit version cargoDeps;
+    inherit version;
+    cargoLock = p.cargoLock."Cargo.lock";
     BINDGEN_EXTRA_CLANG_ARGS = "-I${stdenv.cc.libc.dev}/include";
     preConfigure = ''
       export LIBCLANG_PATH="${lib.getLib clang.cc}/lib"

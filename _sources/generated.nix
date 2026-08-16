@@ -222,13 +222,26 @@
   };
   openlogi = {
     pname = "openlogi";
-    version = "v0.6.27";
+    version = "v0.7.1";
     src = fetchFromGitHub {
       owner = "AprilNEA";
       repo = "OpenLogi";
-      rev = "v0.6.27";
+      rev = "v0.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-FhHzbfcdwtD8bGPCMGsvVaP56zgzvkElMCEPyqHvaz4=";
+      sha256 = "sha256-+LHtffr/m4abosbqh1KCkD5iy/GANLVIMac+lmjJWxc=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-+LHtffr_m4abosbqh1KCkD5iy_GANLVIMac+lmjJWxc=/Cargo.lock";
+      outputHashes = {
+        "proptest-1.10.0" = "sha256-p5NTcHhruI8QQvANACg8AMRVNmuvGxs2NLit+/8PaWo=";
+        "zed-font-kit-0.14.1-zed" = "sha256-KXygi0olNQi5yM8eaJVykNDtbPMDjT+cWPBF8UrtXR4=";
+        "zed-reqwest-0.12.15-zed" = "sha256-p4SiUrOrbTlk/3bBrzN/mq/t+1Gzy2ot4nso6w6S+F8=";
+        "collections-0.1.0" = "sha256-Av+unZNI39dEb+zwSIU+SkEjqagHWrc7W8KehEgQ4H8=";
+        "zed-scap-0.0.8-zed" = "sha256-BihiQHlal/eRsktyf0GI3aSWsUCW7WcICMsC2Xvb7kw=";
+        "gpui-component-0.5.2" = "sha256-yOXdgxQgfvGN2/+OdDnl1pYti0DoGFvS3Tyqvj3Bkng=";
+        "gpui-updater-0.0.7" = "sha256-hxdATcCif7csqKLNoi41ETe09Ym6zM4rVzYvBDEvVg4=";
+        "xim-ctext-0.3.0" = "sha256-pRT4Sz1JU9ros47/7pmIW9kosWOGMOItcnNd+VrvnpE=";
+      };
     };
   };
   oroot = {

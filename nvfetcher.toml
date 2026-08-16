@@ -138,6 +138,7 @@ fetch.github = "scullionw/dirstat-rs"
 [openlogi]
 src.github = "AprilNEA/OpenLogi"
 fetch.github = "AprilNEA/OpenLogi"
+cargo_lock = ["Cargo.lock"]
 
 [waywallen]
 src.github = "waywallen/waywallen"
