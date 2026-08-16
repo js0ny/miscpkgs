@@ -33,6 +33,20 @@
       sha256 = "sha256-lJV+ujiSx/IkjLG5UcA54+3ucNscV2KBwOYnIlUMM2s=";
     };
   };
+  coredump-notify = {
+    pname = "coredump-notify";
+    version = "7932978149036a952220e9263fab1734aea983c2";
+    src = fetchgit {
+      url = "https://github.com/js0ny/coredump-notify.git";
+      rev = "7932978149036a952220e9263fab1734aea983c2";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-OX4O2Oezm7a7o8bbNk7wASVSUVI2w1xJZki625RRuPo=";
+    };
+    date = "2026-08-15";
+  };
   danmakufactory = {
     pname = "danmakufactory";
     version = "3813e93b13b087e95901d1822baf9c3540e3f3f6";

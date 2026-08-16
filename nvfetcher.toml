@@ -48,6 +48,10 @@ fetch.git = "https://github.com/js0ny/oroot.git"
 src.git = "https://github.com/js0ny/limes.git"
 fetch.git = "https://github.com/js0ny/limes.git"
 
+[coredump-notify]
+src.git = "https://github.com/js0ny/coredump-notify.git"
+fetch.git = "https://github.com/js0ny/coredump-notify.git"
+
 [noname]
 src.github = "libnoname/noname"
 fetch.github = "libnoname/noname"
