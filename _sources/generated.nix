@@ -92,6 +92,20 @@
       sha256 = "sha256-p1x1UAuXLG0MpYcyrssudKwpCRlKAPPxrv7UFyPe2lI=";
     };
   };
+  emacs-typst-overlay = {
+    pname = "emacs-typst-overlay";
+    version = "292cea49c5073a54b02aa5eb12467a4ac9919097";
+    src = fetchgit {
+      url = "https://github.com/hesampakdaman/typst-overlay.git";
+      rev = "292cea49c5073a54b02aa5eb12467a4ac9919097";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-Ew7t4bVxJ9GqaYFqV8esUqAfs1nKzZbnNkdkOS88nv4=";
+    };
+    date = "2026-06-04";
+  };
   firefox-csshacks = {
     pname = "firefox-csshacks";
     version = "65d4b5d6ec3ca3570c81460905465cbc78e736f6";
