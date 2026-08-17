@@ -708,6 +708,26 @@
         },
         "version": "4de0cb71746d7a6de6311c85bc39873e56bcefc7"
     },
+    "typst-infect-nvim": {
+        "cargoLock": null,
+        "date": "2026-08-17",
+        "extract": null,
+        "name": "typst-infect-nvim",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "853d6419cd896b7770d533642aeba0421cb644b9",
+            "sha256": "sha256-6NwMjGB5I1PW7qcV7TIuCb+inxbrYrgzHYcH/vz+fPc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/js0ny/typst-infect.nvim.git"
+        },
+        "version": "853d6419cd896b7770d533642aeba0421cb644b9"
+    },
     "udpxy": {
         "cargoLock": null,
         "date": null,

@@ -4,15 +4,15 @@
   lib,
 }:
 let
-  p = sources.sops-nvim;
+  p = sources.typst-infect-nvim;
 in
 vimUtils.buildVimPlugin {
   inherit (p) pname src;
   version = "0-unstable-${p.date}";
   meta = {
     license = lib.licenses.mit;
-    description = "Neovim plugin to transparently encrypt and decrypt SOPS encrypted files";
-    homepage = "https://github.com/trixnz/sops.nvim";
+    description = "Display Typst math in Markdown math blocks";
+    homepage = "https://github.com/js0ny/typst-infect.nvim";
     sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }

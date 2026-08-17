@@ -156,6 +156,10 @@ fetch.github = "waywallen/waywallen-display"
 src.git = "https://github.com/trixnz/sops.nvim.git"
 fetch.git = "https://github.com/trixnz/sops.nvim.git"
 
+[typst-infect-nvim]
+src.git = "https://github.com/js0ny/typst-infect.nvim.git"
+fetch.git = "https://github.com/js0ny/typst-infect.nvim.git"
+
 [vireo]
 src.github = "hyprlab/vireo"
 fetch.github = "hyprlab/vireo"

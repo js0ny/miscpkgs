@@ -434,6 +434,20 @@
     };
     date = "2026-07-11";
   };
+  typst-infect-nvim = {
+    pname = "typst-infect-nvim";
+    version = "853d6419cd896b7770d533642aeba0421cb644b9";
+    src = fetchgit {
+      url = "https://github.com/js0ny/typst-infect.nvim.git";
+      rev = "853d6419cd896b7770d533642aeba0421cb644b9";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-6NwMjGB5I1PW7qcV7TIuCb+inxbrYrgzHYcH/vz+fPc=";
+    };
+    date = "2026-08-17";
+  };
   udpxy = {
     pname = "udpxy";
     version = "1.0-25.2";
