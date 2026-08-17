@@ -406,18 +406,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v17.5.0";
+    version = "v17.5.1";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.0/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-WJHCrZ0Fyyf0ZtorB8lEqhnUu7GE3ST82Bqohx6B7K4=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-R4FMZZpmqTM6b5I/K0cFVeRbY4mZVuY+aT1GR13Vf3E=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v17.5.0";
+    version = "v17.5.1";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.0/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-Bv4MMQmkI4aKhq4Seww/GLFk4kwhNC6cLaFP586PfaQ=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-OjjZl0yBiCHQqG36mYZW4NUGZqjc0V6EyBf+djjEoQY=";
     };
   };
   sops-nvim = {
@@ -436,15 +436,15 @@
   };
   typst-infect-nvim = {
     pname = "typst-infect-nvim";
-    version = "853d6419cd896b7770d533642aeba0421cb644b9";
+    version = "baeaaf867e95867cd45bf9486c5ddf3b3b48b12d";
     src = fetchgit {
       url = "https://github.com/js0ny/typst-infect.nvim.git";
-      rev = "853d6419cd896b7770d533642aeba0421cb644b9";
+      rev = "baeaaf867e95867cd45bf9486c5ddf3b3b48b12d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-6NwMjGB5I1PW7qcV7TIuCb+inxbrYrgzHYcH/vz+fPc=";
+      sha256 = "sha256-oGQTT2ATIymmTLg6AILoZc6hMmTfjv2ChGS/+2VoanI=";
     };
     date = "2026-08-17";
   };

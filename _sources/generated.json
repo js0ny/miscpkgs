@@ -667,11 +667,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-WJHCrZ0Fyyf0ZtorB8lEqhnUu7GE3ST82Bqohx6B7K4=",
+            "sha256": "sha256-R4FMZZpmqTM6b5I/K0cFVeRbY4mZVuY+aT1GR13Vf3E=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.0/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v17.5.0"
+        "version": "v17.5.1"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -682,11 +682,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Bv4MMQmkI4aKhq4Seww/GLFk4kwhNC6cLaFP586PfaQ=",
+            "sha256": "sha256-OjjZl0yBiCHQqG36mYZW4NUGZqjc0V6EyBf+djjEoQY=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.0/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v17.5.0"
+        "version": "v17.5.1"
     },
     "sops-nvim": {
         "cargoLock": null,
@@ -720,13 +720,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "853d6419cd896b7770d533642aeba0421cb644b9",
-            "sha256": "sha256-6NwMjGB5I1PW7qcV7TIuCb+inxbrYrgzHYcH/vz+fPc=",
+            "rev": "baeaaf867e95867cd45bf9486c5ddf3b3b48b12d",
+            "sha256": "sha256-oGQTT2ATIymmTLg6AILoZc6hMmTfjv2ChGS/+2VoanI=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/js0ny/typst-infect.nvim.git"
         },
-        "version": "853d6419cd896b7770d533642aeba0421cb644b9"
+        "version": "baeaaf867e95867cd45bf9486c5ddf3b3b48b12d"
     },
     "udpxy": {
         "cargoLock": null,
