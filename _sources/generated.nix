@@ -133,13 +133,13 @@
   };
   flyline = {
     pname = "flyline";
-    version = "v1.6.2";
+    version = "v1.7.0";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.6.2";
+      rev = "v1.7.0";
       fetchSubmodules = false;
-      sha256 = "sha256-UAHb54S4WUu5IyYiqVvDQYTShaIaBBL78POqCEonEqc=";
+      sha256 = "sha256-RaajdrukYCNHBoTiZ8QvB2t5HrvEA9PG2Ojv1rnvDQY=";
     };
   };
   forgejo-file-icons = {
@@ -309,13 +309,13 @@
   };
   ratune = {
     pname = "ratune";
-    version = "v0.15.2";
+    version = "v0.15.3";
     src = fetchFromGitHub {
       owner = "acmagn";
       repo = "ratune";
-      rev = "v0.15.2";
+      rev = "v0.15.3";
       fetchSubmodules = false;
-      sha256 = "sha256-LkEzYYEVkOL/f1BDa9sYSXuXlCk1i2PZ+1+sHzB+KBc=";
+      sha256 = "sha256-XPR85pbGcsLAbsSb8ull/ypn28355vhZeBvX50hTqFE=";
     };
   };
   rime-cantonese = {
@@ -406,18 +406,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v17.3.0";
+    version = "v17.5.0";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.3.0/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-ndK8aX9MqI30FRw9ZgcJcqT/By9e8q/rTVcH9axVxS4=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.0/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-WJHCrZ0Fyyf0ZtorB8lEqhnUu7GE3ST82Bqohx6B7K4=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v17.3.0";
+    version = "v17.5.0";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.3.0/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-lowg5ECM2a7sJmB+zDzyUg1AAIhIphTIBXJ3u4A78/I=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.0/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-Bv4MMQmkI4aKhq4Seww/GLFk4kwhNC6cLaFP586PfaQ=";
     };
   };
   sops-nvim = {
@@ -472,31 +472,31 @@
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.3.4";
+    version = "v0.3.5";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.3.4";
+      rev = "v0.3.5";
       fetchSubmodules = false;
-      sha256 = "sha256-xjkRdgwTcHzfqOyWKt2Lq0uqFI+ox3fVv5ReM2AvDLI=";
+      sha256 = "sha256-oNwyRohAdzEGArBJBtnh6YMrkmZFqRX8JLJS4yj7siE=";
     };
   };
   waywallen-display = {
     pname = "waywallen-display";
-    version = "v0.3.2";
+    version = "v0.3.3";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen-display";
-      rev = "v0.3.2";
+      rev = "v0.3.3";
       fetchSubmodules = false;
-      sha256 = "sha256-3CMPCulvUwG5m8d894cHAwPKLxhmOEj8t498ujlOPZw=";
+      sha256 = "sha256-zqDI++m4lMeggrjq7GtTso6pn6NDVqvipEFvpDe0lC8=";
     };
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.3.4";
+    version = "v0.3.5";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.4/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.5/ui/assets/main_page.webp";
       sha256 = "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=";
     };
   };
