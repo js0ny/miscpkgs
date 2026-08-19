@@ -19,10 +19,10 @@
   };
   chatgpt = {
     pname = "chatgpt";
-    version = "26.810.52044";
+    version = "26.814.41957";
     src = fetchurl {
       url = "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb";
-      sha256 = "sha256-cIoVobt24rt/DjduUUU5H6J3rTpkBXwdMlN73CobTm4=";
+      sha256 = "sha256-R3iyanq9CGRyFNWwXBe9Pr4tlojRRtq/AXwaL6+TrH0=";
     };
   };
   clair-obscur-fix = {
@@ -119,27 +119,27 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "65d4b5d6ec3ca3570c81460905465cbc78e736f6";
+    version = "67842f9655b83c8e58d09d88b134ccade806f4b3";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "65d4b5d6ec3ca3570c81460905465cbc78e736f6";
+      rev = "67842f9655b83c8e58d09d88b134ccade806f4b3";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Dsxb3ijrFQQ+Ce0O631Hh7XjsNMpcVt+2Umt+LaDCVc=";
+      sha256 = "sha256-vZiwzeep/9JYI6UioVYd/E5bNBYyUrmCqbxQfOKzMvg=";
     };
-    date = "2026-08-15";
+    date = "2026-08-19";
   };
   flyline = {
     pname = "flyline";
-    version = "v1.7.0";
+    version = "v1.7.1";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.7.0";
+      rev = "v1.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-RaajdrukYCNHBoTiZ8QvB2t5HrvEA9PG2Ojv1rnvDQY=";
+      sha256 = "sha256-MscTAE921ymn0qyL3YQ06P3+AGg23c//6rh7+c+Iv4Y=";
     };
   };
   forgejo-file-icons = {
@@ -379,7 +379,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-a81qxhNpt0AYI/fc5ZomWYFA6sW5Q884Zun0EgS2rfs=";
+      sha256 = "sha256-PeIaH/WHq04YjC3cVpVdnSXxBPTQzleU8FptkQOuN8s=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -387,7 +387,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-Yx70ezhPgcGzsI5hjvwp2/B3Ks8KDHgCbjgt8rAHCDA=";
+      sha256 = "sha256-0aAqnbC1tV39d4wRR7Wjjjn0gN70yGIgmWap737l1/k=";
     };
   };
   rime-teochew = {
@@ -406,18 +406,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v17.5.1";
+    version = "v17.5.4";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-R4FMZZpmqTM6b5I/K0cFVeRbY4mZVuY+aT1GR13Vf3E=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.4/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-IAuWxi0SorACvveQIS3KhjJ6kq4bJatHNDDTLCgrZHI=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v17.5.1";
+    version = "v17.5.4";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-OjjZl0yBiCHQqG36mYZW4NUGZqjc0V6EyBf+djjEoQY=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.4/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-4psAii0Dn/9z6GpLXcKhnYNEc+YkcxQBV/Q0hVigg3E=";
     };
   };
   sops-nvim = {

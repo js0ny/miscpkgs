@@ -29,11 +29,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-cIoVobt24rt/DjduUUU5H6J3rTpkBXwdMlN73CobTm4=",
+            "sha256": "sha256-R3iyanq9CGRyFNWwXBe9Pr4tlojRRtq/AXwaL6+TrH0=",
             "type": "url",
             "url": "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb"
         },
-        "version": "26.810.52044"
+        "version": "26.814.41957"
     },
     "clair-obscur-fix": {
         "cargoLock": null,
@@ -188,7 +188,7 @@
     },
     "firefox-csshacks": {
         "cargoLock": null,
-        "date": "2026-08-15",
+        "date": "2026-08-19",
         "extract": null,
         "name": "firefox-csshacks",
         "passthru": null,
@@ -198,13 +198,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "65d4b5d6ec3ca3570c81460905465cbc78e736f6",
-            "sha256": "sha256-Dsxb3ijrFQQ+Ce0O631Hh7XjsNMpcVt+2Umt+LaDCVc=",
+            "rev": "67842f9655b83c8e58d09d88b134ccade806f4b3",
+            "sha256": "sha256-vZiwzeep/9JYI6UioVYd/E5bNBYyUrmCqbxQfOKzMvg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/MrOtherGuy/firefox-csshacks.git"
         },
-        "version": "65d4b5d6ec3ca3570c81460905465cbc78e736f6"
+        "version": "67842f9655b83c8e58d09d88b134ccade806f4b3"
     },
     "flyline": {
         "cargoLock": null,
@@ -220,12 +220,12 @@
             "name": null,
             "owner": "HalFrgrd",
             "repo": "flyline",
-            "rev": "v1.7.0",
-            "sha256": "sha256-RaajdrukYCNHBoTiZ8QvB2t5HrvEA9PG2Ojv1rnvDQY=",
+            "rev": "v1.7.1",
+            "sha256": "sha256-MscTAE921ymn0qyL3YQ06P3+AGg23c//6rh7+c+Iv4Y=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.7.0"
+        "version": "v1.7.1"
     },
     "forgejo-file-icons": {
         "cargoLock": null,
@@ -617,7 +617,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-a81qxhNpt0AYI/fc5ZomWYFA6sW5Q884Zun0EgS2rfs=",
+            "sha256": "sha256-PeIaH/WHq04YjC3cVpVdnSXxBPTQzleU8FptkQOuN8s=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -632,7 +632,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Yx70ezhPgcGzsI5hjvwp2/B3Ks8KDHgCbjgt8rAHCDA=",
+            "sha256": "sha256-0aAqnbC1tV39d4wRR7Wjjjn0gN70yGIgmWap737l1/k=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
         },
@@ -667,11 +667,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-R4FMZZpmqTM6b5I/K0cFVeRbY4mZVuY+aT1GR13Vf3E=",
+            "sha256": "sha256-IAuWxi0SorACvveQIS3KhjJ6kq4bJatHNDDTLCgrZHI=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.4/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v17.5.1"
+        "version": "v17.5.4"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -682,11 +682,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-OjjZl0yBiCHQqG36mYZW4NUGZqjc0V6EyBf+djjEoQY=",
+            "sha256": "sha256-4psAii0Dn/9z6GpLXcKhnYNEc+YkcxQBV/Q0hVigg3E=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.1/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.4/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v17.5.1"
+        "version": "v17.5.4"
     },
     "sops-nvim": {
         "cargoLock": null,
