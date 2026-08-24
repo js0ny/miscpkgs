@@ -1,7 +1,3 @@
-[chatgpt]
-src.cmd = "tmp=$(mktemp); trap 'rm -f $tmp' EXIT; curl -fsSL -r 0-65535 https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb -o $tmp; ar p $tmp control.tar.xz | tar -xO --xz ./control | sed -n 's/^Version: //p'"
-fetch.url = "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb"
-
 [jellyfin-plugin-sso]
 src.github = "Buco7854/jellyfin-plugin-sso"
 fetch.tarball = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v$ver/sso-authentication_$ver.zip"
@@ -134,11 +130,6 @@ fetch.url = "https://proton.me/download/drive/cli/$ver/darwin-arm64/proton-drive
 [dirstat-rs]
 src.github = "scullionw/dirstat-rs"
 fetch.github = "scullionw/dirstat-rs"
-
-[openlogi]
-src.github = "AprilNEA/OpenLogi"
-fetch.github = "AprilNEA/OpenLogi"
-cargo_lock = ["Cargo.lock"]
 
 [waywallen]
 src.github = "waywallen/waywallen"
