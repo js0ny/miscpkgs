@@ -19,10 +19,10 @@
   };
   chatgpt = {
     pname = "chatgpt";
-    version = "26.814.41957";
+    version = "26.818.41705";
     src = fetchurl {
       url = "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb";
-      sha256 = "sha256-R3iyanq9CGRyFNWwXBe9Pr4tlojRRtq/AXwaL6+TrH0=";
+      sha256 = "sha256-ySfJhVd73luszsx38C4UsxHZTmIwFWYh+vkleawDalU=";
     };
   };
   clair-obscur-fix = {
@@ -119,17 +119,17 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "67842f9655b83c8e58d09d88b134ccade806f4b3";
+    version = "d61130b4f4d056daa7018948193f1356e14841c2";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "67842f9655b83c8e58d09d88b134ccade806f4b3";
+      rev = "d61130b4f4d056daa7018948193f1356e14841c2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-vZiwzeep/9JYI6UioVYd/E5bNBYyUrmCqbxQfOKzMvg=";
+      sha256 = "sha256-+6rNH0DFL72thjDCsmptibrnxcsg8jxjyhuhgqR7RMQ=";
     };
-    date = "2026-08-19";
+    date = "2026-08-20";
   };
   flyline = {
     pname = "flyline";
@@ -247,16 +247,16 @@
   };
   openlogi = {
     pname = "openlogi";
-    version = "v0.7.1";
+    version = "v0.7.10";
     src = fetchFromGitHub {
       owner = "AprilNEA";
       repo = "OpenLogi";
-      rev = "v0.7.1";
+      rev = "v0.7.10";
       fetchSubmodules = false;
-      sha256 = "sha256-+LHtffr/m4abosbqh1KCkD5iy/GANLVIMac+lmjJWxc=";
+      sha256 = "sha256-y3HTlyNqkrnNPa0K5daMIke0tYmF6TV5/PXtQxMG6PE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-+LHtffr_m4abosbqh1KCkD5iy_GANLVIMac+lmjJWxc=/Cargo.lock";
+      lockFile = ./. + "/sha256-y3HTlyNqkrnNPa0K5daMIke0tYmF6TV5_PXtQxMG6PE=/Cargo.lock";
       outputHashes = {
         "proptest-1.10.0" = "sha256-p5NTcHhruI8QQvANACg8AMRVNmuvGxs2NLit+/8PaWo=";
         "zed-font-kit-0.14.1-zed" = "sha256-KXygi0olNQi5yM8eaJVykNDtbPMDjT+cWPBF8UrtXR4=";
@@ -264,6 +264,7 @@
         "collections-0.1.0" = "sha256-Av+unZNI39dEb+zwSIU+SkEjqagHWrc7W8KehEgQ4H8=";
         "zed-scap-0.0.8-zed" = "sha256-BihiQHlal/eRsktyf0GI3aSWsUCW7WcICMsC2Xvb7kw=";
         "gpui-component-0.5.2" = "sha256-yOXdgxQgfvGN2/+OdDnl1pYti0DoGFvS3Tyqvj3Bkng=";
+        "appicon-0.1.0" = "sha256-XY8NS2qrpPbUXZ3xCPGjZbbT0tSVpapbcTbgA2H5+/I=";
         "gpui-updater-0.0.7" = "sha256-hxdATcCif7csqKLNoi41ETe09Ym6zM4rVzYvBDEvVg4=";
         "xim-ctext-0.3.0" = "sha256-pRT4Sz1JU9ros47/7pmIW9kosWOGMOItcnNd+VrvnpE=";
       };
@@ -379,7 +380,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-PeIaH/WHq04YjC3cVpVdnSXxBPTQzleU8FptkQOuN8s=";
+      sha256 = "sha256-Af/jfyJge/ilzV2CozSfbfl3RDaUZK7kV3WFES2FRp0=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -406,18 +407,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v17.5.4";
+    version = "v17.5.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.4/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-IAuWxi0SorACvveQIS3KhjJ6kq4bJatHNDDTLCgrZHI=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.8/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-e6AyTagYj5sH6U0qCCTjYqrR8upbQm3AdTu96yCfNWQ=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v17.5.4";
+    version = "v17.5.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.4/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-4psAii0Dn/9z6GpLXcKhnYNEc+YkcxQBV/Q0hVigg3E=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.8/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-A/7m9vbupqKkxJZASSIdpzN8gLwzFgYBunZyaTEdaks=";
     };
   };
   sops-nvim = {
@@ -461,13 +462,13 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.8.1";
+    version = "v1.13.2";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.8.1";
+      rev = "v1.13.2";
       fetchSubmodules = false;
-      sha256 = "sha256-85yTavASNJOkxkXHZqf6AaQmM2TVwZFqTYJ55UnM/QA=";
+      sha256 = "sha256-STPDRBIZ4aFVk7RlwYSmeae1BoXQ155y15P+WGryeo8=";
     };
   };
   waywallen = {

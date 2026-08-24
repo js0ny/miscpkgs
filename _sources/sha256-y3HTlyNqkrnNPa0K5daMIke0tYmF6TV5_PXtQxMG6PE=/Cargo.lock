@@ -253,6 +253,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2a4385e2e34eb35d6b3efe798b9eb88096925d87726c0798709bf56d9ed84af3"
 
 [[package]]
+name = "appicon"
+version = "0.1.0"
+source = "git+https://github.com/AprilNEA/appicon?tag=v0.1.1#13f3df01e7efb8a977694ee5a45c4a0e4e96ac2d"
+dependencies = [
+ "libc",
+ "objc2 0.6.4",
+ "objc2-app-kit 0.3.2",
+ "objc2-foundation 0.3.2",
+]
+
+[[package]]
 name = "ar_archive_writer"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -410,9 +421,9 @@ dependencies = [
 
 [[package]]
 name = "async-hid"
-version = "0.5.2"
+version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3633346d0989f6a13133ebce8cbd7b17d8f971513172397c452d438e1e0841e6"
+checksum = "9f70c6f427f9dc3942b5863b2677a34dfcdd5ec46fe3c21a57883c50403269c5"
 dependencies = [
  "async-io",
  "atomic-waker",
@@ -639,6 +650,12 @@ checksum = "e7178fe5f7d460b13895ebb9dcb28a3a6216d2df2574a0806cb51b555d297f38"
 dependencies = [
  "arrayvec",
 ]
+
+[[package]]
+name = "az"
+version = "1.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "be5eb007b7cacc6c660343e96f650fedf4b5a77512399eb952ca6642cf8d13f7"
 
 [[package]]
 name = "backon"
@@ -1235,6 +1252,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "comfy-table"
+version = "8.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "136c8c4c3823846e8ba6d4bda011b4e5d5827b8bb0ac26c31f9ab31abe9f54f2"
+dependencies = [
+ "unicode-segmentation",
+ "unicode-width",
+]
+
+[[package]]
 name = "compression-codecs"
 version = "0.4.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1553,6 +1580,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511"
 dependencies = [
  "cfg-if",
+]
+
+[[package]]
+name = "crossbeam-channel"
+version = "0.5.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d85363c37faeca707aef026efa9f3b34d077bce547e48f770770625c6013679e"
+dependencies = [
+ "crossbeam-utils",
 ]
 
 [[package]]
@@ -3880,6 +3916,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e2db585e1d738fc771bf08a151420d3ed193d9d895a36df7f6f8a9456b911ddc"
 
 [[package]]
+name = "kinded"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "53c48b3aa70f02a317f180f7d4e0834bbd2ffa293e352a132bb2ac9351736635"
+dependencies = [
+ "kinded_macros",
+]
+
+[[package]]
+name = "kinded_macros"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "feeb717349480c3d8125f84afdd78e9d7128004d8e2a561c35b3bbd76363d085"
+dependencies = [
+ "convert_case 0.11.0",
+ "proc-macro2",
+ "quote",
+ "syn 2.0.117",
+]
+
+[[package]]
 name = "kqueue"
 version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4672,6 +4729,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "nutype"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e3ae01f500e59a27e8c868297e15e268105d30ae06dee1ca194e025be29dee2a"
+dependencies = [
+ "nutype_macros",
+]
+
+[[package]]
+name = "nutype_macros"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "48a6a6ddc63e6d0cd6b77af9aabae24601b39ad543d29bff88c4761c1fc34700"
+dependencies = [
+ "cfg-if",
+ "kinded",
+ "proc-macro2",
+ "quote",
+ "rustc_version",
+ "syn 2.0.117",
+ "urlencoding",
+]
+
+[[package]]
 name = "objc"
 version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4818,13 +4899,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e022c9d066895efa1345f8e33e584b9f958da2fd4cd116792e15e07e4720a807"
 dependencies = [
  "bitflags 2.13.1",
- "block2 0.6.2",
  "dispatch2",
- "libc",
  "objc2 0.6.4",
  "objc2-core-foundation",
  "objc2-io-surface",
- "objc2-metal 0.3.2",
 ]
 
 [[package]]
@@ -5078,7 +5156,7 @@ dependencies = [
 
 [[package]]
 name = "openlogi"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "anyhow",
  "openlogi-cli",
@@ -5087,8 +5165,9 @@ dependencies = [
 
 [[package]]
 name = "openlogi-agent"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
+ "dispatch2",
  "embed-resource",
  "futures",
  "interprocess",
@@ -5102,10 +5181,13 @@ dependencies = [
  "openlogi-hook",
  "openlogi-ipc",
  "plist",
+ "succession",
  "sysinfo 0.38.4",
  "tarpc",
+ "tempfile",
  "tokio",
  "tracing",
+ "tracing-appender",
  "tracing-subscriber",
  "windows-sys 0.61.2",
  "winreg",
@@ -5113,9 +5195,8 @@ dependencies = [
 
 [[package]]
 name = "openlogi-agent-core"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
- "async-hid",
  "futures-lite",
  "openlogi-core",
  "openlogi-hid",
@@ -5128,7 +5209,7 @@ dependencies = [
 
 [[package]]
 name = "openlogi-assets"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "atomic-write-file",
  "backon",
@@ -5143,13 +5224,14 @@ dependencies = [
 
 [[package]]
 name = "openlogi-camera"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "block2 0.6.2",
  "objc2 0.6.4",
  "objc2-core-foundation",
  "objc2-io-kit",
  "serde",
+ "thiserror 2.0.18",
  "tracing",
  "v4l",
  "windows 0.61.3",
@@ -5159,7 +5241,7 @@ dependencies = [
 
 [[package]]
 name = "openlogi-cli"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "anyhow",
  "clap",
@@ -5167,7 +5249,9 @@ dependencies = [
  "openlogi-camera",
  "openlogi-core",
  "openlogi-hid",
+ "openlogi-ipc",
  "png 0.17.16",
+ "tarpc",
  "tokio",
  "tracing",
  "tracing-subscriber",
@@ -5175,11 +5259,13 @@ dependencies = [
 
 [[package]]
 name = "openlogi-core"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "atomic-write-file",
+ "az",
  "etcetera",
  "num_enum",
+ "nutype",
  "plist",
  "serde",
  "strum",
@@ -5188,64 +5274,75 @@ dependencies = [
  "toml 0.8.23",
  "toml_edit 0.22.27",
  "tracing",
- "tracing-subscriber",
 ]
 
 [[package]]
-name = "openlogi-gui"
-version = "0.7.1"
+name = "openlogi-desktop"
+version = "0.7.10"
 dependencies = [
  "anyhow",
+ "appicon",
  "backon",
- "block2 0.6.2",
- "core-graphics 0.25.0",
+ "derive_more",
  "disclaim",
  "embed-resource",
- "fluent-langneg",
  "gpui",
  "gpui-component",
  "gpui-component-assets",
  "gpui-updater",
  "gpui_platform",
  "image",
- "objc2 0.6.4",
  "objc2-app-kit 0.3.2",
  "objc2-foundation 0.3.2",
- "objc2-io-kit",
  "opener",
  "openlogi-assets",
  "openlogi-camera",
  "openlogi-core",
  "openlogi-hook",
  "openlogi-ipc",
+ "openlogi-permissions",
+ "openlogi-ui",
  "rust-i18n",
  "serde",
  "serde_json",
+ "swr-core",
+ "swr-gpui",
  "sys-locale",
  "tarpc",
  "tempfile",
- "thiserror 2.0.18",
  "tokio",
  "tracing",
  "tracing-subscriber",
- "ureq",
  "url",
  "walkdir",
 ]
 
 [[package]]
+name = "openlogi-device"
+version = "0.7.10"
+dependencies = [
+ "futures-concurrency",
+ "futures-lite",
+ "openlogi-core",
+ "openlogi-hidpp",
+ "serde",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
 name = "openlogi-hid"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "async-hid",
  "atomic-write-file",
  "futures-concurrency",
  "futures-lite",
- "num_enum",
- "objc2 0.6.4",
- "objc2-app-kit 0.3.2",
  "objc2-io-kit",
  "openlogi-core",
+ "openlogi-device",
  "openlogi-hidpp",
  "serde",
  "serde_json",
@@ -5258,19 +5355,19 @@ dependencies = [
 
 [[package]]
 name = "openlogi-hidpp"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "async-channel",
  "async-trait",
  "bitflags 2.13.1",
  "derive_builder",
+ "derive_more",
  "futures",
  "futures-timer",
  "hex",
  "hidreport",
  "num_enum",
  "openlogi-hidpp-derive",
- "rand 0.9.4",
  "serde",
  "thiserror 2.0.18",
  "tracing",
@@ -5278,7 +5375,7 @@ dependencies = [
 
 [[package]]
 name = "openlogi-hidpp-derive"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -5287,7 +5384,7 @@ dependencies = [
 
 [[package]]
 name = "openlogi-hook"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "core-foundation 0.10.0",
  "core-graphics 0.25.0",
@@ -5299,7 +5396,6 @@ dependencies = [
  "objc2-app-kit 0.3.2",
  "objc2-application-services",
  "objc2-core-foundation",
- "objc2-foundation 0.3.2",
  "openlogi-core",
  "openlogi-inject",
  "thiserror 2.0.18",
@@ -5313,7 +5409,7 @@ dependencies = [
 
 [[package]]
 name = "openlogi-inject"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "core-foundation 0.10.0",
  "core-graphics 0.25.0",
@@ -5334,14 +5430,62 @@ dependencies = [
 
 [[package]]
 name = "openlogi-ipc"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "bincode",
  "interprocess",
  "openlogi-core",
  "serde",
+ "succession",
+ "tarpc",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "openlogi-overlay"
+version = "0.7.10"
+dependencies = [
+ "anyhow",
+ "block2 0.6.2",
+ "core-graphics 0.25.0",
+ "embed-resource",
+ "gpui",
+ "gpui_platform",
+ "objc2 0.6.4",
+ "objc2-app-kit 0.3.2",
+ "openlogi-core",
+ "openlogi-hook",
+ "openlogi-ipc",
+ "openlogi-ui",
+ "rust-i18n",
+ "succession",
  "tarpc",
  "tokio",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "openlogi-permissions"
+version = "0.7.10"
+dependencies = [
+ "objc2 0.6.4",
+ "objc2-io-kit",
+ "opener",
+ "openlogi-camera",
+ "openlogi-core",
+ "tracing",
+]
+
+[[package]]
+name = "openlogi-ui"
+version = "0.7.10"
+dependencies = [
+ "fluent-langneg",
+ "gpui",
+ "openlogi-core",
+ "rust-i18n",
+ "sys-locale",
 ]
 
 [[package]]
@@ -6609,7 +6753,7 @@ dependencies = [
  "security-framework",
  "security-framework-sys",
  "webpki-root-certs",
- "windows-sys 0.52.0",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -7261,6 +7405,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
 
 [[package]]
+name = "succession"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ebea0f5590b6dde1056c1ba7e6045d5abce2f69da6a3f438d05b91d246d5bd53"
+dependencies = [
+ "serde",
+ "sysinfo 0.38.4",
+]
+
+[[package]]
 name = "sum_tree"
 version = "0.1.0"
 source = "git+https://github.com/zed-industries/zed#1a246efd7e1b83ab568ec5e3e6c1a43a42e1abba"
@@ -7386,6 +7540,33 @@ dependencies = [
  "yazi",
  "zeno",
 ]
+
+[[package]]
+name = "swr-core"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8348035962c22690ea0ad6d95429b091b5e576e5a355d4b0280e373d4055587c"
+dependencies = [
+ "parking_lot",
+ "tokio",
+ "web-time",
+]
+
+[[package]]
+name = "swr-gpui"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "84530a6d5c8f5b608bc23733eb653cf6f3654fff8870987318dcb0654ef6c639"
+dependencies = [
+ "gpui",
+ "swr-core",
+]
+
+[[package]]
+name = "symlink"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a7973cce6668464ea31f176d85b13c7ab3bba2cb3b77a2ed26abd7801688010a"
 
 [[package]]
 name = "syn"
@@ -7750,14 +7931,15 @@ checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
 
 [[package]]
 name = "tokio"
-version = "1.52.3"
+version = "1.53.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8fc7f01b389ac15039e4dc9531aa973a135d7a4135281b12d7c1bc79fd57fffe"
+checksum = "202caea871b69668250d242070849eb495be178ed697a3e98aebce5bc81a0bed"
 dependencies = [
  "bytes",
  "libc",
  "mio",
  "pin-project-lite",
+ "signal-hook-registry",
  "socket2",
  "tokio-macros",
  "windows-sys 0.61.2",
@@ -7954,6 +8136,19 @@ dependencies = [
  "pin-project-lite",
  "tracing-attributes",
  "tracing-core",
+]
+
+[[package]]
+name = "tracing-appender"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "050686193eb999b4bb3bc2acfa891a13da00f79734704c4b8b4ef1a10b368a3c"
+dependencies = [
+ "crossbeam-channel",
+ "symlink",
+ "thiserror 2.0.18",
+ "time",
+ "tracing-subscriber",
 ]
 
 [[package]]
@@ -8202,6 +8397,12 @@ dependencies = [
  "percent-encoding",
  "serde",
 ]
+
+[[package]]
+name = "urlencoding"
+version = "2.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "daf8dba3b7eb870caf1ddeed7bc9d2a049f3cfdfae7cb521b087cc33ae4c49da"
 
 [[package]]
 name = "usvg"
@@ -9833,19 +10034,24 @@ checksum = "32ac00cd3f8ec9c1d33fb3e7958a82df6989c42d747bd326c822b1d625283547"
 
 [[package]]
 name = "xtask"
-version = "0.7.1"
+version = "0.7.10"
 dependencies = [
  "anyhow",
+ "appicon",
  "clap",
+ "comfy-table",
  "fs-err",
+ "openlogi-core",
  "path-absolutize",
  "plist",
  "serde",
  "serde_json",
  "sha2_hasher",
  "strum",
+ "sysinfo 0.38.4",
  "tempfile",
  "time",
+ "toml 0.8.23",
  "which 8.0.4",
  "xshell",
 ]
