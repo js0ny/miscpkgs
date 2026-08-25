@@ -17,14 +17,6 @@
       sha256 = "sha256-IXSK4XrdDbSbjvx0XsjZqi53mo4tTeFL3p0gegaNCA0=";
     };
   };
-  chatgpt = {
-    pname = "chatgpt";
-    version = "26.818.41705";
-    src = fetchurl {
-      url = "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb";
-      sha256 = "sha256-ySfJhVd73luszsx38C4UsxHZTmIwFWYh+vkleawDalU=";
-    };
-  };
   clair-obscur-fix = {
     pname = "clair-obscur-fix";
     version = "0.0.15";
@@ -234,6 +226,14 @@
     };
     date = "2026-07-20";
   };
+  navidrome-lyrics-bin = {
+    pname = "navidrome-lyrics-bin";
+    version = "7.2.0";
+    src = fetchurl {
+      url = "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v7.2.0/nd-lyrics.ndp";
+      sha256 = "sha256-qRluW04sLrKqzLnzXJ+vb0iP6Qgf9WhbFVaQFobHVA8=";
+    };
+  };
   noname = {
     pname = "noname";
     version = "v1.11.5.1";
@@ -243,31 +243,6 @@
       rev = "v1.11.5.1";
       fetchSubmodules = false;
       sha256 = "sha256-Kc//eccLUl1wkj+3GJYSadxPblLWKjxBWLFUO863mTI=";
-    };
-  };
-  openlogi = {
-    pname = "openlogi";
-    version = "v0.7.10";
-    src = fetchFromGitHub {
-      owner = "AprilNEA";
-      repo = "OpenLogi";
-      rev = "v0.7.10";
-      fetchSubmodules = false;
-      sha256 = "sha256-y3HTlyNqkrnNPa0K5daMIke0tYmF6TV5/PXtQxMG6PE=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./. + "/sha256-y3HTlyNqkrnNPa0K5daMIke0tYmF6TV5_PXtQxMG6PE=/Cargo.lock";
-      outputHashes = {
-        "proptest-1.10.0" = "sha256-p5NTcHhruI8QQvANACg8AMRVNmuvGxs2NLit+/8PaWo=";
-        "zed-font-kit-0.14.1-zed" = "sha256-KXygi0olNQi5yM8eaJVykNDtbPMDjT+cWPBF8UrtXR4=";
-        "zed-reqwest-0.12.15-zed" = "sha256-p4SiUrOrbTlk/3bBrzN/mq/t+1Gzy2ot4nso6w6S+F8=";
-        "collections-0.1.0" = "sha256-Av+unZNI39dEb+zwSIU+SkEjqagHWrc7W8KehEgQ4H8=";
-        "zed-scap-0.0.8-zed" = "sha256-BihiQHlal/eRsktyf0GI3aSWsUCW7WcICMsC2Xvb7kw=";
-        "gpui-component-0.5.2" = "sha256-yOXdgxQgfvGN2/+OdDnl1pYti0DoGFvS3Tyqvj3Bkng=";
-        "appicon-0.1.0" = "sha256-XY8NS2qrpPbUXZ3xCPGjZbbT0tSVpapbcTbgA2H5+/I=";
-        "gpui-updater-0.0.7" = "sha256-hxdATcCif7csqKLNoi41ETe09Ym6zM4rVzYvBDEvVg4=";
-        "xim-ctext-0.3.0" = "sha256-pRT4Sz1JU9ros47/7pmIW9kosWOGMOItcnNd+VrvnpE=";
-      };
     };
   };
   oroot = {

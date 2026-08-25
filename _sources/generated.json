@@ -20,21 +20,6 @@
         },
         "version": "1.6.3"
     },
-    "chatgpt": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "chatgpt",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-ySfJhVd73luszsx38C4UsxHZTmIwFWYh+vkleawDalU=",
-            "type": "url",
-            "url": "https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb"
-        },
-        "version": "26.818.41705"
-    },
     "clair-obscur-fix": {
         "cargoLock": null,
         "date": null,
@@ -386,6 +371,21 @@
         },
         "version": "fa68e131343fb58c67ad77b2d26f2cb7c49a2c95"
     },
+    "navidrome-lyrics-bin": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "navidrome-lyrics-bin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-qRluW04sLrKqzLnzXJ+vb0iP6Qgf9WhbFVaQFobHVA8=",
+            "type": "url",
+            "url": "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v7.2.0/nd-lyrics.ndp"
+        },
+        "version": "7.2.0"
+    },
     "noname": {
         "cargoLock": null,
         "date": null,
@@ -406,42 +406,6 @@
             "type": "github"
         },
         "version": "v1.11.5.1"
-    },
-    "openlogi": {
-        "cargoLock": {
-            "Cargo.lock": [
-                "sha256-y3HTlyNqkrnNPa0K5daMIke0tYmF6TV5_PXtQxMG6PE=/Cargo.lock",
-                {
-                    "appicon-0.1.0": "sha256-XY8NS2qrpPbUXZ3xCPGjZbbT0tSVpapbcTbgA2H5+/I=",
-                    "collections-0.1.0": "sha256-Av+unZNI39dEb+zwSIU+SkEjqagHWrc7W8KehEgQ4H8=",
-                    "gpui-component-0.5.2": "sha256-yOXdgxQgfvGN2/+OdDnl1pYti0DoGFvS3Tyqvj3Bkng=",
-                    "gpui-updater-0.0.7": "sha256-hxdATcCif7csqKLNoi41ETe09Ym6zM4rVzYvBDEvVg4=",
-                    "proptest-1.10.0": "sha256-p5NTcHhruI8QQvANACg8AMRVNmuvGxs2NLit+/8PaWo=",
-                    "xim-ctext-0.3.0": "sha256-pRT4Sz1JU9ros47/7pmIW9kosWOGMOItcnNd+VrvnpE=",
-                    "zed-font-kit-0.14.1-zed": "sha256-KXygi0olNQi5yM8eaJVykNDtbPMDjT+cWPBF8UrtXR4=",
-                    "zed-reqwest-0.12.15-zed": "sha256-p4SiUrOrbTlk/3bBrzN/mq/t+1Gzy2ot4nso6w6S+F8=",
-                    "zed-scap-0.0.8-zed": "sha256-BihiQHlal/eRsktyf0GI3aSWsUCW7WcICMsC2Xvb7kw="
-                }
-            ]
-        },
-        "date": null,
-        "extract": null,
-        "name": "openlogi",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "AprilNEA",
-            "repo": "OpenLogi",
-            "rev": "v0.7.10",
-            "sha256": "sha256-y3HTlyNqkrnNPa0K5daMIke0tYmF6TV5/PXtQxMG6PE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v0.7.10"
     },
     "oroot": {
         "cargoLock": null,

@@ -174,3 +174,8 @@ fetch.git = "https://github.com/hesampakdaman/typst-overlay.git"
 [emacs-kitty-graphics]
 src.github = "cashmeredev/kitty-graphics.el"
 fetch.github = "cashmeredev/kitty-graphics.el"
+
+[navidrome-lyrics-bin]
+src.github = "J0R6IT0/navidrome-lyrics-plugin"
+fetch.url = "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v$ver/nd-lyrics.ndp"
+src.prefix = "v"
