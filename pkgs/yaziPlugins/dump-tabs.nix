@@ -17,7 +17,7 @@ pkgs.stdenvNoCC.mkDerivation {
   '';
   meta = {
     license = lib.licenses.mit;
-    platform = lib.platforms.all;
+    platforms = lib.platforms.all;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }
