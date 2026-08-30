@@ -582,7 +582,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Af/jfyJge/ilzV2CozSfbfl3RDaUZK7kV3WFES2FRp0=",
+            "sha256": "sha256-YKqCBEHCuAZmmWYulFIYviGfUVdIVjReS+opYrf/FMo=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -652,6 +652,26 @@
             "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.8/rime-wanxiang-zrm-fuzhu.zip"
         },
         "version": "v17.5.8"
+    },
+    "sioyek-python-extensions": {
+        "cargoLock": null,
+        "date": "2025-10-13",
+        "extract": null,
+        "name": "sioyek-python-extensions",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "23d0407aefabc39714225f20bfdd8bbb6845a1ec",
+            "sha256": "sha256-H4LQ1YmHYuAmWwO0vPn2EVIK4BuEculUHm8W8CPkgqE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/ahrm/sioyek-python-extensions.git"
+        },
+        "version": "23d0407aefabc39714225f20bfdd8bbb6845a1ec"
     },
     "sops-nvim": {
         "cargoLock": null,

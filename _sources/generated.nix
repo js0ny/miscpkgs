@@ -355,7 +355,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-Af/jfyJge/ilzV2CozSfbfl3RDaUZK7kV3WFES2FRp0=";
+      sha256 = "sha256-YKqCBEHCuAZmmWYulFIYviGfUVdIVjReS+opYrf/FMo=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -395,6 +395,20 @@
       url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.8/rime-wanxiang-zrm-fuzhu.zip";
       sha256 = "sha256-A/7m9vbupqKkxJZASSIdpzN8gLwzFgYBunZyaTEdaks=";
     };
+  };
+  sioyek-python-extensions = {
+    pname = "sioyek-python-extensions";
+    version = "23d0407aefabc39714225f20bfdd8bbb6845a1ec";
+    src = fetchgit {
+      url = "https://github.com/ahrm/sioyek-python-extensions.git";
+      rev = "23d0407aefabc39714225f20bfdd8bbb6845a1ec";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-H4LQ1YmHYuAmWwO0vPn2EVIK4BuEculUHm8W8CPkgqE=";
+    };
+    date = "2025-10-13";
   };
   sops-nvim = {
     pname = "sops-nvim";

@@ -179,3 +179,7 @@ fetch.github = "cashmeredev/kitty-graphics.el"
 src.github = "J0R6IT0/navidrome-lyrics-plugin"
 fetch.url = "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v$ver/nd-lyrics.ndp"
 src.prefix = "v"
+
+[sioyek-python-extensions]
+src.git = "https://github.com/ahrm/sioyek-python-extensions.git"
+fetch.git = "https://github.com/ahrm/sioyek-python-extensions.git"
