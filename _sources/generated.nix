@@ -78,10 +78,10 @@
   };
   dwproton = {
     pname = "dwproton";
-    version = "dwproton-11.0-11";
+    version = "dwproton-11.0-12";
     src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-11/dwproton-11.0-11-x86_64.tar.xz";
-      sha256 = "sha256-p1x1UAuXLG0MpYcyrssudKwpCRlKAPPxrv7UFyPe2lI=";
+      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-12/dwproton-11.0-12-x86_64.tar.xz";
+      sha256 = "sha256-NGyrXQcA+k87SnowFd41uq49luI32fZENTwFTma7NpI=";
     };
   };
   emacs-kitty-graphics = {
@@ -111,17 +111,17 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "d61130b4f4d056daa7018948193f1356e14841c2";
+    version = "b65e2de3df1c75519c9ebde3eb480e3b02600bdf";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "d61130b4f4d056daa7018948193f1356e14841c2";
+      rev = "b65e2de3df1c75519c9ebde3eb480e3b02600bdf";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+6rNH0DFL72thjDCsmptibrnxcsg8jxjyhuhgqR7RMQ=";
+      sha256 = "sha256-rP2f732XIGj205J8ZvZIrmJQrf+IrLZT9Y7HCy23kBA=";
     };
-    date = "2026-08-20";
+    date = "2026-08-27";
   };
   flyline = {
     pname = "flyline";
@@ -136,17 +136,17 @@
   };
   forgejo-file-icons = {
     pname = "forgejo-file-icons";
-    version = "6143bd16c1b2a30e97d78e4ffb3b09a2840d1e20";
+    version = "a3c399c75f1443f9431ef7051dc0ec026188bc5c";
     src = fetchgit {
       url = "https://github.com/js0ny/forgejo-file-icons.git";
-      rev = "6143bd16c1b2a30e97d78e4ffb3b09a2840d1e20";
+      rev = "a3c399c75f1443f9431ef7051dc0ec026188bc5c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-XrHIZQcVe5QmmoihaTIHijG4BV12plNHSj+Lc0IOO20=";
+      sha256 = "sha256-cx4lojxuk786tn8n7t0rPPYT2r/UR7qlYqqIkevMU5Q=";
     };
-    date = "2026-08-10";
+    date = "2026-08-28";
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
@@ -161,21 +161,21 @@
   };
   jellyfin-plugin-sso = {
     pname = "jellyfin-plugin-sso";
-    version = "4.0.0.6";
+    version = "4.0.0.7";
     src = fetchTarball {
-      url = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v4.0.0.6/sso-authentication_4.0.0.6.zip";
-      sha256 = "sha256-U7TA16j8ovPa7zhSDGskb1fuU2Icm4J7EJCCdcUmp+Q=";
+      url = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v4.0.0.7/sso-authentication_4.0.0.7.zip";
+      sha256 = "sha256-oG3Ho3E3ejD9KOLxs8SUHiRG8EjEycaQ7klpldke/5g=";
     };
   };
   jellyfin-plugin-sso-src = {
     pname = "jellyfin-plugin-sso-src";
-    version = "v4.0.0.6";
+    version = "v4.0.0.7";
     src = fetchFromGitHub {
       owner = "Buco7854";
       repo = "jellyfin-plugin-sso";
-      rev = "v4.0.0.6";
+      rev = "v4.0.0.7";
       fetchSubmodules = false;
-      sha256 = "sha256-PgDjXTrMCpTKth/nVczBHUCAuaGn8ZWbTXY5yVH5A6M=";
+      sha256 = "sha256-SW2ATU7zd3iaRmxQk2erxqTUzvTNZ3xjgPXksukJKfs=";
     };
   };
   komari-agent = {
@@ -355,7 +355,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-YKqCBEHCuAZmmWYulFIYviGfUVdIVjReS+opYrf/FMo=";
+      sha256 = "sha256-FjVYgAbXnMaVX7zz2N4Sgio2hW61QIc1qLSilSsWyt8=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -382,18 +382,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v17.5.8";
+    version = "v17.9.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.8/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-e6AyTagYj5sH6U0qCCTjYqrR8upbQm3AdTu96yCfNWQ=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.9.2/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-emupt/bRA3WOxEYa5H2wWaTdr50A9lP9GZ2ych3Y8t4=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v17.5.8";
+    version = "v17.9.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.5.8/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-A/7m9vbupqKkxJZASSIdpzN8gLwzFgYBunZyaTEdaks=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.9.2/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-tKCX4PH2FekW8fVEkDlm3qhsruy/OCDwAkxA7sN+dqs=";
     };
   };
   sioyek-python-extensions = {
@@ -451,24 +451,24 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.13.2";
+    version = "v1.18.4";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.13.2";
+      rev = "v1.18.4";
       fetchSubmodules = false;
-      sha256 = "sha256-STPDRBIZ4aFVk7RlwYSmeae1BoXQ155y15P+WGryeo8=";
+      sha256 = "sha256-/qRDSc+iPm9j6DuO1AnRnCtSLTfSXtYZwE/WypmkBc4=";
     };
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.3.5";
+    version = "v0.3.7";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.3.5";
+      rev = "v0.3.7";
       fetchSubmodules = false;
-      sha256 = "sha256-oNwyRohAdzEGArBJBtnh6YMrkmZFqRX8JLJS4yj7siE=";
+      sha256 = "sha256-pwbwtYpDvZKUfGldOw1Ia85e5U4PlcL6cRCXH15wJrY=";
     };
   };
   waywallen-display = {
@@ -484,9 +484,9 @@
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.3.5";
+    version = "v0.3.7";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.5/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.7/ui/assets/main_page.webp";
       sha256 = "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=";
     };
   };
