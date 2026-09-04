@@ -109,6 +109,17 @@
     };
     date = "2026-06-04";
   };
+  fast-note-sync-service = {
+    pname = "fast-note-sync-service";
+    version = "3.6.1";
+    src = fetchFromGitHub {
+      owner = "haierkeys";
+      repo = "fast-note-sync-service";
+      rev = "3.6.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-/aL25g7ePLc/RaErKiRWUc1y3MfPgLEhjqjXCgFq7zY=";
+    };
+  };
   firefox-csshacks = {
     pname = "firefox-csshacks";
     version = "b65e2de3df1c75519c9ebde3eb480e3b02600bdf";
@@ -355,7 +366,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-FjVYgAbXnMaVX7zz2N4Sgio2hW61QIc1qLSilSsWyt8=";
+      sha256 = "sha256-9YNinibKBZmnADjBsLgEGwofirfm3lpmW5zkRqrYHCI=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -363,7 +374,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-0aAqnbC1tV39d4wRR7Wjjjn0gN70yGIgmWap737l1/k=";
+      sha256 = "sha256-SMn/55z2S5Kqlaws75cF2ics0QS01k1VcvzkkP2bWN8=";
     };
   };
   rime-teochew = {

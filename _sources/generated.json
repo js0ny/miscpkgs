@@ -171,6 +171,27 @@
         },
         "version": "292cea49c5073a54b02aa5eb12467a4ac9919097"
     },
+    "fast-note-sync-service": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "fast-note-sync-service",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "haierkeys",
+            "repo": "fast-note-sync-service",
+            "rev": "3.6.1",
+            "sha256": "sha256-/aL25g7ePLc/RaErKiRWUc1y3MfPgLEhjqjXCgFq7zY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "3.6.1"
+    },
     "firefox-csshacks": {
         "cargoLock": null,
         "date": "2026-08-27",
@@ -582,7 +603,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-FjVYgAbXnMaVX7zz2N4Sgio2hW61QIc1qLSilSsWyt8=",
+            "sha256": "sha256-9YNinibKBZmnADjBsLgEGwofirfm3lpmW5zkRqrYHCI=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -597,7 +618,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-0aAqnbC1tV39d4wRR7Wjjjn0gN70yGIgmWap737l1/k=",
+            "sha256": "sha256-SMn/55z2S5Kqlaws75cF2ics0QS01k1VcvzkkP2bWN8=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
         },

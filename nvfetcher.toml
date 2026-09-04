@@ -183,3 +183,11 @@ src.prefix = "v"
 [sioyek-python-extensions]
 src.git = "https://github.com/ahrm/sioyek-python-extensions.git"
 fetch.git = "https://github.com/ahrm/sioyek-python-extensions.git"
+
+[fast-note-sync-service]
+src.github = "haierkeys/fast-note-sync-service"
+fetch.github = "haierkeys/fast-note-sync-service"
+
+# [ly-community]
+# src.git = "https://codeberg.org/fairyglade/ly-community.git"
+# fetch.git = "https://codeberg.org/fairyglade/ly-community.git"
