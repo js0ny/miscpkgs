@@ -10,6 +10,7 @@
   webkitgtk_6_0,
   sources,
   lib,
+  poppler-utils,
 }:
 let
   p = sources.vireo;
@@ -32,6 +33,7 @@ rustPlatform.buildRustPackage {
     dbus
     libadwaita
     webkitgtk_6_0
+    poppler-utils
   ];
 
   postInstall = ''
