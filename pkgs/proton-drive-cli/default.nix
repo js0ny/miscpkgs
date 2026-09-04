@@ -23,7 +23,7 @@ stdenv.mkDerivation {
   # when stripping, bun executable payload is after the ELF header
   dontStrip = true;
 
-  runtimeDeps = lib.optionals (stdenv.isLinux) [
+  runtimeDeps = lib.optionals (stdenv.hostPlatform.isLinux) [
     libsecret
     glib
   ];
