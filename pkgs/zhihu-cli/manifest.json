@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-26T06:57:27Z",
+  "cli": {
+    "latest_version": "0.5.0",
+    "artifacts": {
+      "darwin-amd64": {
+        "url": "https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/cli/0.5.0/zhihu-cli-0.5.0-darwin-amd64.tar.gz",
+        "sha256": "dc0028e39bee7e04572c5224f31f2bebb9f4a46d1d048bbaa83a2b3fa9e21a97",
+        "size": 2879237
+      },
+      "darwin-arm64": {
+        "url": "https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/cli/0.5.0/zhihu-cli-0.5.0-darwin-arm64.tar.gz",
+        "sha256": "9a5a1ce153e545699f7ff765da0b42154b709a6c6a64d926681d7352f3731cea",
+        "size": 2712619
+      },
+      "linux-amd64": {
+        "url": "https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/cli/0.5.0/zhihu-cli-0.5.0-linux-amd64.tar.gz",
+        "sha256": "b68fb4f3caf487c0c55388595748adde6cba69f3b21c0558d8e8429bb0570f2a",
+        "size": 2986798
+      },
+      "linux-arm64": {
+        "url": "https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/cli/0.5.0/zhihu-cli-0.5.0-linux-arm64.tar.gz",
+        "sha256": "35f4aaa838a755c3da28c348ab8604db4b0d6cb4810caf5993f4937e30fc988f",
+        "size": 2760182
+      },
+      "windows-amd64": {
+        "url": "https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/cli/0.5.0/zhihu-cli-0.5.0-windows-amd64.zip",
+        "sha256": "0373dbf449163c381735ea6e96cd4577708377db115793db1946f604281ddc01",
+        "size": 2963696
+      }
+    }
+  },
+  "skill": {
+    "latest_version": "0.5.0",
+    "min_cli_version": "0.5.0",
+    "url": "https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/skill/0.5.0/zhihu-cli-skill-0.5.0.zip",
+    "sha256": "5c5a7dae36cabe4e92362e035ecbffca1e1b14c6479c28372a8e4a2e1cf99b82",
+    "size": 46921
+  }
+}

@@ -22,6 +22,9 @@ stdenvNoCC.mkDerivation {
   meta = {
     platforms = lib.platforms.all;
     license = lib.licenses.gpl3;
-    sourceProvenance = [ lib.sourceTypes.obfuscatedCode ];
+    sourceProvenance = with lib.sourceTypes; [
+      obfuscatedCode
+      fromSource
+    ];
   };
 }
