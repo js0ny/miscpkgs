@@ -674,6 +674,26 @@
         },
         "version": "v17.9.2"
     },
+    "sing-box-dashboard": {
+        "cargoLock": null,
+        "date": "2026-09-03",
+        "extract": null,
+        "name": "sing-box-dashboard",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "c285014d351a685d8a100db0d5bf47ad9bdad76f",
+            "sha256": "sha256-0fPTRY6ChfhAgkAQcr7BztlM5kLZCiIRm8Nm76//3PM=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/SagerNet/sing-box-dashboard.git"
+        },
+        "version": "c285014d351a685d8a100db0d5bf47ad9bdad76f"
+    },
     "sioyek-python-extensions": {
         "cargoLock": null,
         "date": "2025-10-13",

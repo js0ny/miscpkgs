@@ -407,6 +407,20 @@
       sha256 = "sha256-tKCX4PH2FekW8fVEkDlm3qhsruy/OCDwAkxA7sN+dqs=";
     };
   };
+  sing-box-dashboard = {
+    pname = "sing-box-dashboard";
+    version = "c285014d351a685d8a100db0d5bf47ad9bdad76f";
+    src = fetchgit {
+      url = "https://github.com/SagerNet/sing-box-dashboard.git";
+      rev = "c285014d351a685d8a100db0d5bf47ad9bdad76f";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-0fPTRY6ChfhAgkAQcr7BztlM5kLZCiIRm8Nm76//3PM=";
+    };
+    date = "2026-09-03";
+  };
   sioyek-python-extensions = {
     pname = "sioyek-python-extensions";
     version = "23d0407aefabc39714225f20bfdd8bbb6845a1ec";
