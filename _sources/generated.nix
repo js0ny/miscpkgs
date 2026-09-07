@@ -122,17 +122,17 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "b65e2de3df1c75519c9ebde3eb480e3b02600bdf";
+    version = "ddba754e9b8feb0a1186ad44639e312e4bc20d95";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "b65e2de3df1c75519c9ebde3eb480e3b02600bdf";
+      rev = "ddba754e9b8feb0a1186ad44639e312e4bc20d95";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-rP2f732XIGj205J8ZvZIrmJQrf+IrLZT9Y7HCy23kBA=";
+      sha256 = "sha256-gs5MNSwkOPQHavKm4zPeIDxPlKwBv+gDZVMfVRCPQF4=";
     };
-    date = "2026-08-27";
+    date = "2026-09-03";
   };
   flyline = {
     pname = "flyline";
@@ -239,10 +239,10 @@
   };
   navidrome-lyrics-bin = {
     pname = "navidrome-lyrics-bin";
-    version = "7.2.0";
+    version = "8.0.0";
     src = fetchurl {
-      url = "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v7.2.0/nd-lyrics.ndp";
-      sha256 = "sha256-qRluW04sLrKqzLnzXJ+vb0iP6Qgf9WhbFVaQFobHVA8=";
+      url = "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v8.0.0/nd-lyrics.ndp";
+      sha256 = "sha256-7vfUje9U8LtlAzuBudaVkSxka34aYFjK3W1pvlBuUog=";
     };
   };
   noname = {
@@ -366,7 +366,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-9YNinibKBZmnADjBsLgEGwofirfm3lpmW5zkRqrYHCI=";
+      sha256 = "sha256-ZU1/H+Sxvz1CX4wKRKxhQj3tWMeEJntN8DJWAw1yIz8=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -393,18 +393,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v17.9.2";
+    version = "v17.9.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.9.2/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-emupt/bRA3WOxEYa5H2wWaTdr50A9lP9GZ2ych3Y8t4=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.9.8/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-UJD9/aYtHsq3yBEKRbnpZKuedlBus2WxbMkFnYZ+62E=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v17.9.2";
+    version = "v17.9.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.9.2/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-tKCX4PH2FekW8fVEkDlm3qhsruy/OCDwAkxA7sN+dqs=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v17.9.8/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-iLtJnm8b/7wVyqIUvtn5A7XTfZt7I3ksXF43gmnhOXA=";
     };
   };
   sing-box-dashboard = {
@@ -476,24 +476,24 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.18.4";
+    version = "v1.22.0";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.18.4";
+      rev = "v1.22.0";
       fetchSubmodules = false;
-      sha256 = "sha256-/qRDSc+iPm9j6DuO1AnRnCtSLTfSXtYZwE/WypmkBc4=";
+      sha256 = "sha256-kYkNUU/tlFBAdLq3X1VeZt8I6dRfjorzN8VpkbNLa0o=";
     };
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.3.7";
+    version = "v0.3.8";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.3.7";
+      rev = "v0.3.8";
       fetchSubmodules = false;
-      sha256 = "sha256-pwbwtYpDvZKUfGldOw1Ia85e5U4PlcL6cRCXH15wJrY=";
+      sha256 = "sha256-zSep+Hj3V/kZZ8PL7ihQeuxFMiN22dTr4E28elPbmJA=";
     };
   };
   waywallen-display = {
@@ -509,9 +509,9 @@
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.3.7";
+    version = "v0.3.8";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.7/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.3.8/ui/assets/main_page.webp";
       sha256 = "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=";
     };
   };
