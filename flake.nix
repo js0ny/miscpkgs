@@ -31,6 +31,15 @@
         {
           packages = packages.flatPackages;
           legacyPackages = packages.packageSet;
+          devShells.default = pkgs.mkShell {
+            buildInputs = with pkgs; [
+              nvfetcher
+              keep-sorted
+            ];
+            shellHook = /* bash */ ''
+              export NIXPKGS_ALLOW_UNFREE=1
+            '';
+          };
         };
       flake = {
         overlays.default = final: prev: {

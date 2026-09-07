@@ -15,6 +15,8 @@ let
         };
     in
     {
+      # keep-sorted start
+      wechat = callNixPak ./wechat.nix;
       discord = callNixPak ./discord.nix;
       thunderbird = callNixPak ./thunderbird.nix;
       firefox = callNixPak ./firefox.nix;
@@ -30,6 +32,7 @@ let
       cherry-studio = callNixPak ./cherry-studio.nix;
       zotero = callNixPak ./zotero.nix;
       bash = callNixPak ./bash.nix;
+      # keep-sorted end
     };
 in
 {
