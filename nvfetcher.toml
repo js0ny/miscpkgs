@@ -200,3 +200,11 @@ fetch.git = "https://github.com/SagerNet/sing-box-dashboard.git"
 [sni-fetch]
 src.github = "HelloLingC/SNI-Fetch"
 fetch.github = "HelloLingC/SNI-Fetch"
+
+[komari]
+src.github = "komari-monitor/komari"
+fetch.github = "komari-monitor/komari"
+
+[komari-web]
+src.github = "komari-monitor/komari-web"
+fetch.github = "komari-monitor/komari-web"

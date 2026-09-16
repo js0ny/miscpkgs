@@ -25,7 +25,12 @@ jobs:
       - name: Update nvfetcher sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: nix run nixpkgs#nvfetcher -- -c nvfetcher.toml -o _sources
+        run: |
+          umask 077
+          keyfile="$RUNNER_TEMP/nvchecker-keys.toml"
+          trap 'rm -f "$keyfile"' EXIT
+          printf '[keys]\ngithub = "%s"\n' "$GITHUB_TOKEN" > "$keyfile"
+          nix run nixpkgs#nvfetcher -- -c nvfetcher.toml -o _sources --keyfile "$keyfile"
 
       - name: Create commit
         env:

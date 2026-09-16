@@ -189,6 +189,17 @@
       sha256 = "sha256-SW2ATU7zd3iaRmxQk2erxqTUzvTNZ3xjgPXksukJKfs=";
     };
   };
+  komari = {
+    pname = "komari";
+    version = "1.5.0-fix1";
+    src = fetchFromGitHub {
+      owner = "komari-monitor";
+      repo = "komari";
+      rev = "1.5.0-fix1";
+      fetchSubmodules = false;
+      sha256 = "sha256-VL3Pk3II8fU+tKexdumu/j6cX5OEI4GT0TdIFlIfs64=";
+    };
+  };
   komari-agent = {
     pname = "komari-agent";
     version = "1.2.60";
@@ -198,6 +209,17 @@
       rev = "1.2.60";
       fetchSubmodules = false;
       sha256 = "sha256-SsM/RbwdWmKty+6ueL4J9auKcPkRMNX59Imko3oPOiQ=";
+    };
+  };
+  komari-web = {
+    pname = "komari-web";
+    version = "1.5.0-fix1";
+    src = fetchFromGitHub {
+      owner = "komari-monitor";
+      repo = "komari-web";
+      rev = "1.5.0-fix1";
+      fetchSubmodules = false;
+      sha256 = "sha256-ySHbv3AOgCJvAIqzZ12dsOjOCmOzYI6rBFYNoR5Wnjw=";
     };
   };
   limes = {
