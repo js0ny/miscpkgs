@@ -366,7 +366,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-ZU1/H+Sxvz1CX4wKRKxhQj3tWMeEJntN8DJWAw1yIz8=";
+      sha256 = "sha256-jxstPtKydV/dRF9qsQPv9hMFIIC2KgwEn0sWYEOhasQ=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -434,6 +434,17 @@
       sha256 = "sha256-H4LQ1YmHYuAmWwO0vPn2EVIK4BuEculUHm8W8CPkgqE=";
     };
     date = "2025-10-13";
+  };
+  sni-fetch = {
+    pname = "sni-fetch";
+    version = "v1.2";
+    src = fetchFromGitHub {
+      owner = "HelloLingC";
+      repo = "SNI-Fetch";
+      rev = "v1.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-kdYPFMXR53qEThh1HllvyQRTEmXvLEPYRVUMPaS7yCg=";
+    };
   };
   sops-nvim = {
     pname = "sops-nvim";

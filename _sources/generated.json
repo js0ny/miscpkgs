@@ -603,7 +603,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZU1/H+Sxvz1CX4wKRKxhQj3tWMeEJntN8DJWAw1yIz8=",
+            "sha256": "sha256-jxstPtKydV/dRF9qsQPv9hMFIIC2KgwEn0sWYEOhasQ=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -713,6 +713,27 @@
             "url": "https://github.com/ahrm/sioyek-python-extensions.git"
         },
         "version": "23d0407aefabc39714225f20bfdd8bbb6845a1ec"
+    },
+    "sni-fetch": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "sni-fetch",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "HelloLingC",
+            "repo": "SNI-Fetch",
+            "rev": "v1.2",
+            "sha256": "sha256-kdYPFMXR53qEThh1HllvyQRTEmXvLEPYRVUMPaS7yCg=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.2"
     },
     "sops-nvim": {
         "cargoLock": null,

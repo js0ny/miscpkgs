@@ -196,3 +196,7 @@ fetch.github = "haierkeys/fast-note-sync-service"
 src.git = "https://github.com/SagerNet/sing-box-dashboard.git"
 src.branch = "gh-pages"
 fetch.git = "https://github.com/SagerNet/sing-box-dashboard.git"
+
+[sni-fetch]
+src.github = "HelloLingC/SNI-Fetch"
+fetch.github = "HelloLingC/SNI-Fetch"
