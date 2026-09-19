@@ -645,7 +645,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-jxstPtKydV/dRF9qsQPv9hMFIIC2KgwEn0sWYEOhasQ=",
+            "sha256": "sha256-muS3vo5FWBGBJKf7BQl9tqNBPVFamLFKvQK4ogddBUI=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -936,5 +936,26 @@
             "type": "github"
         },
         "version": "v0.5.3"
+    },
+    "xdd": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "xdd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "js0ny",
+            "repo": "xdd",
+            "rev": "0.1.0",
+            "sha256": "sha256-zC0h+pQysN93fRRTUCQCNvcZ3laci47S5DkhdHG6ehg=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "0.1.0"
     }
 }

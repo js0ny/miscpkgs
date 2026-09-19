@@ -388,7 +388,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-jxstPtKydV/dRF9qsQPv9hMFIIC2KgwEn0sWYEOhasQ=";
+      sha256 = "sha256-muS3vo5FWBGBJKf7BQl9tqNBPVFamLFKvQK4ogddBUI=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -557,6 +557,17 @@
       rev = "v0.5.3";
       fetchSubmodules = false;
       sha256 = "sha256-kmEMkkU5cy2AqEzbpm4Dp+FzguzldzWqD5KSr7uskLE=";
+    };
+  };
+  xdd = {
+    pname = "xdd";
+    version = "0.1.0";
+    src = fetchFromGitHub {
+      owner = "js0ny";
+      repo = "xdd";
+      rev = "0.1.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-zC0h+pQysN93fRRTUCQCNvcZ3laci47S5DkhdHG6ehg=";
     };
   };
 }

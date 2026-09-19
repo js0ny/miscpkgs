@@ -208,3 +208,7 @@ fetch.github = "komari-monitor/komari"
 [komari-web]
 src.github = "komari-monitor/komari-web"
 fetch.github = "komari-monitor/komari-web"
+
+[xdd]
+src.github = "js0ny/xdd"
+fetch.github = "js0ny/xdd"
