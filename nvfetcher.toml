@@ -1,6 +1,6 @@
 [jellyfin-plugin-sso]
 src.github = "Buco7854/jellyfin-plugin-sso"
-fetch.tarball = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v$ver/sso-authentication_$ver.zip"
+fetch.tarball = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v$ver/sso-auth_$ver.zip"
 src.prefix = "v"
 
 [jellyfin-plugin-sso-src]
