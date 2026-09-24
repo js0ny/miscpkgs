@@ -170,34 +170,12 @@
       sha256 = "sha256-y/U8kQ3HeYf/KvCEQisMjgrfRP/ie7vZjqMU/im1lF0=";
     };
   };
-  jellyfin-plugin-sso = {
-    pname = "jellyfin-plugin-sso";
-    version = "4.0.0.7";
-    src = fetchTarball {
-      url = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v4.0.0.7/sso-authentication_4.0.0.7.zip";
-      sha256 = "sha256-oG3Ho3E3ejD9KOLxs8SUHiRG8EjEycaQ7klpldke/5g=";
-    };
-  };
-  jellyfin-plugin-sso-src = {
-    pname = "jellyfin-plugin-sso-src";
-    version = "v4.0.0.7";
-    src = fetchFromGitHub {
-      owner = "Buco7854";
-      repo = "jellyfin-plugin-sso";
-      rev = "v4.0.0.7";
-      fetchSubmodules = false;
-      sha256 = "sha256-SW2ATU7zd3iaRmxQk2erxqTUzvTNZ3xjgPXksukJKfs=";
-    };
-  };
   komari = {
     pname = "komari";
-    version = "1.5.0-fix1";
-    src = fetchFromGitHub {
-      owner = "komari-monitor";
-      repo = "komari";
-      rev = "1.5.0-fix1";
-      fetchSubmodules = false;
-      sha256 = "sha256-VL3Pk3II8fU+tKexdumu/j6cX5OEI4GT0TdIFlIfs64=";
+    version = "1.5.1";
+    src = fetchTarball {
+      url = "https://github.com/komari-monitor/komari/archive/refs/tags/1.5.1.tar.gz";
+      sha256 = "sha256-jzZ2IroS6eJTgfGHWSywh588lHaQc5ycn0cWM8Cd5eU=";
     };
   };
   komari-agent = {

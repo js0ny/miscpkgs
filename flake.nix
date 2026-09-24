@@ -34,6 +34,7 @@
           devShells.default = pkgs.mkShell {
             buildInputs = with pkgs; [
               nvfetcher
+              nix-update
               keep-sorted
             ];
             shellHook = /* bash */ ''

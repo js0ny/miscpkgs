@@ -20,7 +20,7 @@ buildGoModule (finalAttrs: {
     "-s"
     "-w"
     "-X github.com/komari-monitor/komari/utils.CurrentVersion=${finalAttrs.version}"
-    "-X github.com/komari-monitor/komari/utils.VersionHash=${p.src.rev}"
+    "-X github.com/komari-monitor/komari/utils.VersionHash=${p.version}"
   ];
 
   # web/public/public.go embeds defaultTheme/dist.tar.zst and

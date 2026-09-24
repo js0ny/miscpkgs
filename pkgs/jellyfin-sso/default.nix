@@ -1,20 +1,22 @@
-# /var/lib/jellyfin/plugins/SSO Authentication_${version}
 {
   stdenvNoCC,
-  sources,
+  fetchzip,
+  fetchFromGitHub,
   lib,
   buildDotnetModule,
   dotnetCorePackages,
+  ...
 }:
-let
-  bin = sources.jellyfin-plugin-sso;
-  src = sources.jellyfin-plugin-sso-src;
-
-in
 {
-  jellyfin-plugin-sso-bin = stdenvNoCC.mkDerivation {
-    inherit (bin) version src;
+  jellyfin-plugin-sso-bin = stdenvNoCC.mkDerivation rec {
     pname = "jellyfin-plugin-sso";
+    version = "5.0.0.2";
+
+    src = fetchzip {
+      url = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v${version}/sso-auth_${version}.zip";
+      stripRoot = false;
+      hash = "sha256-p6vdHnzPocdVVRJzmM0cNzG1meyRfS0Z3pWUBghd4xE=";
+    };
 
     installPhase = ''
       runHook preInstall
@@ -32,15 +34,22 @@ in
       sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     };
   };
-  jellyfin-plugin-sso-src = buildDotnetModule {
-    inherit (src) src;
+  jellyfin-plugin-sso-src = buildDotnetModule rec {
     pname = "jellyfin-plugin-sso";
-    version = lib.removePrefix "v" src.version;
+    version = "5.0.0.2";
+
+    src = fetchFromGitHub {
+      owner = "Buco7854";
+      repo = "jellyfin-plugin-sso";
+      rev = "v${version}";
+      hash = "sha256-08AtHYAO+/L3ahHbjCQX5jZR2Eefgb1URO+njTkDv0c=";
+    };
 
     projectFile = "SSO-Auth.sln";
 
-    dotnet-sdk = dotnetCorePackages.sdk_9_0;
+    dotnet-sdk = dotnetCorePackages.sdk_10_0;
 
+    # fetch-deps omits the FSharp.Core package bundled with the SDK, but offline restore needs it in deps.json.
     nugetDeps = ./deps.json;
 
     meta = {

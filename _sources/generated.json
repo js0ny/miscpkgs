@@ -274,41 +274,6 @@
         },
         "version": "v1.1.1"
     },
-    "jellyfin-plugin-sso": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "jellyfin-plugin-sso",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-oG3Ho3E3ejD9KOLxs8SUHiRG8EjEycaQ7klpldke/5g=",
-            "type": "tarball",
-            "url": "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v4.0.0.7/sso-authentication_4.0.0.7.zip"
-        },
-        "version": "4.0.0.7"
-    },
-    "jellyfin-plugin-sso-src": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "jellyfin-plugin-sso-src",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "Buco7854",
-            "repo": "jellyfin-plugin-sso",
-            "rev": "v4.0.0.7",
-            "sha256": "sha256-SW2ATU7zd3iaRmxQk2erxqTUzvTNZ3xjgPXksukJKfs=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v4.0.0.7"
-    },
     "komari": {
         "cargoLock": null,
         "date": null,
@@ -317,18 +282,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "komari-monitor",
-            "repo": "komari",
-            "rev": "1.5.0-fix1",
-            "sha256": "sha256-VL3Pk3II8fU+tKexdumu/j6cX5OEI4GT0TdIFlIfs64=",
-            "sparseCheckout": [],
-            "type": "github"
+            "sha256": "sha256-jzZ2IroS6eJTgfGHWSywh588lHaQc5ycn0cWM8Cd5eU=",
+            "type": "tarball",
+            "url": "https://github.com/komari-monitor/komari/archive/refs/tags/1.5.1.tar.gz"
         },
-        "version": "1.5.0-fix1"
+        "version": "1.5.1"
     },
     "komari-agent": {
         "cargoLock": null,

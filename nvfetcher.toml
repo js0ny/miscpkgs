@@ -1,12 +1,3 @@
-[jellyfin-plugin-sso]
-src.github = "Buco7854/jellyfin-plugin-sso"
-fetch.tarball = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v$ver/sso-auth_$ver.zip"
-src.prefix = "v"
-
-[jellyfin-plugin-sso-src]
-src.github = "Buco7854/jellyfin-plugin-sso"
-fetch.github = "Buco7854/jellyfin-plugin-sso"
-
 [clair-obscur-fix]
 src.webpage = "https://codeberg.org/Lyall/ClairObscurFix/releases"
 src.regex = "ClairObscurFix_([0-9.]+)\\.zip"
@@ -207,7 +198,7 @@ fetch.github = "HelloLingC/SNI-Fetch"
 
 [komari]
 src.github = "komari-monitor/komari"
-fetch.github = "komari-monitor/komari"
+fetch.tarball = "https://github.com/komari-monitor/komari/archive/refs/tags/$ver.tar.gz"
 
 [komari-web]
 src.github = "komari-monitor/komari-web"
