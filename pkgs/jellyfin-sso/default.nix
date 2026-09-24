@@ -57,6 +57,7 @@
       license = lib.licenses.gpl3Only;
       platforms = lib.platforms.linux;
       sourceProvenance = [ lib.sourceTypes.fromSource ];
+      problems.broken.message = "Upstream depends on F-Sharp, which cannot be handled correctly now.";
     };
   };
 }

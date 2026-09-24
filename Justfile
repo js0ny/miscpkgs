@@ -2,6 +2,11 @@ update:
     nix flake update
     nvfetcher
 
+update-jellyfin-ldapauth:
+    nix-update --flake jellyfin-plugin-ldapauth-bin
+    nix-update --flake jellyfin-plugin-ldapauth-src
+    bash pkgs/jellyfin-plugin-ldapauth/update-abi.sh
+
 check:
     NIXPKGS_ALLOW_UNFREE=1 nix flake check --impure
 
