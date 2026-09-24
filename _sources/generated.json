@@ -392,6 +392,27 @@
         },
         "version": "0cd6451c4558919ffeceec51f11b7fa8b912318e"
     },
+    "mdformat-obsidian": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "mdformat-obsidian",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "KyleKing",
+            "repo": "mdformat-obsidian",
+            "rev": "v0.3.2",
+            "sha256": "sha256-itt2Ukxd4eU5OCHdym6Uf8YyBzEhyEWnNTszqWYmnFw=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.3.2"
+    },
     "mpv-bilibili-sponsorblock": {
         "cargoLock": null,
         "date": null,

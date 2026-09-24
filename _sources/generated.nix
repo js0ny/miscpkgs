@@ -236,6 +236,17 @@
     };
     date = "2026-07-07";
   };
+  mdformat-obsidian = {
+    pname = "mdformat-obsidian";
+    version = "v0.3.2";
+    src = fetchFromGitHub {
+      owner = "KyleKing";
+      repo = "mdformat-obsidian";
+      rev = "v0.3.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-itt2Ukxd4eU5OCHdym6Uf8YyBzEhyEWnNTszqWYmnFw=";
+    };
+  };
   mpv-bilibili-sponsorblock = {
     pname = "mpv-bilibili-sponsorblock";
     version = "v0.1.1";

@@ -16,6 +16,10 @@ fetch.tarball = "https://codeberg.org/Lyall/ClairObscurFix/releases/download/$ve
 src.github = "nilaoda/BBDown"
 fetch.github = "nilaoda/BBDown"
 
+[mdformat-obsidian]
+src.github_tag = "KyleKing/mdformat-obsidian"
+fetch.github = "KyleKing/mdformat-obsidian"
+
 [firefox-csshacks]
 src.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"
 fetch.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"
