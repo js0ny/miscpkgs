@@ -10,4 +10,5 @@ lib.recurseIntoAttrs {
   typst-infect-nvim = pkgs.callPackage ./typst-infect-nvim.nix {
     inherit sources;
   };
+  code-runner-nvim = pkgs.callPackage ./code-runer-nvim.nix { };
 }

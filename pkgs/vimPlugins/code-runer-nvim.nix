@@ -2,7 +2,6 @@
   lib,
   vimUtils,
   fetchgit,
-  ...
 }:
 vimUtils.buildVimPlugin rec {
   pname = "code-runner-nvim";
