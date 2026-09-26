@@ -191,13 +191,13 @@
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.5.0-fix1";
+    version = "1.5.1";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.5.0-fix1";
+      rev = "1.5.1";
       fetchSubmodules = false;
-      sha256 = "sha256-ySHbv3AOgCJvAIqzZ12dsOjOCmOzYI6rBFYNoR5Wnjw=";
+      sha256 = "sha256-ZJn+Grwfg2p813QQ87w39xk4lEbQsT/SbCal8lIcd3o=";
     };
   };
   limes = {
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-aZ0EWhvpJqOf0M2j9w4VMyRUElnbOQ1wtb8BF3QuRFE=";
+      sha256 = "sha256-cbwu9bsNavUZ7eYsp+hcbO+ptpFqGgk5C2kk45/dUFk=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -385,7 +385,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-SMn/55z2S5Kqlaws75cF2ics0QS01k1VcvzkkP2bWN8=";
+      sha256 = "sha256-EqsWIu6MJarLYmx/fhPRL3hm2Q79P3Yd7Psc48QBkh4=";
     };
   };
   rime-teochew = {
@@ -404,18 +404,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v18.0.9";
+    version = "v18.0.12";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.9/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-HQUUfxh0kOnXEGNLUjz/G7aJb5Z2I+VO7Nb5qDNxjCc=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.12/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-tUzTHiF9Coo3Dj+SGdWEucYHJh+zRjUl0fvRR0ooBnA=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v18.0.9";
+    version = "v18.0.12";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.9/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-9K01Pi9JnfSJBykRJfCzZyLY0gNCfF5ecv4yLqzWJAI=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.12/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-jl1YhBpXA52d2ETp4s6Fpb42ez3mwj+HBdVG7mthrJ4=";
     };
   };
   sing-box-dashboard = {
@@ -498,24 +498,24 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.39.1";
+    version = "v1.41.1";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.39.1";
+      rev = "v1.41.1";
       fetchSubmodules = false;
-      sha256 = "sha256-N0iIFZkAgNU9XMVeHpuHNB3PtmMFl5nLUE86NvNSKAs=";
+      sha256 = "sha256-KSnwQtgpCI1wk8dkfv1JMzS4wg1ecuFtVmG7ysIR+xY=";
     };
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.4.0";
+    version = "v0.4.3";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.4.0";
+      rev = "v0.4.3";
       fetchSubmodules = false;
-      sha256 = "sha256-FzPnol4+qyilYjz/iQA+f1IXoHfFTnTjjqEe5/esUFU=";
+      sha256 = "sha256-nGTfRAUu9aPUPz/UfnMf8QJnO689/Xstl17yvWiKk1U=";
     };
   };
   waywallen-display = {
@@ -531,9 +531,9 @@
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.4.0";
+    version = "v0.4.3";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.0/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.3/ui/assets/main_page.webp";
       sha256 = "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=";
     };
   };
