@@ -404,18 +404,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v18.0.12";
+    version = "v18.0.14";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.12/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-tUzTHiF9Coo3Dj+SGdWEucYHJh+zRjUl0fvRR0ooBnA=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.14/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-aMtwq2X40U49zE2pTY7WwczyrapGkgz6JFwpspCXofE=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v18.0.12";
+    version = "v18.0.14";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.12/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-jl1YhBpXA52d2ETp4s6Fpb42ez3mwj+HBdVG7mthrJ4=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.14/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-futmktpFq+ZxAsasgI6YN1rT+tfFD13qKmdBy0+/o7c=";
     };
   };
   sing-box-dashboard = {
