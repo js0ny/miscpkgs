@@ -7,9 +7,15 @@
   dotnetCorePackages,
   ...
 }:
+let
+  pname = "jellyfin-plugin-sso";
+  passthru = {
+    pluginName = "SSO-Auth";
+  };
+in
 {
   jellyfin-plugin-sso-bin = stdenvNoCC.mkDerivation rec {
-    pname = "jellyfin-plugin-sso";
+    inherit pname passthru;
     version = "5.0.0.2";
 
     src = fetchzip {
@@ -35,7 +41,7 @@
     };
   };
   jellyfin-plugin-sso-src = buildDotnetModule rec {
-    pname = "jellyfin-plugin-sso";
+    inherit pname passthru;
     version = "5.0.0.2";
 
     src = fetchFromGitHub {
