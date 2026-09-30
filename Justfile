@@ -10,6 +10,9 @@ update-jellyfin-ldapauth:
 update-code-runner-nvim:
     nix-update --flake code-runner-nvim --version branch
 
+update-m365:
+    nix shell --inputs-from path:. nixpkgs#python3 --command python3 pkgs/m365/update.py
+
 check:
     NIXPKGS_ALLOW_UNFREE=1 nix flake check --impure
 
