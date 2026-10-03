@@ -78,10 +78,10 @@
   };
   dwproton = {
     pname = "dwproton";
-    version = "dwproton-11.0-13";
+    version = "dwproton-11.0-14";
     src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-13/dwproton-11.0-13-x86_64.tar.xz";
-      sha256 = "sha256-INbvpKk01gMyt72Z2jlJvov5k4LZztpFuiYgVkGBc1I=";
+      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-14/dwproton-11.0-14-x86_64.tar.xz";
+      sha256 = "sha256-dXtOdfqIU0wWQ0OXDRbHuFTifGJ7ti+Ij4g+a/RV71Q=";
     };
   };
   emacs-kitty-graphics = {
@@ -122,17 +122,17 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "d722ef4d4ef257cb1495726395deeb834f2dfefd";
+    version = "565b0008134423e1059258b628acbf7119f5ea33";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "d722ef4d4ef257cb1495726395deeb834f2dfefd";
+      rev = "565b0008134423e1059258b628acbf7119f5ea33";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-FPqmMcv2biBu7RK2WlPi5N1pG0AZbMExM7cMskRCNiI=";
+      sha256 = "sha256-qujQcAfZFbfkOe/vIOUuDuLEkImWCgV5z5raSqydGEg=";
     };
-    date = "2026-09-21";
+    date = "2026-10-01";
   };
   flyline = {
     pname = "flyline";
@@ -161,13 +161,13 @@
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
-    version = "v1.1.2";
+    version = "v1.1.3";
     src = fetchFromGitHub {
       owner = "erichll";
       repo = "go-fast-note-sync";
-      rev = "v1.1.2";
+      rev = "v1.1.3";
       fetchSubmodules = false;
-      sha256 = "sha256-N9BsB0sfyZnPssgdgY9TxFKXEGEVrXbZSXYFetMstBU=";
+      sha256 = "sha256-Mrf+Tr5nlhNcDwnqRFyYVfGSKp7+QvZNs0fBoheg8sg=";
     };
   };
   komari = {
@@ -258,13 +258,13 @@
   };
   noname = {
     pname = "noname";
-    version = "v1.11.5.2";
+    version = "v1.11.6";
     src = fetchFromGitHub {
       owner = "libnoname";
       repo = "noname";
-      rev = "v1.11.5.2";
+      rev = "v1.11.6";
       fetchSubmodules = false;
-      sha256 = "sha256-A1sYo/WkGI7ZhOsBDy9FANPe176Gar1nABHAZiygPjU=";
+      sha256 = "sha256-Zv+PUyVGfecsa2PdEkPzmSIR1dFHYIQeu+Mha5sSqrI=";
     };
   };
   oroot = {
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-cbwu9bsNavUZ7eYsp+hcbO+ptpFqGgk5C2kk45/dUFk=";
+      sha256 = "sha256-hzy7s1n89N+LIAGDaD3ci+ezIerEyGT40sf8MTbUJ58=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -385,7 +385,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-EqsWIu6MJarLYmx/fhPRL3hm2Q79P3Yd7Psc48QBkh4=";
+      sha256 = "sha256-U7Z4zhfx2Ax13VGXa2l6XR/CzWoTZwZSBpsie0AVfJg=";
     };
   };
   rime-teochew = {
@@ -404,33 +404,33 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v18.0.14";
+    version = "v18.0.15";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.14/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-aMtwq2X40U49zE2pTY7WwczyrapGkgz6JFwpspCXofE=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.15/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-pih/7r8xJ1wVpm+00b7+d5rYNZU9UCxdRij9k7UFLf0=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v18.0.14";
+    version = "v18.0.15";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.14/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-futmktpFq+ZxAsasgI6YN1rT+tfFD13qKmdBy0+/o7c=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.0.15/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-mjX563CJ5FgavY64aiRi+LWoLUq5X79ZmO9Kvoytzxg=";
     };
   };
   sing-box-dashboard = {
     pname = "sing-box-dashboard";
-    version = "1f56683b9adf952b47957f5bb758d9ca7837cef0";
+    version = "edca5a83ccd91f474d7942b990b360e12292b4a8";
     src = fetchgit {
       url = "https://github.com/SagerNet/sing-box-dashboard.git";
-      rev = "1f56683b9adf952b47957f5bb758d9ca7837cef0";
+      rev = "edca5a83ccd91f474d7942b990b360e12292b4a8";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-zYp7AQZB5GxTHa7PB+HrfUIu85lrsPwMx7LicruvAZk=";
+      sha256 = "sha256-sSq6Ai4JR4fxIrLTsQJz5jg/S8XbgQtvcOM5xlxEmfA=";
     };
-    date = "2026-09-18";
+    date = "2026-10-02";
   };
   sioyek-python-extensions = {
     pname = "sioyek-python-extensions";
@@ -498,13 +498,13 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.41.1";
+    version = "v1.42.0";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.41.1";
+      rev = "v1.42.0";
       fetchSubmodules = false;
-      sha256 = "sha256-KSnwQtgpCI1wk8dkfv1JMzS4wg1ecuFtVmG7ysIR+xY=";
+      sha256 = "sha256-WRS/e/enQZPZ5HcW0mDaHHuNWHt+MuHudaBBd6rT9UU=";
     };
   };
   waywallen = {
@@ -550,13 +550,13 @@
   };
   xdd = {
     pname = "xdd";
-    version = "0.1.0";
+    version = "0.3.0";
     src = fetchFromGitHub {
       owner = "js0ny";
       repo = "xdd";
-      rev = "0.1.0";
+      rev = "0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-zC0h+pQysN93fRRTUCQCNvcZ3laci47S5DkhdHG6ehg=";
+      sha256 = "sha256-n58873gGhJ8p9GxEkeT7yRRc86CkiD9xBSlRluiKf54=";
     };
   };
 }
