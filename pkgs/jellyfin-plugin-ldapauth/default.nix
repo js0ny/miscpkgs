@@ -11,6 +11,10 @@
 }:
 let
   jellyfinAbiVersion = builtins.fromJSON (builtins.readFile ./target-abi.json);
+  passthru = {
+    inherit jellyfinAbiVersion;
+    pluginName = "LDAP-Auth";
+  };
 in
 {
   jellyfin-plugin-ldapauth-bin = stdenvNoCC.mkDerivation rec {
@@ -35,7 +39,7 @@ in
       runHook postInstall
     '';
 
-    passthru.jellyfinAbiVersion = jellyfinAbiVersion;
+    inherit passthru;
 
     meta = {
       homepage = "https://github.com/jellyfin/jellyfin-plugin-ldapauth";
@@ -83,6 +87,6 @@ in
       rm -r "$out/lib"
     '';
 
-    passthru.jellyfinAbiVersion = jellyfinAbiVersion;
+    inherit passthru;
   };
 }
