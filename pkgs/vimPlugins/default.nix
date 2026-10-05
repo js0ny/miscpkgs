@@ -11,4 +11,5 @@ lib.recurseIntoAttrs {
     inherit sources;
   };
   code-runner-nvim = pkgs.callPackage ./code-runer-nvim.nix { };
+  overleaf-nvim = pkgs.callPackage ./overleaf-nvim { };
 }

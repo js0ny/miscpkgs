@@ -13,6 +13,9 @@ update-code-runner-nvim:
 update-m365:
     nix shell --inputs-from path:. nixpkgs#python3 --command python3 pkgs/m365/update.py
 
+update-overleaf-nvim:
+    nix shell --inputs-from path:. nixpkgs#python3 --command python3 pkgs/vimPlugins/overleaf-nvim/update.py
+
 check:
     NIXPKGS_ALLOW_UNFREE=1 nix flake check --impure
 
