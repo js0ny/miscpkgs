@@ -55,15 +55,15 @@ let
     startupWMClass = "tty7";
   };
 in
-rec {
-  tty7-src = rustPlatform.buildRustPackage rec {
+let
+  tty7-src = rustPlatform.buildRustPackage (finalAttrs: {
     pname = "tty7";
     version = "26.9.3";
 
     src = fetchFromGitHub {
       owner = "l0ng-ai";
       repo = "tty7";
-      rev = "v${version}";
+      rev = "v${finalAttrs.version}";
       hash = "sha256-DN+MvhpGYCk1pl0uMx31Fe/+jaqy2mII8mttH+QbbIw=";
     };
 
@@ -111,14 +111,14 @@ rec {
       platforms = lib.platforms.linux;
       sourceProvenance = [ lib.sourceTypes.fromSource ];
     };
-  };
+  });
 
-  tty7-bin = stdenvNoCC.mkDerivation rec {
+  tty7-bin = stdenvNoCC.mkDerivation (finalAttrs: {
     pname = "tty7";
     version = "26.9.3";
 
     src = fetchzip {
-      url = "https://github.com/l0ng-ai/tty7/releases/download/v${version}/tty7-${version}-linux-x86_64.tar.gz";
+      url = "https://github.com/l0ng-ai/tty7/releases/download/v${finalAttrs.version}/tty7-${finalAttrs.version}-linux-x86_64.tar.gz";
       hash = "sha256-SDfBc4ap6M9F9FPcRAqiCxIpQPXstTrI5gnFewkFSIA=";
     };
 
@@ -157,5 +157,8 @@ rec {
       platforms = [ "x86_64-linux" ];
       sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     };
-  };
+  });
+in
+{
+  inherit tty7-src tty7-bin;
 }

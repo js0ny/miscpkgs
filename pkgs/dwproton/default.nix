@@ -33,19 +33,25 @@ let
       };
     };
 in
-rec {
-
+let
   dwproton = makeDWProton {
     inherit (p) pname src;
     version = lib.removePrefix "dwproton-" p.version;
   };
-  dwproton-11 = makeDWProton rec {
-    pname = "dwproton";
-    version = "11.0-4";
-    src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-${version}/dwproton-${version}-x86_64.tar.xz";
-      sha256 = "sha256-t5dLTIN+KSCQIG8spzN6soOhfCnnc+OgBoQWBdtJQFM=";
+  dwproton-11 =
+    let
+      version = "11.0-4";
+    in
+    makeDWProton {
+      pname = "dwproton";
+      inherit version;
+      src = fetchTarball {
+        url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-${version}/dwproton-${version}-x86_64.tar.xz";
+        sha256 = "sha256-t5dLTIN+KSCQIG8spzN6soOhfCnnc+OgBoQWBdtJQFM=";
+      };
     };
-  };
+in
+{
+  inherit dwproton dwproton-11;
   dwproton-pin = dwproton-11;
 }

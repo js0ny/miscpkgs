@@ -7,7 +7,7 @@ let
   p = sources.fast-note-sync-service;
   repo = "github.com/haierkeys/fast-note-sync-service";
 in
-buildGoModule rec {
+buildGoModule (finalAttrs: {
   inherit (p) pname version src;
   env.CGO_ENABLED = 0;
   subPackages = [ "." ];
@@ -20,8 +20,8 @@ buildGoModule rec {
   ldflags = [
     "-s"
     "-w"
-    "-X ${repo}/internal/app.Version=${version}"
-    "-X ${repo}/internal/app.GitTag=v${version}"
+    "-X ${repo}/internal/app.Version=${finalAttrs.version}"
+    "-X ${repo}/internal/app.GitTag=v${finalAttrs.version}"
     "-X ${repo}/internal/app.BuildTime=1970-01-01T00:00:00Z"
   ];
   meta = {
@@ -31,4 +31,4 @@ buildGoModule rec {
     license = lib.licenses.asl20;
     sourceProvenance = [ lib.sourceProvenance.fromSource ];
   };
-}
+})

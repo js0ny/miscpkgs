@@ -3,9 +3,12 @@
   vimUtils,
   fetchgit,
 }:
-vimUtils.buildVimPlugin rec {
-  pname = "code-runner-nvim";
+let
   date = "2026-08-20";
+in
+vimUtils.buildVimPlugin {
+  pname = "code-runner-nvim";
+  inherit date;
   version = "0-unstable-${date}";
   src = fetchgit {
     url = "https://github.com/CRAG666/code_runner.nvim.git";

@@ -17,11 +17,11 @@ let
   };
 in
 {
-  jellyfin-plugin-ldapauth-bin = stdenvNoCC.mkDerivation rec {
+  jellyfin-plugin-ldapauth-bin = stdenvNoCC.mkDerivation (finalAttrs: {
     pname = "jellyfin-plugin-ldapauth";
     version = "24";
     src = fetchzip {
-      url = "https://github.com/jellyfin/${pname}/releases/download/v${version}/ldap-authentication_${version}.0.0.0.zip";
+      url = "https://github.com/jellyfin/${finalAttrs.pname}/releases/download/v${finalAttrs.version}/ldap-authentication_${finalAttrs.version}.0.0.0.zip";
       stripRoot = false;
       hash = "sha256-yiyoLahv+tzNWB4JVPoC4fxl+gj8IoYVXv0bi2FGlmM=";
     };
@@ -33,7 +33,7 @@ in
 
       mkdir -p $out
       cp -R . $out/
-      jq -e --arg abi "${jellyfinAbiVersion}" --arg version "${version}.0.0.0" \
+      jq -e --arg abi "${jellyfinAbiVersion}" --arg version "${finalAttrs.version}.0.0.0" \
         '.targetAbi == $abi and .version == $version' "$out/meta.json" > /dev/null
 
       runHook postInstall
@@ -47,14 +47,14 @@ in
       platforms = lib.platforms.linux;
       sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     };
-  };
-  jellyfin-plugin-ldapauth-src = buildDotnetModule rec {
+  });
+  jellyfin-plugin-ldapauth-src = buildDotnetModule (finalAttrs: {
     pname = "jellyfin-plugin-ldapauth";
     version = "24";
     src = fetchFromGitHub {
       owner = "jellyfin";
       repo = "jellyfin-plugin-ldapauth";
-      rev = "v${version}";
+      rev = "v${finalAttrs.version}";
       hash = "sha256-g1zajkpRxTI/ZaYawDHTwUBwIx3sD71gnQ88iLgCU3I=";
     };
 
@@ -73,20 +73,20 @@ in
         echo 'targetAbi changed; run pkgs/jellyfin-plugin-ldapauth/update-abi.sh' >&2
         exit 1
       fi
-      test "$(yq -r '.version' build.yaml)" = "${version}"
+      test "$(yq -r '.version' build.yaml)" = "${finalAttrs.version}"
 
       yq -o=json '.' build.yaml | jq \
-        --arg version "${version}.0.0.0" \
+        --arg version "${finalAttrs.version}.0.0.0" \
         --arg timestamp "1970-01-01T00:00:00Z" \
         '{category, changelog, description, guid, imageUrl, name, overview, owner, targetAbi, version: $version, timestamp: $timestamp}' \
         > "$out/meta.json"
 
       yq -r '.artifacts[]' build.yaml | while IFS= read -r artifact; do
-        cp "$out/lib/${pname}/$artifact" "$out/$artifact"
+        cp "$out/lib/${finalAttrs.pname}/$artifact" "$out/$artifact"
       done
       rm -r "$out/lib"
     '';
 
     inherit passthru;
-  };
+  });
 }

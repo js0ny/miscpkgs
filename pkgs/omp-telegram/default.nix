@@ -5,14 +5,14 @@
   ...
 }:
 
-buildGoModule rec {
+buildGoModule (finalAttrs: {
   pname = "omp-telegram";
   version = "0.8.1";
 
   src = fetchFromGitHub {
     owner = "fcying";
     repo = "omp-telegram";
-    rev = "v${version}";
+    rev = "v${finalAttrs.version}";
     hash = "sha256-+VbahFs6ndRheGyfA6E6+X+GNeIV9LE5xDXpfui8yRk=";
   };
 
@@ -31,4 +31,4 @@ buildGoModule rec {
     mainProgram = "omp-telegram";
     platforms = lib.platforms.linux;
   };
-}
+})

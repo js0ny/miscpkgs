@@ -7,12 +7,12 @@
   stdenv,
   ...
 }:
-stdenvNoCC.mkDerivation rec {
+stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "snell-server";
   version = "5.0.1";
 
   src = fetchzip {
-    url = "https://dl.nssurge.com/snell/snell-server-v${version}-linux-amd64.zip";
+    url = "https://dl.nssurge.com/snell/snell-server-v${finalAttrs.version}-linux-amd64.zip";
     hash = "sha256-J2kRVJRC0GhxLMarg7Ucdk8uvzTsKbFHePEflPjwsHU=";
   };
 
@@ -29,8 +29,8 @@ stdenvNoCC.mkDerivation rec {
     mkdir -p $out/bin
 
     upx -d snell-server
-    cp snell-server $out/bin/${pname}
-    chmod +x $out/bin/${pname}
+    cp snell-server $out/bin/${finalAttrs.pname}
+    chmod +x $out/bin/${finalAttrs.pname}
   '';
   meta = {
     description = "An encrypted proxy service program";
@@ -40,4 +40,4 @@ stdenvNoCC.mkDerivation rec {
     platforms = lib.platforms.linux;
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
   };
-}
+})

@@ -12,7 +12,7 @@ let
   p = sources.mpv-bilibili-sponsorblock;
 in
 
-rustPlatform.buildRustPackage rec {
+rustPlatform.buildRustPackage (finalAttrs: {
   inherit (p) src;
   pname = "bilibili-sponsorblock";
   version = lib.removePrefix "v" p.version;
@@ -28,15 +28,15 @@ rustPlatform.buildRustPackage rec {
 
   doCheck = false;
 
-  passthru.scriptName = "${pname}/bilibili_sponsorblock.so";
+  passthru.scriptName = "${finalAttrs.pname}/bilibili_sponsorblock.so";
 
   installPhase = ''
     runHook preInstall
 
     install -Dm755 target/${stdenv.hostPlatform.rust.cargoShortTarget}/release/libmpv_bilibili_sponsorblock.so \
-      $out/share/mpv/scripts/${pname}/bilibili_sponsorblock.so
+      $out/share/mpv/scripts/${finalAttrs.pname}/bilibili_sponsorblock.so
     install -Dm644 bilibili-sponsorblock.toml \
-      $out/share/mpv/scripts/${pname}/bilibili-sponsorblock.toml
+      $out/share/mpv/scripts/${finalAttrs.pname}/bilibili_sponsorblock.toml
 
     runHook postInstall
   '';
@@ -48,4 +48,4 @@ rustPlatform.buildRustPackage rec {
     platforms = lib.platforms.linux;
     sourceProvenance = [ lib.sourceProvenance.fromSource ];
   };
-}
+})

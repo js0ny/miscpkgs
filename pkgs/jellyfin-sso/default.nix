@@ -14,12 +14,12 @@ let
   };
 in
 {
-  jellyfin-plugin-sso-bin = stdenvNoCC.mkDerivation rec {
+  jellyfin-plugin-sso-bin = stdenvNoCC.mkDerivation (finalAttrs: {
     inherit pname passthru;
     version = "5.0.0.2";
 
     src = fetchzip {
-      url = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v${version}/sso-auth_${version}.zip";
+      url = "https://github.com/Buco7854/jellyfin-plugin-sso/releases/download/v${finalAttrs.version}/sso-auth_${finalAttrs.version}.zip";
       stripRoot = false;
       hash = "sha256-p6vdHnzPocdVVRJzmM0cNzG1meyRfS0Z3pWUBghd4xE=";
     };
@@ -39,15 +39,15 @@ in
       platforms = lib.platforms.linux;
       sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     };
-  };
-  jellyfin-plugin-sso-src = buildDotnetModule rec {
+  });
+  jellyfin-plugin-sso-src = buildDotnetModule (finalAttrs: {
     inherit pname passthru;
     version = "5.0.0.2";
 
     src = fetchFromGitHub {
       owner = "Buco7854";
       repo = "jellyfin-plugin-sso";
-      rev = "v${version}";
+      rev = "v${finalAttrs.version}";
       hash = "sha256-08AtHYAO+/L3ahHbjCQX5jZR2Eefgb1URO+njTkDv0c=";
     };
 
@@ -65,5 +65,5 @@ in
       sourceProvenance = [ lib.sourceTypes.fromSource ];
       problems.broken.message = "Upstream depends on F-Sharp, which cannot be handled correctly now.";
     };
-  };
+  });
 }

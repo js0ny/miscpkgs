@@ -6,13 +6,14 @@
   lib,
   ...
 }:
-buildGoModule rec {
+
+buildGoModule (finalAttrs: {
   pname = "mcp-grafana";
   version = "2.0.0";
   src = fetchFromGitHub {
     owner = "grafana";
     repo = "mcp-grafana";
-    rev = "v${version}";
+    rev = "v${finalAttrs.version}";
     hash = "sha256-0gM78hSMLXucTbuBoSukPXSkujUpKwlyhq17/aM28Jg=";
   };
 
@@ -22,7 +23,7 @@ buildGoModule rec {
   ldflags = [
     "-s"
     "-w"
-    "-X github.com/grafana/mcp-grafana/v2.version=2.0.0"
+    "-X github.com/grafana/mcp-grafana/v2.version=${finalAttrs.version}"
   ];
 
   nativeBuildInputs = [ makeWrapper ];
@@ -38,4 +39,4 @@ buildGoModule rec {
     mainProgram = "mcp-grafana";
     platforms = with lib.platforms; linux ++ darwin;
   };
-}
+})

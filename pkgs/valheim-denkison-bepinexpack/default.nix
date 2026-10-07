@@ -4,11 +4,11 @@
   lib,
   ...
 }:
-stdenvNoCC.mkDerivation rec {
+stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "valheim-denkison-bepinexpack";
   version = "5.4.2351";
   src = fetchzip {
-    url = "https://ccdn.thunderstore.io/live/repository/packages/denikson-BepInExPack_Valheim-${version}.zip";
+    url = "https://ccdn.thunderstore.io/live/repository/packages/denikson-BepInExPack_Valheim-${finalAttrs.version}.zip";
     hash = "sha256-FsUroDyXQ7q1ZSWga9yIwyu71Q+2eBii6aP8Zl7Xt5Q=";
   };
 
@@ -32,4 +32,4 @@ stdenvNoCC.mkDerivation rec {
     platforms = [ "x86_64-linux" ];
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
   };
-}
+})

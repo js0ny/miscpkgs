@@ -5,7 +5,7 @@
   fetchFromGitHub,
   ...
 }:
-rustPlatform.buildRustPackage rec {
+rustPlatform.buildRustPackage (finalAttrs: {
   pname = "tylax";
   version = "0.3.8";
 
@@ -33,4 +33,4 @@ rustPlatform.buildRustPackage rec {
     ];
     sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
-}
+})

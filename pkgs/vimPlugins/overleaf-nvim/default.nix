@@ -6,16 +6,18 @@
   nodejs,
   npmHooks,
 }:
-vimUtils.buildVimPlugin rec {
-  pname = "overleaf-nvim";
-  version = "0-unstable-2026-03-17";
-
+let
   src = fetchFromGitHub {
     owner = "richwomanbtc";
     repo = "overleaf.nvim";
     rev = "dc470e34f2686bfbe6c9cea283dac10eaa11af7d";
     hash = "sha256-EiE6SiS5RxCONdFxzbE4HSzPCg8aCsCAWYRG9NMwMLc=";
   };
+in
+vimUtils.buildVimPlugin {
+  pname = "overleaf-nvim";
+  version = "0-unstable-2026-03-17";
+  inherit src;
 
   npmDeps = fetchNpmDeps {
     inherit src;
