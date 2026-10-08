@@ -97,17 +97,17 @@
   };
   emacs-typst-overlay = {
     pname = "emacs-typst-overlay";
-    version = "5a6428c20ce38fcfa4918ed72a45c337655a422b";
+    version = "41c24e8a6f10949e7d24932dfc50f4842516894c";
     src = fetchgit {
       url = "https://github.com/hesampakdaman/typst-overlay.git";
-      rev = "5a6428c20ce38fcfa4918ed72a45c337655a422b";
+      rev = "41c24e8a6f10949e7d24932dfc50f4842516894c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ihOQm460VccKBMjhp0RxaDnFivqtlXL4WLDqAqWly2M=";
+      sha256 = "sha256-FJ3cYDogk25HtxNadfkSG1Hds+wiDdpXnxxCBkQyncg=";
     };
-    date = "2026-10-03";
+    date = "2026-10-07";
   };
   fast-note-sync-service = {
     pname = "fast-note-sync-service";
@@ -283,26 +283,26 @@
   };
   proton-drive-cli-darwin-arm64 = {
     pname = "proton-drive-cli-darwin-arm64";
-    version = "0.8.0";
+    version = "0.9.0";
     src = fetchurl {
-      url = "https://proton.me/download/drive/cli/0.8.0/darwin-arm64/proton-drive";
-      sha256 = "sha256-3I/BTenvB/zvKP4gQFG7ZynEnPV5FwyM4a1mmiZ2lxE=";
+      url = "https://proton.me/download/drive/cli/0.9.0/darwin-arm64/proton-drive";
+      sha256 = "sha256-/jKdnSpVdT9RXIo3BGdnzfD7tKV6iUYzph//n1Npbjg=";
     };
   };
   proton-drive-cli-linux-arm64 = {
     pname = "proton-drive-cli-linux-arm64";
-    version = "0.8.0";
+    version = "0.9.0";
     src = fetchurl {
-      url = "https://proton.me/download/drive/cli/0.8.0/linux-arm64/proton-drive";
-      sha256 = "sha256-CGvEdApzy460kA1Rg2v/DDMt2jkLPweA2fgF/VwqX+M=";
+      url = "https://proton.me/download/drive/cli/0.9.0/linux-arm64/proton-drive";
+      sha256 = "sha256-YwM+07x9Ji0HS/0OwSMwMRK7n4XSQUwk6MnwfmqyfTA=";
     };
   };
   proton-drive-cli-linux-x64 = {
     pname = "proton-drive-cli-linux-x64";
-    version = "0.8.0";
+    version = "0.9.0";
     src = fetchurl {
-      url = "https://proton.me/download/drive/cli/0.8.0/linux-x64/proton-drive";
-      sha256 = "sha256-lEPXcXGciSeQ2xfm8C7Nma18U1kzKfOmfHdnfc5XdzU=";
+      url = "https://proton.me/download/drive/cli/0.9.0/linux-x64/proton-drive";
+      sha256 = "sha256-T2b5hLY2EITUZWe49P1IUfQnHrn3fl0YHh7/PIozJQE=";
     };
   };
   ratune = {
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-4/lY0lV6LAJ1Q+h0yALczpAiubb+FnPZfAvR7zBZImQ=";
+      sha256 = "sha256-wzC8pzpBArCX/Wsjnm0QCXpBmVhk8TAE3sBujOyY8sw=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -385,7 +385,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-U7Z4zhfx2Ax13VGXa2l6XR/CzWoTZwZSBpsie0AVfJg=";
+      sha256 = "sha256-r2opyrpKK9I58JdwlXATd+6VRLGiGQfxon9wVAIrpyo=";
     };
   };
   rime-teochew = {
@@ -509,31 +509,31 @@
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.4.3";
+    version = "v0.4.4";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.4.3";
+      rev = "v0.4.4";
       fetchSubmodules = false;
-      sha256 = "sha256-nGTfRAUu9aPUPz/UfnMf8QJnO689/Xstl17yvWiKk1U=";
+      sha256 = "sha256-/ML7KKSes00fT/2fpRcAu0TjTSuSD2lMmXcOmOu4vpI=";
     };
   };
   waywallen-display = {
     pname = "waywallen-display";
-    version = "v0.4.0";
+    version = "v0.4.1";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen-display";
-      rev = "v0.4.0";
+      rev = "v0.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-qFCKUQSfx+bjbbfkj/REIf4w4U09sPCcilHI0lE6YqQ=";
+      sha256 = "sha256-Kf42AUH1rl5X60/BPswcTISewCJRqsSr/eW6lHSt8I0=";
     };
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.4.3";
+    version = "v0.4.4";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.3/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.4/ui/assets/main_page.webp";
       sha256 = "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=";
     };
   };

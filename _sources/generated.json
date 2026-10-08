@@ -153,7 +153,7 @@
     },
     "emacs-typst-overlay": {
         "cargoLock": null,
-        "date": "2026-10-03",
+        "date": "2026-10-07",
         "extract": null,
         "name": "emacs-typst-overlay",
         "passthru": null,
@@ -163,13 +163,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "5a6428c20ce38fcfa4918ed72a45c337655a422b",
-            "sha256": "sha256-ihOQm460VccKBMjhp0RxaDnFivqtlXL4WLDqAqWly2M=",
+            "rev": "41c24e8a6f10949e7d24932dfc50f4842516894c",
+            "sha256": "sha256-FJ3cYDogk25HtxNadfkSG1Hds+wiDdpXnxxCBkQyncg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/hesampakdaman/typst-overlay.git"
         },
-        "version": "5a6428c20ce38fcfa4918ed72a45c337655a422b"
+        "version": "41c24e8a6f10949e7d24932dfc50f4842516894c"
     },
     "fast-note-sync-service": {
         "cargoLock": null,
@@ -478,11 +478,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3I/BTenvB/zvKP4gQFG7ZynEnPV5FwyM4a1mmiZ2lxE=",
+            "sha256": "sha256-/jKdnSpVdT9RXIo3BGdnzfD7tKV6iUYzph//n1Npbjg=",
             "type": "url",
-            "url": "https://proton.me/download/drive/cli/0.8.0/darwin-arm64/proton-drive"
+            "url": "https://proton.me/download/drive/cli/0.9.0/darwin-arm64/proton-drive"
         },
-        "version": "0.8.0"
+        "version": "0.9.0"
     },
     "proton-drive-cli-linux-arm64": {
         "cargoLock": null,
@@ -493,11 +493,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CGvEdApzy460kA1Rg2v/DDMt2jkLPweA2fgF/VwqX+M=",
+            "sha256": "sha256-YwM+07x9Ji0HS/0OwSMwMRK7n4XSQUwk6MnwfmqyfTA=",
             "type": "url",
-            "url": "https://proton.me/download/drive/cli/0.8.0/linux-arm64/proton-drive"
+            "url": "https://proton.me/download/drive/cli/0.9.0/linux-arm64/proton-drive"
         },
-        "version": "0.8.0"
+        "version": "0.9.0"
     },
     "proton-drive-cli-linux-x64": {
         "cargoLock": null,
@@ -508,11 +508,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-lEPXcXGciSeQ2xfm8C7Nma18U1kzKfOmfHdnfc5XdzU=",
+            "sha256": "sha256-T2b5hLY2EITUZWe49P1IUfQnHrn3fl0YHh7/PIozJQE=",
             "type": "url",
-            "url": "https://proton.me/download/drive/cli/0.8.0/linux-x64/proton-drive"
+            "url": "https://proton.me/download/drive/cli/0.9.0/linux-x64/proton-drive"
         },
-        "version": "0.8.0"
+        "version": "0.9.0"
     },
     "ratune": {
         "cargoLock": null,
@@ -624,7 +624,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4/lY0lV6LAJ1Q+h0yALczpAiubb+FnPZfAvR7zBZImQ=",
+            "sha256": "sha256-wzC8pzpBArCX/Wsjnm0QCXpBmVhk8TAE3sBujOyY8sw=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
         },
@@ -639,7 +639,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-U7Z4zhfx2Ax13VGXa2l6XR/CzWoTZwZSBpsie0AVfJg=",
+            "sha256": "sha256-r2opyrpKK9I58JdwlXATd+6VRLGiGQfxon9wVAIrpyo=",
             "type": "url",
             "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
         },
@@ -852,12 +852,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen",
-            "rev": "v0.4.3",
-            "sha256": "sha256-nGTfRAUu9aPUPz/UfnMf8QJnO689/Xstl17yvWiKk1U=",
+            "rev": "v0.4.4",
+            "sha256": "sha256-/ML7KKSes00fT/2fpRcAu0TjTSuSD2lMmXcOmOu4vpI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.4.3"
+        "version": "v0.4.4"
     },
     "waywallen-display": {
         "cargoLock": null,
@@ -873,12 +873,12 @@
             "name": null,
             "owner": "waywallen",
             "repo": "waywallen-display",
-            "rev": "v0.4.0",
-            "sha256": "sha256-qFCKUQSfx+bjbbfkj/REIf4w4U09sPCcilHI0lE6YqQ=",
+            "rev": "v0.4.1",
+            "sha256": "sha256-Kf42AUH1rl5X60/BPswcTISewCJRqsSr/eW6lHSt8I0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.4.0"
+        "version": "v0.4.1"
     },
     "waywallen-main-page-webp": {
         "cargoLock": null,
@@ -891,9 +891,9 @@
             "name": null,
             "sha256": "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=",
             "type": "url",
-            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.3/ui/assets/main_page.webp"
+            "url": "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.4/ui/assets/main_page.webp"
         },
-        "version": "v0.4.3"
+        "version": "v0.4.4"
     },
     "wdotool": {
         "cargoLock": null,
