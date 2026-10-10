@@ -64,11 +64,12 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "无名杀 noname (libnoname/noname)";
     homepage = "https://github.com/libnoname/noname";
-    license = licenses.gpl3Only;
-    platforms = platforms.linux ++ platforms.darwin;
-    sourceProvenance = [ sourceTypes.fromSource ];
+    license = lib.licenses.gpl3Only;
+    platforms = with lib.platforms; linux ++ darwin;
+    mainProgram = "noname-server";
+    sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 })
