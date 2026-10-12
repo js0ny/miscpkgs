@@ -97,17 +97,17 @@
   };
   emacs-typst-overlay = {
     pname = "emacs-typst-overlay";
-    version = "41c24e8a6f10949e7d24932dfc50f4842516894c";
+    version = "e235d74f112f752dd22dc44e61b76fc16404ff4a";
     src = fetchgit {
       url = "https://github.com/hesampakdaman/typst-overlay.git";
-      rev = "41c24e8a6f10949e7d24932dfc50f4842516894c";
+      rev = "e235d74f112f752dd22dc44e61b76fc16404ff4a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-FJ3cYDogk25HtxNadfkSG1Hds+wiDdpXnxxCBkQyncg=";
+      sha256 = "sha256-DIG/kkRN9nz3uVzX0/ln25QNWfmAOkH1noxc6lmHh3s=";
     };
-    date = "2026-10-07";
+    date = "2026-10-12";
   };
   fast-note-sync-service = {
     pname = "fast-note-sync-service";
@@ -122,17 +122,17 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "565b0008134423e1059258b628acbf7119f5ea33";
+    version = "152a3c07d9c88e5c85449294eddca0b97e05a63e";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "565b0008134423e1059258b628acbf7119f5ea33";
+      rev = "152a3c07d9c88e5c85449294eddca0b97e05a63e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-qujQcAfZFbfkOe/vIOUuDuLEkImWCgV5z5raSqydGEg=";
+      sha256 = "sha256-X4wIq0rnYnO8QDSH3cRT6mjSRTWyYO5deOirq10aSek=";
     };
-    date = "2026-10-01";
+    date = "2026-10-10";
   };
   flyline = {
     pname = "flyline";
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-wzC8pzpBArCX/Wsjnm0QCXpBmVhk8TAE3sBujOyY8sw=";
+      sha256 = "sha256-0m2j1v5We89KrYeQR1NWmX2LwIhrCHspLFBjwK3BK9A=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -404,33 +404,33 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v18.1.0";
+    version = "v18.1.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.0/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-4dE4Lnuj5QwARBoy+zRiswsc/UD+ILm76PprzJDbKt0=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.2/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-hVgnRQZ5CJASA4qXYx9PVr6wa6C5OSd9ufB5BCnbFLI=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v18.1.0";
+    version = "v18.1.2";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.0/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-HxG0FSTBHyHmgleeKfOdxdcv2xYKdQ9ovCgER3mWQOo=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.2/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-FcB5iPnLe/rFNYffN9qGrHDqpZfFWJLcmV10K7NGeX0=";
     };
   };
   sing-box-dashboard = {
     pname = "sing-box-dashboard";
-    version = "edca5a83ccd91f474d7942b990b360e12292b4a8";
+    version = "d77c2f016a7681aa1704e9f83c69139edb230c97";
     src = fetchgit {
       url = "https://github.com/SagerNet/sing-box-dashboard.git";
-      rev = "edca5a83ccd91f474d7942b990b360e12292b4a8";
+      rev = "d77c2f016a7681aa1704e9f83c69139edb230c97";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
       sha256 = "sha256-sSq6Ai4JR4fxIrLTsQJz5jg/S8XbgQtvcOM5xlxEmfA=";
     };
-    date = "2026-10-02";
+    date = "2026-10-11";
   };
   sioyek-python-extensions = {
     pname = "sioyek-python-extensions";
@@ -498,13 +498,13 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.42.0";
+    version = "v1.43.2";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.42.0";
+      rev = "v1.43.2";
       fetchSubmodules = false;
-      sha256 = "sha256-WRS/e/enQZPZ5HcW0mDaHHuNWHt+MuHudaBBd6rT9UU=";
+      sha256 = "sha256-Ek48CoW64hqa2V0FRU3TvGrWF1FVSyxzhndZ3o3aP2k=";
     };
   };
   waywallen = {
