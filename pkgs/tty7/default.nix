@@ -58,16 +58,16 @@ in
 let
   tty7-src = rustPlatform.buildRustPackage (finalAttrs: {
     pname = "tty7";
-    version = "26.9.3";
+    version = "26.10.0";
 
     src = fetchFromGitHub {
       owner = "l0ng-ai";
       repo = "tty7";
       rev = "v${finalAttrs.version}";
-      hash = "sha256-DN+MvhpGYCk1pl0uMx31Fe/+jaqy2mII8mttH+QbbIw=";
+      hash = "sha256-+J6kkg27aqQb/7/rcOf6NJLQ7ICHbUcaW4PDsJiC0ho=";
     };
 
-    cargoHash = "sha256-LznCz9hGURWYnYBikUvtxZO9w4nDRlyxxSCqu8yKkMk=";
+    cargoHash = "sha256-VzQsEEvrXZDBp9rqTZsn9pbWKMgX0Z3eC6P8Ag1LZNs=";
 
     nativeBuildInputs = [
       pkg-config
@@ -115,11 +115,11 @@ let
 
   tty7-bin = stdenvNoCC.mkDerivation (finalAttrs: {
     pname = "tty7";
-    version = "26.9.3";
+    version = "26.10.0";
 
     src = fetchzip {
       url = "https://github.com/l0ng-ai/tty7/releases/download/v${finalAttrs.version}/tty7-${finalAttrs.version}-linux-x86_64.tar.gz";
-      hash = "sha256-SDfBc4ap6M9F9FPcRAqiCxIpQPXstTrI5gnFewkFSIA=";
+      hash = "sha256-3c3MC4072ABxkxrzpMTn8Kr0rnxbwW++xNPIFx74mbM=";
     };
 
     nativeBuildInputs = [
