@@ -161,4 +161,5 @@ let
 in
 {
   inherit tty7-src tty7-bin;
+  tty7 = tty7-src;
 }

@@ -1,0 +1,79 @@
+name: Build binary cache
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "flake.nix"
+      - "flake.lock"
+      - "pkgs/**"
+      - "_sources/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      revision:
+        description: Commit to build
+        required: true
+        type: string
+    secrets:
+      CACHIX_AUTH_TOKEN:
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Cache ${{ matrix.package }} (x86_64-linux)
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        package:
+          - bbdown
+          - edstem-cli
+          - fast-note-sync-service
+          - komari
+          - komari-agent
+          - limes
+          - msd_lite
+          - proton-cli
+          - ratune
+          - tylax
+          - udpxy
+          - xdd
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.revision || github.sha }}
+          persist-credentials: false
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v17
+
+      - name: Configure Cachix
+        uses: cachix/cachix-action@v17
+        with:
+          name: js0ny
+          skipPush: true
+
+      - name: Build package
+        env:
+          PACKAGE: ${{ matrix.package }}
+        run: |
+          nix build \
+            ".#packages.x86_64-linux.${PACKAGE}" \
+            --no-update-lock-file \
+            --no-link \
+            --print-out-paths > "$RUNNER_TEMP/cache-paths"
+
+      - name: Push package closure
+        env:
+          CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+        run: cachix push js0ny < "$RUNNER_TEMP/cache-paths"
