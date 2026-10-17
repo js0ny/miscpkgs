@@ -202,17 +202,17 @@
   };
   limes = {
     pname = "limes";
-    version = "0cd6451c4558919ffeceec51f11b7fa8b912318e";
+    version = "335923c191440134123f6aa4915af807593fee06";
     src = fetchgit {
       url = "https://github.com/js0ny/limes.git";
-      rev = "0cd6451c4558919ffeceec51f11b7fa8b912318e";
+      rev = "335923c191440134123f6aa4915af807593fee06";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Nt/y2H5+T9mA0Lvv23dig4BZUUGib16tPiCb0+Fg14Q=";
+      sha256 = "sha256-fPZehnL1GQQ7hO1eQz57wzbpNG+XrvltwfeWljBl7/E=";
     };
-    date = "2026-07-07";
+    date = "2026-10-17";
   };
   mdformat-obsidian = {
     pname = "mdformat-obsidian";
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-0m2j1v5We89KrYeQR1NWmX2LwIhrCHspLFBjwK3BK9A=";
+      sha256 = "sha256-GEnl5Ky9v69B/O64a3OdXQyF1XS9imiFYsuh5r63hIg=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -385,7 +385,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
-      sha256 = "sha256-r2opyrpKK9I58JdwlXATd+6VRLGiGQfxon9wVAIrpyo=";
+      sha256 = "sha256-yC2YZxrWzz8yBkeAupmPzlCEv+RJfyxOlkxTTZ/MRVw=";
     };
   };
   rime-teochew = {
