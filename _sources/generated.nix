@@ -78,10 +78,10 @@
   };
   dwproton = {
     pname = "dwproton";
-    version = "dwproton-11.0-14";
+    version = "dwproton-11.0-15";
     src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-14/dwproton-11.0-14-x86_64.tar.xz";
-      sha256 = "sha256-dXtOdfqIU0wWQ0OXDRbHuFTifGJ7ti+Ij4g+a/RV71Q=";
+      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-15/dwproton-11.0-15-x86_64.tar.xz";
+      sha256 = "sha256-vF5O5sR1/zr1+06SraznN4u8eRtp47bVYxj0ntCZIwQ=";
     };
   };
   emacs-kitty-graphics = {
@@ -97,17 +97,17 @@
   };
   emacs-typst-overlay = {
     pname = "emacs-typst-overlay";
-    version = "e235d74f112f752dd22dc44e61b76fc16404ff4a";
+    version = "5f688e903709ca7adda3e81b76cc8abc6e9c4ada";
     src = fetchgit {
       url = "https://github.com/hesampakdaman/typst-overlay.git";
-      rev = "e235d74f112f752dd22dc44e61b76fc16404ff4a";
+      rev = "5f688e903709ca7adda3e81b76cc8abc6e9c4ada";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-DIG/kkRN9nz3uVzX0/ln25QNWfmAOkH1noxc6lmHh3s=";
+      sha256 = "sha256-ZAdfTvlgUlV1Xd1DkS3Bl8RM3NiHYh9jgDCIKz7xtLU=";
     };
-    date = "2026-10-12";
+    date = "2026-10-13";
   };
   fast-note-sync-service = {
     pname = "fast-note-sync-service";
@@ -122,27 +122,27 @@
   };
   firefox-csshacks = {
     pname = "firefox-csshacks";
-    version = "152a3c07d9c88e5c85449294eddca0b97e05a63e";
+    version = "4869329f67522f17cd86bf504a552089d07261d5";
     src = fetchgit {
       url = "https://github.com/MrOtherGuy/firefox-csshacks.git";
-      rev = "152a3c07d9c88e5c85449294eddca0b97e05a63e";
+      rev = "4869329f67522f17cd86bf504a552089d07261d5";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-X4wIq0rnYnO8QDSH3cRT6mjSRTWyYO5deOirq10aSek=";
+      sha256 = "sha256-iIuUfNjQ6miVHrKm3ZBafCRNXEVnHDu0QSiR81PwLdE=";
     };
-    date = "2026-10-10";
+    date = "2026-10-15";
   };
   flyline = {
     pname = "flyline";
-    version = "v1.9.0";
+    version = "v1.10.0";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.9.0";
+      rev = "v1.10.0";
       fetchSubmodules = false;
-      sha256 = "sha256-bKFTAAN+A3Po0PnVv1XYQyLWqBQT3btYUUuFu7jcCXA=";
+      sha256 = "sha256-nOCawyqUdOkxaqFS11Tp9IaOm7hevWhnLjpxsr5YWCo=";
     };
   };
   forgejo-file-icons = {
@@ -172,10 +172,10 @@
   };
   komari = {
     pname = "komari";
-    version = "1.5.1";
+    version = "1.6.0";
     src = fetchTarball {
-      url = "https://github.com/komari-monitor/komari/archive/refs/tags/1.5.1.tar.gz";
-      sha256 = "sha256-jzZ2IroS6eJTgfGHWSywh588lHaQc5ycn0cWM8Cd5eU=";
+      url = "https://github.com/komari-monitor/komari/archive/refs/tags/1.6.0.tar.gz";
+      sha256 = "sha256-g7UdfL9+iaB/gnsbuBqpEqG0IY5SxzP4S4RHsAy07fA=";
     };
   };
   komari-agent = {
@@ -191,13 +191,13 @@
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.5.1";
+    version = "1.6.0";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.5.1";
+      rev = "1.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-ZJn+Grwfg2p813QQ87w39xk4lEbQsT/SbCal8lIcd3o=";
+      sha256 = "sha256-+fzblC4V7K9l6TpGKcApRm7bJ7knpVgRmZclMqEQFAc=";
     };
   };
   limes = {
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-GEnl5Ky9v69B/O64a3OdXQyF1XS9imiFYsuh5r63hIg=";
+      sha256 = "sha256-nu2sHYNvP9r7YbFiA1yJNyU67cEGvkCyuVfZq2Tp7Yk=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -404,18 +404,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v18.1.2";
+    version = "v18.1.5";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.2/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-hVgnRQZ5CJASA4qXYx9PVr6wa6C5OSd9ufB5BCnbFLI=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.5/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-QeO++p9x29Watlk75VdkELS5wwzDOdOv51SoQVWJF6Y=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v18.1.2";
+    version = "v18.1.5";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.2/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-FcB5iPnLe/rFNYffN9qGrHDqpZfFWJLcmV10K7NGeX0=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.5/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-WG7bLZXhbZ9ym8IGUh6wcpWexRtslPSUYGnYROXuaQg=";
     };
   };
   sing-box-dashboard = {
@@ -498,13 +498,13 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.43.2";
+    version = "v1.44.0";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.43.2";
+      rev = "v1.44.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Ek48CoW64hqa2V0FRU3TvGrWF1FVSyxzhndZ3o3aP2k=";
+      sha256 = "sha256-9K5grdsWfmqxmw6M2rPx4fnDbs6ZUY34OMUwlAftRoI=";
     };
   };
   waywallen = {
@@ -520,13 +520,13 @@
   };
   waywallen-display = {
     pname = "waywallen-display";
-    version = "v0.4.1";
+    version = "v0.4.2";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen-display";
-      rev = "v0.4.1";
+      rev = "v0.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-Kf42AUH1rl5X60/BPswcTISewCJRqsSr/eW6lHSt8I0=";
+      sha256 = "sha256-VScmByqw5Ue5Md3KEAjJLGFHlNxyS8GFbgiMdi+Y31k=";
     };
   };
   waywallen-main-page-webp = {
