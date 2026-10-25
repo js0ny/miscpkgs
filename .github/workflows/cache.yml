@@ -47,6 +47,7 @@ jobs:
           - tylax
           - udpxy
           - xdd
+          - cli2mcp
     steps:
       - name: Checkout
         uses: actions/checkout@v4
