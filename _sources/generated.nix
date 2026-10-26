@@ -97,17 +97,17 @@
   };
   emacs-typst-overlay = {
     pname = "emacs-typst-overlay";
-    version = "5f688e903709ca7adda3e81b76cc8abc6e9c4ada";
+    version = "152efe2f7f2f2146f393c7f889e64217294dbd35";
     src = fetchgit {
       url = "https://github.com/hesampakdaman/typst-overlay.git";
-      rev = "5f688e903709ca7adda3e81b76cc8abc6e9c4ada";
+      rev = "152efe2f7f2f2146f393c7f889e64217294dbd35";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ZAdfTvlgUlV1Xd1DkS3Bl8RM3NiHYh9jgDCIKz7xtLU=";
+      sha256 = "sha256-3IQ1YFP0iBz2PO5vtqzX10IPbY/SVQPtN5nxdtZo7no=";
     };
-    date = "2026-10-13";
+    date = "2026-10-26";
   };
   fast-note-sync-service = {
     pname = "fast-note-sync-service";
@@ -161,21 +161,21 @@
   };
   go-fast-note-sync = {
     pname = "go-fast-note-sync";
-    version = "v1.1.3";
+    version = "v1.1.4";
     src = fetchFromGitHub {
       owner = "erichll";
       repo = "go-fast-note-sync";
-      rev = "v1.1.3";
+      rev = "v1.1.4";
       fetchSubmodules = false;
-      sha256 = "sha256-Mrf+Tr5nlhNcDwnqRFyYVfGSKp7+QvZNs0fBoheg8sg=";
+      sha256 = "sha256-pZ4txEGqSGSZLp0HkCacEQjsMaGzEextaA1AbIrrCzQ=";
     };
   };
   komari = {
     pname = "komari";
-    version = "1.6.0";
+    version = "1.6.1";
     src = fetchTarball {
-      url = "https://github.com/komari-monitor/komari/archive/refs/tags/1.6.0.tar.gz";
-      sha256 = "sha256-g7UdfL9+iaB/gnsbuBqpEqG0IY5SxzP4S4RHsAy07fA=";
+      url = "https://github.com/komari-monitor/komari/archive/refs/tags/1.6.1.tar.gz";
+      sha256 = "sha256-NEs5oSXIfmxJpl+TdVInq7EJCIhmMyJPjVcHDyiRoSc=";
     };
   };
   komari-agent = {
@@ -191,13 +191,13 @@
   };
   komari-web = {
     pname = "komari-web";
-    version = "1.6.0";
+    version = "1.6.1";
     src = fetchFromGitHub {
       owner = "komari-monitor";
       repo = "komari-web";
-      rev = "1.6.0";
+      rev = "1.6.1";
       fetchSubmodules = false;
-      sha256 = "sha256-+fzblC4V7K9l6TpGKcApRm7bJ7knpVgRmZclMqEQFAc=";
+      sha256 = "sha256-HdWdptnlk1x1k2fxIvBW/uheCqh8uFiihWIQfwk+mVo=";
     };
   };
   limes = {
@@ -258,13 +258,13 @@
   };
   noname = {
     pname = "noname";
-    version = "v1.11.6";
+    version = "v1.11.6.1";
     src = fetchFromGitHub {
       owner = "libnoname";
       repo = "noname";
-      rev = "v1.11.6";
+      rev = "v1.11.6.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Zv+PUyVGfecsa2PdEkPzmSIR1dFHYIQeu+Mha5sSqrI=";
+      sha256 = "sha256-honCI4ix3WqMNaJPuR7senBAk6XOMPclflhDx4jhGg4=";
     };
   };
   oroot = {
@@ -307,13 +307,13 @@
   };
   ratune = {
     pname = "ratune";
-    version = "v0.16.0";
+    version = "v0.17.0";
     src = fetchFromGitHub {
       owner = "acmagn";
       repo = "ratune";
-      rev = "v0.16.0";
+      rev = "v0.17.0";
       fetchSubmodules = false;
-      sha256 = "sha256-HxhK2tLLr2T7T2ThYKg16l9MWsV3bauTzjSl0NrsJGk=";
+      sha256 = "sha256-D/dK7c8FlABYbg7Y+PzzH68pb2epO+wxdPFaguOK+fs=";
     };
   };
   rime-cantonese = {
@@ -377,7 +377,7 @@
     version = "LTS";
     src = fetchurl {
       url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
-      sha256 = "sha256-nu2sHYNvP9r7YbFiA1yJNyU67cEGvkCyuVfZq2Tp7Yk=";
+      sha256 = "sha256-40UAq0RibcA5oGQXkuy6mKtjMHZG6z0pGGvlZgj/4JQ=";
     };
   };
   rime-lmdg-zh-hant = {
@@ -404,18 +404,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v18.1.5";
+    version = "v18.1.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.5/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-QeO++p9x29Watlk75VdkELS5wwzDOdOv51SoQVWJF6Y=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.8/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-kIDzM9vXAG2R0K6LIveeS0ee1CFCNk7DtqjKb8LYtYg=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v18.1.5";
+    version = "v18.1.8";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.5/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-WG7bLZXhbZ9ym8IGUh6wcpWexRtslPSUYGnYROXuaQg=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v18.1.8/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-zUzo50X77dWiafgOkgI6f4joqZTo3tJrIZLo4KTl5kQ=";
     };
   };
   sing-box-dashboard = {
@@ -498,42 +498,42 @@
   };
   vireo = {
     pname = "vireo";
-    version = "v1.44.0";
+    version = "v1.45.3";
     src = fetchFromGitHub {
       owner = "hyprlab";
       repo = "vireo";
-      rev = "v1.44.0";
+      rev = "v1.45.3";
       fetchSubmodules = false;
-      sha256 = "sha256-9K5grdsWfmqxmw6M2rPx4fnDbs6ZUY34OMUwlAftRoI=";
+      sha256 = "sha256-1DFvzFbcDwq0rsOexGFISu0k+sTcKACKqSjlWE4n0M0=";
     };
   };
   waywallen = {
     pname = "waywallen";
-    version = "v0.4.4";
+    version = "v0.5.0";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen";
-      rev = "v0.4.4";
+      rev = "v0.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-/ML7KKSes00fT/2fpRcAu0TjTSuSD2lMmXcOmOu4vpI=";
+      sha256 = "sha256-z1OnbtT/1TZOBtrz3srCj7SPWaQphUQBXIDYw745XEE=";
     };
   };
   waywallen-display = {
     pname = "waywallen-display";
-    version = "v0.4.2";
+    version = "v0.4.3";
     src = fetchFromGitHub {
       owner = "waywallen";
       repo = "waywallen-display";
-      rev = "v0.4.2";
+      rev = "v0.4.3";
       fetchSubmodules = false;
-      sha256 = "sha256-VScmByqw5Ue5Md3KEAjJLGFHlNxyS8GFbgiMdi+Y31k=";
+      sha256 = "sha256-pYc7n+FB3Y3BHP+bkExhqZWXZPUEXbNcTYFQIj+rBS4=";
     };
   };
   waywallen-main-page-webp = {
     pname = "waywallen-main-page-webp";
-    version = "v0.4.4";
+    version = "v0.5.0";
     src = fetchurl {
-      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.4.4/ui/assets/main_page.webp";
+      url = "https://media.githubusercontent.com/media/waywallen/waywallen/v0.5.0/ui/assets/main_page.webp";
       sha256 = "sha256-4+RMgz8Jz3PZFWKYtSdGUBKNjq53zh/Yce+702band0=";
     };
   };
