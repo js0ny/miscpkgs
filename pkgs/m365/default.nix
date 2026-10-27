@@ -9,20 +9,19 @@
   ...
 }:
 let
-  source = builtins.fromJSON (builtins.readFile ./source.json);
+  pins = builtins.fromJSON (builtins.readFile ./pins.json);
 in
-buildNpmPackage {
+buildNpmPackage (finalAttrs: {
   pname = "m365";
-  inherit (source) version;
+  inherit (pins) version npmDepsHash;
 
   src = fetchFromGitHub {
     owner = "pnp";
     repo = "cli-microsoft365";
-    inherit (source) rev hash;
+    inherit (pins) rev hash;
   };
 
   nodejs = nodejs_24;
-  npmDepsHash = source.npmDepsHash;
   npmDepsFetcherVersion = 2;
 
   # The upstream shrinkwrap omits URLs and integrity hashes required by the offline npm cache.
@@ -39,4 +38,4 @@ buildNpmPackage {
     license = lib.licenses.mit;
     mainProgram = "m365";
   };
-}
+})

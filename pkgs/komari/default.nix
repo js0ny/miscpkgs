@@ -2,17 +2,23 @@
   buildGoModule,
   callPackage,
   lib,
-  sources,
+  fetchFromGitHub,
   zstd,
+  pins ? builtins.fromJSON (builtins.readFile ./pins.json),
+  ...
 }:
 let
-  p = sources.komari;
-  frontend = callPackage ./frontend.nix { inherit sources; };
+  frontend = callPackage ./frontend.nix { pins = pins.frontend; };
 in
 buildGoModule (finalAttrs: {
-  inherit (p) pname version src;
+  pname = "komari";
+  inherit (pins) version vendorHash;
 
-  vendorHash = "sha256-k7rJk1oxhU2CQigiJrPSn2YJYvNIFxJd1k9lm4hdyCA=";
+  src = fetchFromGitHub {
+    owner = "komari-monitor";
+    repo = "komari";
+    inherit (pins) rev hash;
+  };
 
   nativeBuildInputs = [ zstd ];
 
@@ -20,7 +26,7 @@ buildGoModule (finalAttrs: {
     "-s"
     "-w"
     "-X github.com/komari-monitor/komari/utils.CurrentVersion=${finalAttrs.version}"
-    "-X github.com/komari-monitor/komari/utils.VersionHash=${p.version}"
+    "-X github.com/komari-monitor/komari/utils.VersionHash=${finalAttrs.src.rev}"
   ];
 
   # web/public/public.go embeds defaultTheme/dist.tar.zst and
@@ -46,7 +52,7 @@ buildGoModule (finalAttrs: {
   ];
 
   meta = {
-    description = "A simple self-hosted server monitoring tool";
+    description = "Self-hosted server monitoring tool";
     homepage = "https://github.com/komari-monitor/komari";
     license = lib.licenses.mit;
     mainProgram = "komari";

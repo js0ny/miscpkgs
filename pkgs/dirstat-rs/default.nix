@@ -1,23 +1,35 @@
 {
   rustPlatform,
   lib,
-  sources,
+  fetchFromGitHub,
+  versionCheckHook,
+  ...
 }:
 let
-  p = sources.dirstat-rs;
+  pins = builtins.fromJSON (builtins.readFile ./pins.json);
 in
-rustPlatform.buildRustPackage {
-  inherit (p) pname src;
-  version = lib.removePrefix "v" p.version;
+rustPlatform.buildRustPackage (finalAttrs: {
+  pname = "dirstat-rs";
+  inherit (pins) version;
 
-  cargoLock.lockFile = "${p.src}/Cargo.lock";
+  src = fetchFromGitHub {
+    owner = "scullionw";
+    repo = "dirstat-rs";
+    inherit (pins) rev hash;
+  };
+
+  cargoLock.lockFile = "${finalAttrs.src}/Cargo.lock";
+
+  nativeInstallCheckInputs = [ versionCheckHook ];
+  doInstallCheck = true;
+  versionCheckProgramArg = "--version";
 
   meta = {
-    description = "disk usage cli, similar to windirstat.";
+    description = "Disk usage analyser similar to WinDirStat";
     homepage = "https://github.com/scullionw/dirstat-rs";
     license = lib.licenses.mit;
     mainProgram = "ds";
     platforms = lib.platforms.linux;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
-}
+})

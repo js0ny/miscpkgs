@@ -37,13 +37,22 @@
               nix-update
               yq-go
               keep-sorted
+              python3
+              git
             ];
             shellHook = /* bash */ ''
               export NIXPKGS_ALLOW_UNFREE=1
+              # Helpers must use the writable checkout, not the flake's store copy.
+              export PATH="$(git rev-parse --show-toplevel)/helper:$PATH"
             '';
           };
         };
       flake = {
+        updateManifest =
+          (import ./pkgs {
+            pkgs = { };
+            inherit (inputs.nixpkgs) lib;
+          }).updateManifest;
         overlays.default = final: prev: {
           js0ny =
             (import ./pkgs {

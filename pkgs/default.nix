@@ -23,6 +23,29 @@ let
         scanPackages subdir
     ) dirs;
 
+  scanUpdateScripts =
+    path:
+    let
+      content = builtins.readDir path;
+      dirs = lib.filterAttrs (_: type: type == "directory") content;
+      scripts = lib.mapAttrsToList (name: _: scanUpdateScripts (path + "/${name}")) dirs;
+      mergeScripts =
+        left: right:
+        let
+          duplicates = builtins.attrNames (builtins.intersectAttrs left right);
+        in
+        assert lib.assertMsg (
+          duplicates == [ ]
+        ) "duplicate update script package names: ${lib.concatStringsSep ", " duplicates}";
+        left // right;
+    in
+    lib.foldl' mergeScripts (lib.optionalAttrs
+      (content."default.nix" or null == "regular" && content."update.py" or null == "regular")
+      {
+        ${builtins.baseNameOf path} = lib.removePrefix "${toString ../.}/" (toString (path + "/update.py"));
+      }
+    ) scripts;
+
   collectPackages =
     attrs:
     lib.concatMap (
@@ -42,17 +65,20 @@ let
         [ ]
     ) (builtins.attrNames attrs);
 
+  updateManifest = scanUpdateScripts ./.;
   packageEntries = collectPackages (scanPackages ./.);
   packageNames = map (package: package.name) packageEntries;
   duplicateNames = lib.unique (
     lib.filter (name: builtins.length (lib.filter (other: other == name) packageNames) > 1) packageNames
   );
-  packageSet = builtins.listToAttrs packageEntries;
+  packageSet =
+    assert lib.assertMsg (
+      duplicateNames == [ ]
+    ) "duplicate package names: ${lib.concatStringsSep ", " duplicateNames}";
+    builtins.listToAttrs packageEntries;
 in
-assert lib.assertMsg (
-  duplicateNames == [ ]
-) "duplicate package names: ${lib.concatStringsSep ", " duplicateNames}";
 {
+  updateScripts = updateManifest;
   flatPackages = lib.filterAttrs (_: lib.isDerivation) packageSet;
-  inherit packageSet;
+  inherit packageSet updateManifest;
 }

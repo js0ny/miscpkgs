@@ -75,27 +75,6 @@
         },
         "version": "3813e93b13b087e95901d1822baf9c3540e3f3f6"
     },
-    "dirstat-rs": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "dirstat-rs",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "scullionw",
-            "repo": "dirstat-rs",
-            "rev": "v0.3.7",
-            "sha256": "sha256-gDIUYhc+GWbQsn5DihnBJdOJ45zdwm24J2ZD2jEwGyE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v0.3.7"
-    },
     "dump-tabs": {
         "cargoLock": null,
         "date": "2026-07-09",
@@ -273,62 +252,6 @@
             "type": "github"
         },
         "version": "v1.1.4"
-    },
-    "komari": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "komari",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-NEs5oSXIfmxJpl+TdVInq7EJCIhmMyJPjVcHDyiRoSc=",
-            "type": "tarball",
-            "url": "https://github.com/komari-monitor/komari/archive/refs/tags/1.6.1.tar.gz"
-        },
-        "version": "1.6.1"
-    },
-    "komari-agent": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "komari-agent",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "komari-monitor",
-            "repo": "komari-agent",
-            "rev": "1.5.11",
-            "sha256": "sha256-1jemWrMcdJ4RIhcRyxmFahLQZ34Q1QSQLgO6BoHhOGw=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "1.5.11"
-    },
-    "komari-web": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "komari-web",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "komari-monitor",
-            "repo": "komari-web",
-            "rev": "1.6.1",
-            "sha256": "sha256-HdWdptnlk1x1k2fxIvBW/uheCqh8uFiihWIQfwk+mVo=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "1.6.1"
     },
     "limes": {
         "cargoLock": null,

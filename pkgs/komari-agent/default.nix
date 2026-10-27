@@ -1,15 +1,19 @@
 {
   buildGoModule,
   lib,
-  sources,
+  fetchFromGitHub,
+  pins ? builtins.fromJSON (builtins.readFile ./pins.json),
+  ...
 }:
-let
-  p = sources.komari-agent;
-in
 buildGoModule (finalAttrs: {
-  inherit (p) pname version src;
+  pname = "komari-agent";
+  inherit (pins) version vendorHash;
 
-  vendorHash = "sha256-teKx9u7M2ZQdd7G3xSCqhwjcHRzBzKeBViSl62TRg+g=";
+  src = fetchFromGitHub {
+    owner = "komari-monitor";
+    repo = "komari-agent";
+    inherit (pins) rev hash;
+  };
 
   ldflags = [
     "-X github.com/komari-monitor/komari-agent/update.CurrentVersion=${finalAttrs.version}"
@@ -20,7 +24,7 @@ buildGoModule (finalAttrs: {
   checkFlags = [ "-skip=Test(ICMP|TCP|HTTP)Ping" ];
 
   meta = {
-    description = "komari agent";
+    description = "Lightweight monitoring agent for Komari";
     homepage = "https://github.com/komari-monitor/komari-agent";
     license = lib.licenses.mit;
     mainProgram = "komari-agent";

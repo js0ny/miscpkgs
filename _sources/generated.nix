@@ -51,17 +51,6 @@
     };
     date = "2026-07-27";
   };
-  dirstat-rs = {
-    pname = "dirstat-rs";
-    version = "v0.3.7";
-    src = fetchFromGitHub {
-      owner = "scullionw";
-      repo = "dirstat-rs";
-      rev = "v0.3.7";
-      fetchSubmodules = false;
-      sha256 = "sha256-gDIUYhc+GWbQsn5DihnBJdOJ45zdwm24J2ZD2jEwGyE=";
-    };
-  };
   dump-tabs = {
     pname = "dump-tabs";
     version = "745e347bcf9a2bec87370a33d4929d07af09f011";
@@ -168,36 +157,6 @@
       rev = "v1.1.4";
       fetchSubmodules = false;
       sha256 = "sha256-pZ4txEGqSGSZLp0HkCacEQjsMaGzEextaA1AbIrrCzQ=";
-    };
-  };
-  komari = {
-    pname = "komari";
-    version = "1.6.1";
-    src = fetchTarball {
-      url = "https://github.com/komari-monitor/komari/archive/refs/tags/1.6.1.tar.gz";
-      sha256 = "sha256-NEs5oSXIfmxJpl+TdVInq7EJCIhmMyJPjVcHDyiRoSc=";
-    };
-  };
-  komari-agent = {
-    pname = "komari-agent";
-    version = "1.5.11";
-    src = fetchFromGitHub {
-      owner = "komari-monitor";
-      repo = "komari-agent";
-      rev = "1.5.11";
-      fetchSubmodules = false;
-      sha256 = "sha256-1jemWrMcdJ4RIhcRyxmFahLQZ34Q1QSQLgO6BoHhOGw=";
-    };
-  };
-  komari-web = {
-    pname = "komari-web";
-    version = "1.6.1";
-    src = fetchFromGitHub {
-      owner = "komari-monitor";
-      repo = "komari-web";
-      rev = "1.6.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-HdWdptnlk1x1k2fxIvBW/uheCqh8uFiihWIQfwk+mVo=";
     };
   };
   limes = {

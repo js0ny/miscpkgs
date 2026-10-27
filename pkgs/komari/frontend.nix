@@ -1,14 +1,19 @@
 {
   buildNpmPackage,
-  sources,
+  fetchFromGitHub,
+  pins ? (builtins.fromJSON (builtins.readFile ./pins.json)).frontend,
 }:
-let
-  p = sources.komari-web;
-in
-buildNpmPackage {
-  inherit (p) pname version src;
+buildNpmPackage (finalAttrs: {
+  pname = "komari-web";
+  inherit (pins) version npmDepsHash;
 
-  npmDepsHash = "sha256-e9kXBw773ozXFkAnTBzJp6Y2PRi1TTPb6sgTcj/jqs8=";
+  src = fetchFromGitHub {
+    owner = "komari-monitor";
+    repo = "komari-web";
+    inherit (pins) rev hash;
+  };
+
+  npmDepsFetcherVersion = 1;
 
   installPhase = ''
     runHook preInstall
@@ -16,4 +21,4 @@ buildNpmPackage {
     cp -r dist komari-theme.json $out/
     runHook postInstall
   '';
-}
+})

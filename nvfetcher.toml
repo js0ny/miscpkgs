@@ -92,10 +92,6 @@ src.git = "https://github.com/rozhuk-im/msd_lite.git"
 fetch.github = "rozhuk-im/msd_lite"
 git.fetchSubmodules = true
 
-[komari-agent]
-src.github = "komari-monitor/komari-agent"
-fetch.github = "komari-monitor/komari-agent"
-
 [rime-lmdg-zh-hans]
 src.manual = "LTS"
 fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/$ver/wanxiang-lts-zh-hans.gram"
@@ -121,10 +117,6 @@ fetch.url = "https://proton.me/download/drive/cli/$ver/linux-arm64/proton-drive"
 src.webpage = "https://proton.me/download/drive/cli/index.html"
 src.regex = "drive/cli/([0-9.]+)"
 fetch.url = "https://proton.me/download/drive/cli/$ver/darwin-arm64/proton-drive"
-
-[dirstat-rs]
-src.github = "scullionw/dirstat-rs"
-fetch.github = "scullionw/dirstat-rs"
 
 [waywallen]
 src.github = "waywallen/waywallen"
@@ -195,14 +187,6 @@ fetch.git = "https://github.com/SagerNet/sing-box-dashboard.git"
 [sni-fetch]
 src.github = "HelloLingC/SNI-Fetch"
 fetch.github = "HelloLingC/SNI-Fetch"
-
-[komari]
-src.github = "komari-monitor/komari"
-fetch.tarball = "https://github.com/komari-monitor/komari/archive/refs/tags/$ver.tar.gz"
-
-[komari-web]
-src.github = "komari-monitor/komari-web"
-fetch.github = "komari-monitor/komari-web"
 
 [xdd]
 src.github = "js0ny/xdd"

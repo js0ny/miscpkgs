@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+import argparse
+import json
+import shlex
+import subprocess
+import sys
+from pathlib import Path
+
+REPO_DIR = Path(__file__).resolve().parents[1]
+
+
+def load_manifest(path):
+    if path is None:
+        content = subprocess.check_output(
+            [
+                "nix",
+                "eval",
+                "--json",
+                "--no-write-lock-file",
+                f"path:{REPO_DIR}#updateManifest",
+            ],
+            cwd=REPO_DIR,
+            text=True,
+        )
+    else:
+        content = path.read_text()
+    manifest = json.loads(content)
+    if not isinstance(manifest, dict):
+        raise TypeError("Expected a manifest mapping package names to script paths")
+
+    scripts = {}
+    for name, relative in manifest.items():
+        if not isinstance(name, str) or not name or not isinstance(relative, str):
+            raise ValueError(
+                "Manifest names and script paths must be non-empty strings"
+            )
+        path = Path(relative)
+        script = (REPO_DIR / path).resolve()
+        # A supplied manifest may only select updater scripts inside this checkout.
+        if (
+            path.is_absolute()
+            or not script.is_relative_to(REPO_DIR)
+            or script.name != "update.py"
+            or not script.is_file()
+        ):
+            raise ValueError(f"Invalid updater path for {name}: {relative!r}")
+        scripts[name] = script
+    return scripts
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Run package updaters selected by updateManifest"
+    )
+    parser.add_argument(
+        "packages", nargs="*", help="Packages to update; defaults to all"
+    )
+    parser.add_argument(
+        "--exclude",
+        action="append",
+        default=[],
+        metavar="PACKAGE",
+        help="Skip a package; may be repeated",
+    )
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        metavar="FILE",
+        help="Read an exported JSON manifest instead of evaluating Nix",
+    )
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
+        "--list",
+        action="store_true",
+        help="List selected packages without running them",
+    )
+    mode.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Show updater commands without running them",
+    )
+    args = parser.parse_intermixed_args(argv)
+    try:
+        manifest = load_manifest(args.manifest)
+    except (OSError, TypeError, ValueError, subprocess.CalledProcessError) as error:
+        parser.error(str(error))
+
+    unknown = sorted((set(args.packages) | set(args.exclude)) - manifest.keys())
+    if unknown:
+        parser.error(f"Unknown packages: {', '.join(unknown)}")
+    packages = [
+        name
+        for name in dict.fromkeys(args.packages or sorted(manifest))
+        if name not in args.exclude
+    ]
+    if not packages:
+        print("No packages selected.")
+        return 0
+
+    failed = []
+    for index, name in enumerate(packages, start=1):
+        script = manifest[name]
+        if args.list:
+            print(f"{name}\t{script.relative_to(REPO_DIR).as_posix()}")
+            continue
+        command = [sys.executable, str(script)]
+        print(f"[{index}/{len(packages)}] {name}: {shlex.join(command)}", flush=True)
+        if args.dry_run:
+            continue
+        try:
+            result = subprocess.run(command, cwd=REPO_DIR, check=False)
+            if result.returncode != 0:
+                failed.append(name)
+                print(
+                    f"{name}: exited with status {result.returncode}", file=sys.stderr
+                )
+        except OSError as error:
+            failed.append(name)
+            print(f"{name}: {error}", file=sys.stderr)
+
+    if not (args.list or args.dry_run):
+        print(
+            f"Completed: {len(packages) - len(failed)} succeeded, {len(failed)} failed."
+        )
+        if failed:
+            print(f"Failed: {', '.join(failed)}", file=sys.stderr)
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main())
+    except KeyboardInterrupt:
+        print("\nInterrupted.", file=sys.stderr)
+        sys.exit(130)
