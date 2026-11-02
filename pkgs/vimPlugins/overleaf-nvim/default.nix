@@ -25,7 +25,7 @@ vimUtils.buildVimPlugin {
     postPatch = ''
       cp ${./package-lock.json} package-lock.json
     '';
-    hash = "sha256-TC9VEaV2sc2UQG1B+2aqQJf+QwT5w+86/FH1+kCinao=";
+    hash = "sha256-YBPaVRpyB9RNtkkXFqKGsZcOo6hSeChpl7Uw5JNHNqs=";
   };
   npmRoot = "node";
   makeCacheWritable = true;
