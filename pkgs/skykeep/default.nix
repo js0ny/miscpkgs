@@ -34,13 +34,31 @@ rustPlatform.buildRustPackage (finalAttrs: {
     hash = pins.npmHash;
   };
 
-  nativeBuildInputs = [ pkg-config nodejs npmHooks.npmConfigHook makeWrapper ];
-  buildInputs = [ gtk3 webkitgtk_4_1 glib libsoup_3 libsecret libheif openssl gst_all_1.gstreamer gst_all_1.gst-plugins-base ];
+  nativeBuildInputs = [
+    pkg-config
+    nodejs
+    npmHooks.npmConfigHook
+    makeWrapper
+  ];
+  buildInputs = [
+    gtk3
+    webkitgtk_4_1
+    glib
+    libsoup_3
+    libsecret
+    libheif
+    openssl
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+  ];
 
   preBuild = ''
     npm run build
   '';
-  cargoBuildFlags = [ "-p" "quince-app" ];
+  cargoBuildFlags = [
+    "-p"
+    "quince-app"
+  ];
   doCheck = false;
 
   installPhase = ''
@@ -68,17 +86,32 @@ rustPlatform.buildRustPackage (finalAttrs: {
     install -Dm644 packaging/$id.krunner.desktop "$out/share/krunner/dbusplugins/$id.krunner.desktop"
     wrapProgram "$out/bin/skykeep" \
       --prefix PATH : ${lib.makeBinPath [ fuse3 ]} \
-      --prefix GST_PLUGIN_SYSTEM_PATH_1_0 : ${lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0" (with gst_all_1; [ gst-plugins-base gst-plugins-good gst-libav ])}
+      --prefix GST_PLUGIN_SYSTEM_PATH_1_0 : ${
+        lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0" (
+          with gst_all_1;
+          [
+            gst-plugins-base
+            gst-plugins-good
+            gst-libav
+          ]
+        )
+      }
     runHook postInstall
   '';
 
-  passthru.updateScript = [ (lib.getExe python3) "pkgs/skykeep/update.py" ];
+  passthru.updateScript = [
+    (lib.getExe python3)
+    "pkgs/skykeep/update.py"
+  ];
 
   meta = {
     description = "Native iCloud desktop apps with offline synchronisation";
     homepage = "https://github.com/YashwanthKamireddi/Skykeep";
     license = lib.licenses.gpl3Only;
     mainProgram = "skykeep";
-    platforms = [ "x86_64-linux" "aarch64-linux" ];
+    platforms = [
+      "x86_64-linux"
+      "aarch64-linux"
+    ];
   };
 })

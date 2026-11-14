@@ -25,11 +25,14 @@ let
     npmDeps = fetchNpmDeps {
       inherit src;
       sourceRoot = "source/frontend";
-      postPatch = ''cp ${lockFile} package-lock.json'';
+      postPatch = "cp ${lockFile} package-lock.json";
       hash = pins.npmHash;
     };
     npmFlags = [ "--legacy-peer-deps" ];
-    nativeBuildInputs = [ bun nodejs ];
+    nativeBuildInputs = [
+      bun
+      nodejs
+    ];
     postPatch = ''
       cp ${lockFile} frontend/package-lock.json
     '';
@@ -55,7 +58,11 @@ buildGoModule (finalAttrs: {
   subPackages = [ "cmd/server" ];
   env.CGO_ENABLED = 0;
   nativeBuildInputs = [ makeWrapper ];
-  ldflags = [ "-s" "-w" "-X main.version=${finalAttrs.version}" ];
+  ldflags = [
+    "-s"
+    "-w"
+    "-X main.version=${finalAttrs.version}"
+  ];
   preBuild = ''
     cp -r ${web}/. internal/web/dist/
   '';
@@ -66,13 +73,21 @@ buildGoModule (finalAttrs: {
   '';
   passthru = {
     npmDeps = web.npmDeps;
-    updateScript = [ (lib.getExe python3) "pkgs/pixivbiu/update.py" ];
+    updateScript = [
+      (lib.getExe python3)
+      "pkgs/pixivbiu/update.py"
+    ];
   };
   meta = {
     description = "Pixiv client for browsing and downloading artwork";
     homepage = "https://github.com/txperl/PixivBiu";
     license = lib.licenses.mit;
     mainProgram = "pixivbiu";
-    platforms = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+    platforms = [
+      "x86_64-linux"
+      "aarch64-linux"
+      "x86_64-darwin"
+      "aarch64-darwin"
+    ];
   };
 })
