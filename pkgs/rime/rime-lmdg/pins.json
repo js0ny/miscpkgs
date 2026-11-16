@@ -1,10 +1,10 @@
 {
   "hans": {
     "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram",
-    "hash": "sha256-dphUyD9skUoFoeGrtnwxwA8a5iKkGHjgWVe83uPb2po="
+    "hash": "sha256-1PZDViMXZP8nt5ybDbec2dZlATRkz1VE4vvZpx4PHFo="
   },
   "hant": {
     "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram",
-    "hash": "sha256-yC2YZxrWzz8yBkeAupmPzlCEv+RJfyxOlkxTTZ/MRVw="
+    "hash": "sha256-D+bCcT8h0Zl5mt0dYxR8v+zjrOYQ6WISGZbC117/PyM="
   }
 }

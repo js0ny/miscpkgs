@@ -1,11 +1,11 @@
 {
-  "version": "18.1.10",
+  "version": "18.1.13",
   "flypy": {
-    "url": "https://github.com/amzxyz/rime-wanxiang/releases/download/v18.1.10/rime-wanxiang-flypy-fuzhu.zip",
-    "hash": "sha256-7LAhaaXwPNF+IBNlTNabuVrKnz0jl/4/SgV9Krj8i00="
+    "url": "https://github.com/amzxyz/rime-wanxiang/releases/download/v18.1.13/rime-wanxiang-flypy-fuzhu.zip",
+    "hash": "sha256-+l/nbLsO91lHFYRlTCerP5E0hFSOvgiiXU6jNokd3Tc="
   },
   "zrm": {
-    "url": "https://github.com/amzxyz/rime-wanxiang/releases/download/v18.1.10/rime-wanxiang-zrm-fuzhu.zip",
-    "hash": "sha256-L9CdO/AgWezrRgHPw4ANBJp5iNLmDLAx5suNYeIwh54="
+    "url": "https://github.com/amzxyz/rime-wanxiang/releases/download/v18.1.13/rime-wanxiang-zrm-fuzhu.zip",
+    "hash": "sha256-DwIzkhURFiRiHQQZcCpgCc6W66HDJ5TxN/CogH53TTA="
   }
 }
