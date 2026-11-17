@@ -16,6 +16,12 @@ vimUtils.buildVimPlugin {
   };
   dependencies = [ vimPlugins.flash-nvim ];
 
+  buildPhase = ''
+    runHook preBuild
+    make
+    runHook postBuild
+  '';
+
   # These files are required only by tables.load "tiger", not at startup.
   postInstall = lib.optionalString (!withTiger) ''
     rm -f $out/lua/flash-any/table/tiger.lua $out/lua/flash-any/table/tiger.tsv
