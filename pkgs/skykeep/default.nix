@@ -15,6 +15,7 @@
   libsecret,
   libheif,
   openssl,
+  sqlite,
   fuse3,
   gst_all_1,
   pins ? builtins.fromJSON (builtins.readFile ./pins.json),
@@ -48,6 +49,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     libsecret
     libheif
     openssl
+    sqlite
     gst_all_1.gstreamer
     gst_all_1.gst-plugins-base
   ];
