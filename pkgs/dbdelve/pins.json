@@ -1,0 +1,16 @@
+{
+  "version": "0.7.3",
+  "rev": "64f250252e3dce28bab627232b4bb2b805cd7548",
+  "hash": "sha256-oL42BRIemE/5oXWJJCFX1AmKE/Pz71E6cHr/1eUn+as=",
+  "cargoHash": "sha256-cg7Y55iCVRvFXiteBmKcV8WWzmL4f4HUfgnz8XyBCYY=",
+  "releaseAssets": {
+    "x86_64-linux": {
+      "url": "https://github.com/ShayanAbbas1/dbdelve/releases/download/v0.7.3/dbdelve-0.7.3-linux-x86_64.tar.gz",
+      "hash": "sha256-XFi72qGNGsAKXUAi5/S1E/TTvJBTkJfuiwUmCO3VPfI="
+    },
+    "aarch64-linux": {
+      "url": "https://github.com/ShayanAbbas1/dbdelve/releases/download/v0.7.3/dbdelve-0.7.3-linux-aarch64.tar.gz",
+      "hash": "sha256-aBKMMDw9Yoglp8TVgk2Jl9dZRFsmmGJdp+g+dQTXOGw="
+    }
+  }
+}
