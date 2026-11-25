@@ -9,7 +9,7 @@ PACKAGE_DIR = Path(__file__).resolve().parent
 
 
 def main():
-    update_release(PACKAGE_DIR, "trixnz", "sops.nvim", lambda _pins, _source: {}, snapshot=True)
+    update_release(PACKAGE_DIR, "js0ny", "sops.nvim", lambda _pins, _source: {}, snapshot=True)
 
 
 if __name__ == "__main__":
